@@ -11,6 +11,7 @@ import { Footer } from './components/footer/Footer';
 import {History} from './components/history/History';
 import {Mission} from './components/mission/Mission';
 import { Vision } from './components/vision/Vision';
+import { Contact } from './components/contact/Contact';
 
 export const App = () => {
   return (
@@ -27,6 +28,7 @@ export const App = () => {
       <History/>
       <Mission/>
       <Vision/>
+      <Contact/>
     </section>
 
   )
