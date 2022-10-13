@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Navbar} from './components/navbar/Navbar';
+import { Homepage } from './components/homepage/Homepage';
+import {Strive} from './components/strive/Strive';
+import {Glance} from './components/glance/Glance';
+import {Whatweoffer} from './components/what-we-offer/Whatweoffer';
+import { Events } from './components/events/events/Events';
+import { Ourteam } from './components/ourTeam/Ourteam';
+import { Testimonials } from './components/testimonials/Testimonials';
+import { Footer } from './components/footer/Footer';
+import {History} from './components/history/History';
+import {Mission} from './components/mission/Mission';
+import { Vision } from './components/vision/Vision';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <section>
+      <Navbar/>
+      <Homepage/>
+      <Strive/>
+      <Glance/>
+      <Whatweoffer/>
+      <Events/>
+      <Ourteam/>
+      <Testimonials/>
+      <Footer/>
+      <History/>
+      <Mission/>
+      <Vision/>
+    </section>
+
+  )
 }
 
-export default App;
