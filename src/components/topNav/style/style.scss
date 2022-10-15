@@ -1,0 +1,38 @@
+.topnav-container{
+    display: flex;
+    background-color:  hsla(349, 98%, 20%, 1);
+    padding:  .5rem 1.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+                
+    }
+    a:hover{
+        color: #211969;
+    }
+
+    .webmail{
+        background-color: #141138;
+        padding: .7rem .5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-left: 8rem;
+
+        a:hover{
+            color: #ffffff;
+        }
+        
+    }
+    .webmail:hover{
+        transform: scale(1.1,1.1);
+    }
+    .links{
+        a{
+            padding:.5rem
+        }
+    }
+}
