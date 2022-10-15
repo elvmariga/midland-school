@@ -1,4 +1,5 @@
 import React from 'react';
+import { TopNav } from "./components/topNav/TopNav";
 import {Navbar} from './components/navbar/Navbar';
 import { Homepage } from './components/homepage/Homepage';
 import {Strive} from './components/strive/Strive';
@@ -12,6 +13,8 @@ import {History} from './components/history/History';
 import {Mission} from './components/mission/Mission';
 import { Vision } from './components/vision/Vision';
 import { Contact } from './components/contact/Contact';
+
+import { Socials } from './components/socials/Socials';
 
 export const App = () => {
   return (
@@ -29,6 +32,8 @@ export const App = () => {
       <Mission/>
       <Vision/>
       <Contact/>
+      <TopNav/>
+      <Socials/>
     </section>
 
   )

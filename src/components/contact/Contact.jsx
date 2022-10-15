@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Socials } from "../socials/Socials"
 
 export const Contact = () => {
   return (
@@ -26,12 +27,7 @@ export const Contact = () => {
             <FontAwesomeIcon icon="fa-solid fa-location-dot" />
             Midland Court, Community Rd Syokimau, Machakos County
           </p>
-          <div className="social-links">
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-          </div>
+          <div> {Socials}</div>
         </div>
       </div>
       <div className="contact-right">
