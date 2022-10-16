@@ -2,6 +2,8 @@
     background-color: hsla(0, 0%, 84%, 0.2);
     width: 100%;
 
+   
+
     .containerTeam {
         width: 80%;
         margin: 0 auto;
@@ -21,6 +23,10 @@
                         color: #141138;
                     }
                 }
+
+                .profileList{
+                    display: flex;
+                    justify-content: space-between;
                 .profile{
                     display: flex;
                     gap: 2rem;
@@ -50,5 +56,6 @@
                     }
                     // justify-content: center;
                 }
+            }
     }
 }

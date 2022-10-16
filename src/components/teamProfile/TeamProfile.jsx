@@ -1,15 +1,15 @@
 import React from 'react'
-import TeamProfileImage from "../../assests/team.png";
+
 import './style/style.css'
 
 
-export const TeamProfile = () => {
+export const TeamProfile = ({image,name,position}) => {
   return (
     <div className="profile">
       <div className="profile1">
-        <img className="team-profile-image" src={TeamProfileImage} alt="profile" />
-        <h3 className="team-name">Boaz</h3>
-        <p className="team-title">Director</p>
+        <img className="team-profile-image" src={image} alt="profile" />
+        <h3 className="team-name">{name}</h3>
+        <p className="team-title">{position}</p>
       </div>
     </div>
   );

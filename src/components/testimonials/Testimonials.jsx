@@ -8,7 +8,7 @@ export const Testimonials = () => {
       <div className="containerT">
         <div className="line"></div>
         <div className="ourTeam-title">
-          <h2>Our Team</h2>
+          <h2>Testimonials</h2>
         </div>
         <div className="profile">
           <div className="profileT">
