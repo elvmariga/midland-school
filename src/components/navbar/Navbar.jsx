@@ -31,7 +31,8 @@ export const Navbar = ({getModalState}) => {
                 getModalState(showModal);
               }}
             >
-              Send Inquiry
+            {showModal === false ?  <i style={{backgroundColor:"black",opacity:"0.9", with:"25px", padding:"5px",color:"#fff"}} className="fa-solid fa-xmark"></i>  :  "Send Inquiry"    }
+            
             </li>
 
             <li className="link">

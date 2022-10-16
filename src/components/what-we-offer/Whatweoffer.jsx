@@ -21,20 +21,22 @@ export const Whatweoffer = () => {
         <h2>What We Offer</h2>
       </div>
 
-      {whatWeOfferArray.map((i) => {
-        return (
+     
           <div className="offerDetails">
-            <div className="cont">
-              <div className="offerIcon">
-                <img src={i.icon} alt=" Extra Curriculum Icon" />
-              </div>
-              <div className="offerIconDetails">
-                <p>{i.p}</p>
-              </div>
-            </div>
+            {whatWeOfferArray.map((i) => {
+                return (
+                    <div className="cont">
+                      <div className="offerIcon">
+                        <img src={i.icon} alt=" Extra Curriculum Icon" />
+                      </div>
+                      <div className="offerIconDetails">
+                        <p>{i.p}</p>
+                      </div>
+                    </div>
+                    );
+              })}
           </div>
-        );
-      })}
+     
 
     </div>
   );

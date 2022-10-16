@@ -21,8 +21,10 @@
        
     }
     .offerDetails{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
        .cont{
-     
         
             .offerIcon {
                 border-radius: 100%;
