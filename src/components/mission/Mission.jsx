@@ -1,6 +1,6 @@
 import React from 'react'
 import MissionImage from '../../assests/mission.png'
-
+import "./style/style.css"
 export const Mission = () => {
   return (
     <div className="mission-container">

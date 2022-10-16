@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    width: 89%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+
+    .links {
+        ul {
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+            gap: 3rem;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-size: 24px;
+
+            li {
+                a {
+                    color: #141138;
+                    text-decoration: none;
+                    font-weight: 300;
+                }
+
+
+                button {
+
+                    padding: .1rem 1.5rem;
+                    gap: 10px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    font-size: 1.5rem;
+
+                    // position: absolute;
+                    width: max-content;
+                    // height: 60px;
+                    // left: 1200px;
+                    // top: 142px;
+
+                    /* Midland-blue */
+
+                    border: 2px solid #141138;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                }
+
+                button {
+                    box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
+                }
+
+            }
+
+            .link:hover {
+                transform: scale(1.1, 1.1);
+                font-weight: 700;
+
+            }
+        }
+
+    }
+}

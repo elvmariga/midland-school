@@ -1,0 +1,22 @@
+.vision-container {
+  font-family: "Poppins", sans-serif;
+  color: #1F1F1F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.vision-container h2 {
+  font-size: 3rem;
+}
+.vision-container p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.vision-container .vision-right {
+  width: 50%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}/*# sourceMappingURL=style.css.map */

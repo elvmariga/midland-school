@@ -1,6 +1,6 @@
 import React from 'react';
 import HistoryImage from '../../assests/history.png';
-
+import "./style/style.css";
 export const History = () => {
   return (
     <div className="history-container">

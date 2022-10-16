@@ -1,4 +1,5 @@
 import React from 'react'
+import "./style/style.css"
 
 export const Glance = () => {
   return (
@@ -7,16 +8,49 @@ export const Glance = () => {
         <h3>Midland Prep at a Glance</h3>
       </div>
       <div className="glanceStats">
-        <p className="statsNumbers">
-          <b>
-            <span>20</span>K+
-          </b>
-        </p>
-        <p className="statsTitle">Enrolled Students</p>
+        <div>
+          <p className="statsNumbers">
+            <b>
+              <span className="value">20</span>K+
+            </b>
+          </p>
+          <p className="statsTitle">Enrolled Students</p>
+        </div>
+        <div>
+          <p className="statsNumbers">
+            <b>
+              <span id="value">20</span>K+
+            </b>
+          </p>
+          <p className="statsTitle">Enrolled Students</p>
+        </div>
+        <div>
+          <p className="statsNumbers">
+            <b>
+              <span className="value">20</span>K+
+            </b>
+          </p>
+          <p className="statsTitle">Enrolled Students</p>
+        </div>
       </div>
-      <hr />
+      {/* <hr /> */}
     </div>
-    
   );
 }
+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj = document.getElementsByClassName("value");
+animateValue(obj, 0, 200, 5000);
 

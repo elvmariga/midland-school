@@ -1,0 +1,35 @@
+ .glance{
+     display: grid;
+     justify-content: center;
+     width: 100%;
+    gap: 2rem;
+    h3, p{
+        margin: 0;
+    }
+
+    .glanceTitle{
+        font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+                    
+            color: #660113;
+    }
+    .glanceStats{
+       
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-bottom: 1.3rem;
+
+            .statsNumbers{
+                font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 32px;
+                    color: #141138;
+                    
+            }
+    }
+   
+ }

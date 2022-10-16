@@ -7,22 +7,22 @@ import React from 'react'
       <div className="links">
         <a href="http:// ">
           {" "}
-          <i class="fa-brands fa-whatsapp"></i>
+          <i className="fa-brands fa-whatsapp"></i>
         </a>
         <a href="http://">
           {" "}
-          <i class="fa-brands fa-twitter"></i>
+          <i className="fa-brands fa-twitter"></i>
         </a>
         <a href="http://">
           {" "}
-          <i class="fa-brands fa-facebook"></i>
+          <i className="fa-brands fa-facebook"></i>
         </a>
         <a href="http://">
           {" "}
-          <i class="fa-brands fa-instagram"></i>
+          <i className="fa-brands fa-instagram"></i>
         </a>
         <a href="http://">
-          <i class="fa-brands fa-linkedin-in"></i>
+          <i className="fa-brands fa-linkedin-in"></i>
         </a>
       </div>
     </div>

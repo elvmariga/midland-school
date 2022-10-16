@@ -1,5 +1,6 @@
 import React from 'react'
 import StriveImage from '../../assests/strive.png'
+import "./style/style.css"
 
 export const Strive = () => {
   return (
