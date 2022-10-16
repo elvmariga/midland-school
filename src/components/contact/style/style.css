@@ -1,0 +1,81 @@
+.concact-container {
+  background-color: hsla(0deg, 0%, 84%, 0.2);
+  padding: 2rem 0;
+}
+.concact-container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height */
+  /* Midland-blue */
+  color: #141138;
+}
+.concact-container .fa-solid {
+  color: #141138;
+  margin-right: 1rem;
+}
+.concact-container .contact-details {
+  display: grid;
+  gap: 1rem;
+}
+.concact-container .contact-details p, .concact-container .contact-details a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  /* General black */
+  color: #1F1F1F;
+}
+.concact-container .contact-details p .location, .concact-container .contact-details a .location {
+  margin-left: 3.4rem;
+}
+.concact-container .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.concact-container .container .container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+.concact-container .container .contact-right {
+  width: 35%;
+}
+.concact-container .container .contact-right form {
+  display: grid;
+  gap: 0.5rem;
+}
+.concact-container .container .contact-right form input, .concact-container .container .contact-right form textarea {
+  padding: 1rem 0.3rem;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  /* General black */
+  color: #1F1F1F;
+}
+.concact-container .container .contact-right form .myBtn {
+  justify-self: center;
+  padding: 8px 24px;
+  gap: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: #660113;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  border: none;
+  margin-top: 2rem;
+}/*# sourceMappingURL=style.css.map */

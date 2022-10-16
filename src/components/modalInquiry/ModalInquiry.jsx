@@ -1,12 +1,16 @@
 import React from 'react'
+import "./style/style.css"
 
  export const ModalInquiry = () => {
   return (
-    <div className="contact-right">
+    <div className="contact">
       <div>
         <h2>Any questions? Send us an inquiry</h2>
       </div>
       <div>
+        <div>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
         <form action="" method="post">
           <input type="text" name="name" id="name" placeholder="Full Name" />
           <input type="email" name="email" id="email" placeholder="Email" />

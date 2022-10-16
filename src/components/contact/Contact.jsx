@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Socials } from "../socials/Socials";
 import { ModalInquiry } from "../modalInquiry/ModalInquiry";
-import './style/Style.css'
+import './style/style.css'
 
 export const Contact = ({modalState}) => {
   return (
@@ -15,7 +15,7 @@ export const Contact = ({modalState}) => {
           </div>
           <div className="contact-details">
             <a href="tel:+254702789015">
-              <i className="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-phone fa-2xl"></i>
               +254 702 789 015
             </a>
             <br />
@@ -24,12 +24,13 @@ export const Contact = ({modalState}) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope fa-2xl"></i>
               midlandprep17@gmail.com
             </a>
             <p>
-              <i className="fa-solid fa-location-dot"></i>
-              Midland Court, Community Rd Syokimau, Machakos County
+              <i className="fa-solid fa-location-dot fa-2xl"></i>
+              Midland Court, Community Rd <br />
+              <span className="location">Syokimau, Machakos County</span>
             </p>
             <div className="socials">
               <Socials />

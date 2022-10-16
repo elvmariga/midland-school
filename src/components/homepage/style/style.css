@@ -57,7 +57,9 @@
   align-items: center;
   padding: 15px 24px;
   gap: 10px;
-  width: 192px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   background: #660113;
   border-radius: 10px;
   font-size: 1.5rem;

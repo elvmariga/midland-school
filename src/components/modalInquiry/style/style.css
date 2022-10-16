@@ -1,0 +1,40 @@
+.contact {
+  display: contents;
+  width: 60%;
+  padding: 3rem;
+  position: absolute;
+  z-index: 1;
+}
+.contact form {
+  display: grid;
+  gap: 0.5rem;
+}
+.contact form input,
+.contact form textarea {
+  padding: 1rem 0.3rem;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  /* General black */
+  color: #1F1F1F;
+}
+.contact form .myBtn {
+  justify-self: center;
+  padding: 8px 24px;
+  gap: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: #660113;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  border: none;
+  margin-top: 2rem;
+}/*# sourceMappingURL=style.css.map */
