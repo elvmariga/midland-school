@@ -2,9 +2,27 @@ import React from "react";
 import Event1 from "../../assests/event1.png";
 import Event2 from "../../assests/event2.png";
 import Event3 from "../../assests/event3.png";
-import './style/style.css'
+import './style/style.css';
+import axios from "axios";
 
 export const Events = () => {
+//get the envents from server side
+  const getEvents = () => {
+    axios
+      .get("https://localhost:5000/events")
+      
+      .then((response) => {
+        console.log(response)
+      })
+
+      // here we expect an array of objects
+      .catch((error) => {
+        console.error(error)
+      });
+  };
+  //calling the function
+  getEvents();
+
   return (
     <div className="events-container">
       <div className="line"></div>'
