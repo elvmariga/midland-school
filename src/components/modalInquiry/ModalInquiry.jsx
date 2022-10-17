@@ -1,12 +1,33 @@
 import React from 'react'
-import "./style/style.css"
+import "./style/style.css";
+import {ImCross} from "react-icons/im"
 
- export const ModalInquiry = () => {
-  // const [showModal, setShowModal] = React.useStatate(true);
+ export const ModalInquiry = ({getModalState}) => {
+  const [showModal, setShowModal]= React.useState(false);
   return (
     // showModal===true && 
     <div className="cover">
-      <div className="contact">
+
+     <ImCross 
+        onClick={() => {
+            setShowModal(false);
+            getModalState(showModal);
+          }
+        } 
+        style={
+          {
+            backgroundColor:"black",
+            opacity:"0.9", with:"25px",
+            padding:"5px",color:"#fff",
+            display:"flex",
+            justifyItems:"end",
+            height:"30px",
+            width:"30px",
+          }
+        } 
+      />
+    <div className="contact">
+
       <div>
         <h2>Any questions? Send us an inquiry</h2>
       </div>

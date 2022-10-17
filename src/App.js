@@ -19,21 +19,20 @@ import { Socials } from "./components/socials/Socials";
 import { Route, Routes } from "react-router-dom";
 export const App = () => {
   const [showModal, setShowModal]= React.useState(false);
-  const getModalState = (modalState) =>{
-setShowModal(modalState) ;
+  const getModalState = (modalState) =>{  
+  setShowModal(modalState) ;
   }
   return (
     <section>
       <TopNav />
       <Navbar getModalState={getModalState} />
+      {showModal && <ModalInquiry getModalState={getModalState}  />}
 
       <Routes>
         <Route path="*" element={<ModalInquiry />} />
-        <Route path="/" element={<Home modalState={showModal} />} />
-        <Route path="/aboutUs" element={<About modalState={showModal} />} />
-        <Route
-          path="/contactUs"
-          element={<Contact modalState={showModal} />}
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutUs" element={<About/>} />
+        <Route path="/contactUs" element={<Contact />}
         />
       </Routes>
       <Footer />
@@ -41,11 +40,9 @@ setShowModal(modalState) ;
   );
 };
 
-export const Home = ({ modalState}) => {
+export const Home = () => {
   return (
     <>
-      {modalState && <ModalInquiry />}
-
       <Homepage />
       <Strive />
       <Glance />
@@ -58,10 +55,10 @@ export const Home = ({ modalState}) => {
   );
 };
 
-export const About = ({modalState}) => {
+export const About = () => {
   return (
     <>
-      {modalState && <ModalInquiry />}
+      
       <History />
       <Mission />
       <Vision />

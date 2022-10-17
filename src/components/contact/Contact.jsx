@@ -4,10 +4,10 @@ import { Socials } from "../socials/Socials";
 import { ModalInquiry } from "../modalInquiry/ModalInquiry";
 import './style/style.css'
 
-export const Contact = ({modalState}) => {
+export const Contact = () => {
   return (
     <div className="concact-container">
-      {modalState && <ModalInquiry />}
+    
       <div className="container">
         <div className="contact-left">
           <div className="contact-title">

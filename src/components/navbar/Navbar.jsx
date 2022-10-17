@@ -27,11 +27,11 @@ export const Navbar = ({getModalState}) => {
             <li
               className="link"
               onClick={() => {
-                setShowModal(!showModal);
+                setShowModal(true);
                 getModalState(showModal);
               }}
             >
-            {showModal === false ?  <i style={{backgroundColor:"black",opacity:"0.9", with:"25px", padding:"5px",color:"#fff"}} className="fa-solid fa-xmark"></i>  :  "Send Inquiry"    }
+              Send Inquiry
             
             </li>
 
