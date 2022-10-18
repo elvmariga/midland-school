@@ -4,10 +4,10 @@ $tablet : 850px;
 
 .container {
     display: flex;
-    width: 89%;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
-
+   
 
     .logo{
         
@@ -22,72 +22,10 @@ $tablet : 850px;
     
     }
 
-    .mobileLinks{
+   
 
-        display: none;
-        
-
-        @media screen and (max-width: $tablet) {
-            
-            
-            ul {
-                display: flex;
-                text-decoration: none;
-                list-style: none;
-                gap: 3rem;
-                font-family: 'Poppins';
-                font-style: normal;
-                font-size: 24px;
-    
-                li {
-                    a {
-                        color: #141138;
-                        text-decoration: none;
-                        font-weight: 300;
-                    }
-    
-    
-                    button {
-    
-                        padding: .1rem 1.5rem;
-                        gap: 10px;
-                        font-family: 'Poppins';
-                        font-weight: 500;
-                        font-size: 1.5rem;
-    
-                        // position: absolute;
-                        width: max-content;
-                        // height: 60px;
-                        // left: 1200px;
-                        // top: 142px;
-    
-                        /* Midland-blue */
-    
-                        border: 2px solid #141138;
-                        border-radius: 5px;
-                        background-color: #ffffff;
-                    }
-    
-                    button {
-                        box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
-                    }
-    
-                }
-    
-                .link:hover {
-                    transform: scale(1.1, 1.1);
-                    font-weight: 700;
-    
-                }
-            }
-            
-            
-        }
-
-        // @media screen and (min-width: $tablet) {
-        //     display: none;
-        // }
-       
+    .activeLink{
+        color:hsla(349, 98%, 20%, 1)
     }
 
 
@@ -98,6 +36,12 @@ $tablet : 850px;
         @media screen and (max-width: $tablet) {
             display: none;
         }
+
+        @media screen and (min-width: 1090px){
+            font-size:1rem ;
+        }
+            
+        
         ul {
             display: flex;
             text-decoration: none;
@@ -122,6 +66,7 @@ $tablet : 850px;
                     font-family: 'Poppins';
                     font-weight: 500;
                     font-size: 1.5rem;
+                    margin-right:20px;
 
                     // position: absolute;
                     width: max-content;
@@ -152,11 +97,24 @@ $tablet : 850px;
     }
 
     .humberger{
-        size: 30px;
+        
         display: none;
 
         @media screen and (max-width: $tablet) {
             display: flex;
+            height: 20px;
+            margin-right: 20px;
         }
+    }
+
+    .mobilelinks{
+        width: 100%;
+        list-style: none;
+        
+
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    
     }
 }

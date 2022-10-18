@@ -27,6 +27,7 @@
                 .profileList{
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
                 .profile{
                     display: flex;
                     gap: 2rem;

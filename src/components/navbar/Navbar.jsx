@@ -9,6 +9,7 @@ import {ImCross} from "react-icons/im";
 
 export const Navbar = ({getModalState}) => {
   const [showLinks, setShowLinks] = React.useState(false);
+  const [showModal, setShowModal] = React.useState(false);
 
   const handleClick = () =>{
     setShowLinks(!showLinks )
@@ -21,51 +22,12 @@ export const Navbar = ({getModalState}) => {
           <img src={Logo} alt="logo" />
         </div>
         
-        <Links showLinks={showLinks} getModalState ={getModalState}/>
-
-        <div className="humberger"   >
-          <div onClick={()=>handleClick() }>
-            { showLinks ? <ImCross/> : <GiHamburgerMenu />}
-          </div>
-         
-          <div>
-            {
-              showLinks &&  
-              <Links 
-                // className= {showLinks ? "mobileLinks" :"links"}
-                // style={{ display:"flex", flexDirection:"column"}}
-                getModalState ={getModalState}
-                handleClick = {handleClick}
-
-              />
-            }
-          </div>
-         
-        </div>
-
-        
-      </div>
-    </nav>
-  );
-};
-
-
-
-  export const Links = ({getModalState,showLinks,handleClick}) => {
-    const [showModal, setShowModal]= React.useState(false);
-
-    const hideLinks = () =>{
-      handleClick();
-
-    }
-    
-  return (
-    <div className={!showLinks && "links"}>
+        <div className= "links">
 
     
           <ul>
-            <li className="link" onClick={()=>hideLinks()}>
-              <Link to="/">Home</Link>
+            <li className="link" onClick={()=>handleClick()}>
+              <Link aactivestyle ="activeLink" to="/">Home</Link>
             </li>
             <li className="link">
               <Link to="/aboutUs">About Us</Link>
@@ -78,6 +40,7 @@ export const Navbar = ({getModalState}) => {
               onClick={() => {
                 setShowModal(true);
                 getModalState(showModal);
+                ;
               }}
             >
               Send Inquiry
@@ -91,7 +54,61 @@ export const Navbar = ({getModalState}) => {
             </li>
           </ul>
         </div>
-  )
-}
+
+        <div   >
+        
+          <div className="humberger"  onClick={()=>handleClick() }>
+            { showLinks ? <ImCross/> : <GiHamburgerMenu />}
+          </div>
+         
+          <div>
+            {
+              showLinks &&  
+              <div className= "mobilelinks">
+
+    
+                <ul>
+                  <li className="link" onClick={()=>handleClick()}>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li className="link" onClick={()=>handleClick()}>
+                    <Link to="/aboutUs">About Us</Link>
+                  </li>
+                  <li className="link" onClick={()=>handleClick()}>
+                    <Link to="/contactUs"> Contact Us</Link>
+                  </li>
+                  <li
+                    className="link"
+                    onClick={() => {
+                      setShowModal(true);
+                      getModalState(showModal);
+                      handleClick()
+                    }}
+                  >
+                    Send Inquiry
+                  
+                  </li>
+
+                  <li className="link" onClick={()=>handleClick()}>
+                    <Link>
+                      <button>Login</button>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            }
+          </div>
+         
+        </div>
+
+        
+      </div>
+    </nav>
+  );
+};
+
+
+
+ 
 
 

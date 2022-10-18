@@ -8,10 +8,10 @@ import "./style/style.css";
 
 export const Whatweoffer = () => {
   const whatWeOfferArray = [
-    { p: "Extracurricular Activities", icon: ExtraCurriculum },
-    { p: "Day care school", icon: Daycare },
-    { p: "Verified staff", icon: VerifiedStaff },
-    { p: "KCPE certification", icon: KCPE },
+    { key:1, p: "Extracurricular Activities", icon: ExtraCurriculum },
+    {  key:2,p: "Day care school", icon: Daycare },
+    {  key:3,p: "Verified staff", icon: VerifiedStaff },
+    { key:4, p: "KCPE certification", icon: KCPE },
   ];
 
   return (
@@ -23,14 +23,14 @@ export const Whatweoffer = () => {
 
      
           <div className="offerDetails">
-            {whatWeOfferArray.map((i) => {
+            {whatWeOfferArray.map(({key,p,icon}) => {
                 return (
-                    <div className="cont">
+                    <div key={key} className="cont">
                       <div className="offerIcon">
-                        <img src={i.icon} alt=" Extra Curriculum Icon" />
+                        <img src={icon} alt=" Extra Curriculum Icon" />
                       </div>
                       <div className="offerIconDetails">
-                        <p>{i.p}</p>
+                        <p>{p}</p>
                       </div>
                     </div>
                     );

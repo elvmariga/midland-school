@@ -19,6 +19,7 @@ import { Socials } from "./components/socials/Socials";
 import { Route, Routes } from "react-router-dom";
 export const App = () => {
   const [showModal, setShowModal]= React.useState(false);
+  
   const getModalState = (modalState) =>{  
   setShowModal(modalState) ;
   }

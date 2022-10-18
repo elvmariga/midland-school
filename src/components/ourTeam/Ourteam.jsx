@@ -1,13 +1,13 @@
 import React from 'react'
 import TeamProfileImage from "../../assests/team.png";
-import './style/style.css'
+import './style/style.scss'
 import {TeamProfile} from '../teamProfile/TeamProfile'
 
 export const Ourteam = () => {
   const teamArr = [
-    {name:"John Doe", image:TeamProfileImage,position:"CEO"},
-    {name:"Elvis Mariga", image:TeamProfileImage,position:"Head of PR"},
-    {name:"Donult Trump", image:TeamProfileImage, position:"Senior Dev"}
+    {id:1,name:"John Doe", image:TeamProfileImage,position:"CEO"},
+    {id:2,name:"Elvis Mariga", image:TeamProfileImage,position:"Head of PR"},
+    {id:3,name:"Donult Trump", image:TeamProfileImage, position:"Senior Dev"},
   ]
 
   return (
@@ -22,7 +22,7 @@ export const Ourteam = () => {
           {
             teamArr.map((team)=>{
             return(
-              <TeamProfile {...team} />
+              <TeamProfile {...team} key={team.id} />
             )})
           }
      
