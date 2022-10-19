@@ -8,26 +8,29 @@ import {ImCross} from "react-icons/im"
     // showModal===true && 
     <div className="cover">
 
-     <ImCross 
-        onClick={() => {
-            setShowModal(false);
-            getModalState(showModal);
-          }
-        } 
-        style={
-          {
-            backgroundColor:"black",
-            opacity:"0.9", with:"25px",
-            padding:"5px",color:"#fff",
-            display:"flex",
-            justifyItems:"end",
-            height:"30px",
-            width:"30px",
-          }
-        } 
-      />
     <div className="contact">
 
+    <div className='close'>
+        <ImCross 
+            onClick={() => {
+                setShowModal(false);
+                getModalState(showModal);
+              }
+            } 
+            style={
+              {
+                opacity:"0.9", with:"25px",
+                padding:"5px",color:"black",
+                display:"flex",
+                justifyItems:"end",
+                height:"30px",
+                width:"30px",
+                alignSelf:"end"
+              }
+            } 
+          />
+    </div>
+    
       <div>
         <h2>Any questions? Send us an inquiry</h2>
       </div>
@@ -49,7 +52,7 @@ import {ImCross} from "react-icons/im"
             name="message"
             id="message"
             cols="30"
-            rows="10"
+            rows="5"
             placeholder="Message"
           ></textarea>
           <input className="myBtn" type="button" value="Send Inquiry" />

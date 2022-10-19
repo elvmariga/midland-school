@@ -1,1 +1,32 @@
-.topnav-container{display:flex;background-color:#650113;padding:.5rem 1.2rem;justify-content:center;align-items:center;gap:1.5rem}.topnav-container a{color:#fff;text-decoration:none;font-weight:600}.topnav-container a:hover{color:#211969}.topnav-container .webmail{background-color:#141138;padding:.7rem .5rem;border-radius:8px;font-weight:600;margin-left:8rem}.topnav-container .webmail a:hover{color:#fff}.topnav-container .webmail:hover{transform:scale(1.1, 1.1)}.topnav-container .links a{padding:.5rem}
+.topnav-container {
+  display: flex;
+  background-color: hsl(349deg, 98%, 20%);
+  padding: 0.5rem 1.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.topnav-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.topnav-container a:hover {
+  color: #211969;
+}
+.topnav-container .webmail {
+  background-color: #141138;
+  padding: 0.7rem 0.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-left: 8rem;
+}
+.topnav-container .webmail a:hover {
+  color: #ffffff;
+}
+.topnav-container .webmail:hover {
+  transform: scale(1.1, 1.1);
+}
+.topnav-container .links a {
+  padding: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
