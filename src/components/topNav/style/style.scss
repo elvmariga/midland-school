@@ -42,15 +42,19 @@
                         padding: .5rem
                     }
                 }
-
+            
 
 
     }
    
     @media screen and (max-width: 850px){
         .containerTopnav{
-            display: none;
+            display: grid;
             justify-content: center;
+
+            .webmail{
+                margin: 0;
+            }
         }
         
     }
