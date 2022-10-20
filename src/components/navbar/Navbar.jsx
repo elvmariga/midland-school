@@ -21,13 +21,13 @@ export const Navbar = ({getModalState}) => {
         <div className="logo">
           <img src={Logo} alt="logo" />
         </div>
-        
-        <div className= "links">
 
-    
+        <div className="links">
           <ul>
-            <li className="link" onClick={()=>handleClick()}>
-              <Link aactivestyle ="activeLink" to="/">Home</Link>
+            <li className="link" onClick={() => handleClick()}>
+              <Link aactivestyle="activeLink" to="/">
+                Home
+              </Link>
             </li>
             <li className="link">
               <Link to="/aboutUs">About Us</Link>
@@ -40,41 +40,35 @@ export const Navbar = ({getModalState}) => {
               onClick={() => {
                 setShowModal(true);
                 getModalState(showModal);
-                ;
               }}
             >
               Send Inquiry
-            
             </li>
 
-            <li className="link">
-              <Link>
-                <button>Login</button>
+            <li className="link ">
+              <Link to="/log" className="login">
+                Login
               </Link>
             </li>
           </ul>
         </div>
 
-        <div   >
-        
-          <div className="humberger"  onClick={()=>handleClick() }>
-            { showLinks ? <ImCross/> : <GiHamburgerMenu />}
+        <div>
+          <div className="humberger" onClick={() => handleClick()}>
+            {showLinks ? <ImCross /> : <GiHamburgerMenu />}
           </div>
-         
-          <div>
-            {
-              showLinks &&  
-              <div className= "mobilelinks">
 
-    
+          <div>
+            {showLinks && (
+              <div className="mobilelinks">
                 <ul>
-                  <li className="link" onClick={()=>handleClick()}>
+                  <li className="link" onClick={() => handleClick()}>
                     <Link to="/">Home</Link>
                   </li>
-                  <li className="link" onClick={()=>handleClick()}>
+                  <li className="link" onClick={() => handleClick()}>
                     <Link to="/aboutUs">About Us</Link>
                   </li>
-                  <li className="link" onClick={()=>handleClick()}>
+                  <li className="link" onClick={() => handleClick()}>
                     <Link to="/contactUs"> Contact Us</Link>
                   </li>
                   <li
@@ -82,26 +76,22 @@ export const Navbar = ({getModalState}) => {
                     onClick={() => {
                       setShowModal(true);
                       getModalState(showModal);
-                      handleClick()
+                      handleClick();
                     }}
                   >
                     Send Inquiry
-                  
                   </li>
 
-                  <li className="link" onClick={()=>handleClick()}>
-                    <Link>
-                      <button>Login</button>
+                  <li className="link" onClick={() => handleClick()}>
+                    <Link to="/log" className="login">
+                      Login
                     </Link>
                   </li>
                 </ul>
               </div>
-            }
+            )}
           </div>
-         
         </div>
-
-        
       </div>
     </nav>
   );

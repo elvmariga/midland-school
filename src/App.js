@@ -14,6 +14,7 @@ import { Mission } from "./components/mission/Mission";
 import { Vision } from "./components/vision/Vision";
 import { Contact } from "./components/contact/Contact";
 import { ModalInquiry } from "./components/modalInquiry/ModalInquiry";
+import { Login } from "./components/login/Login";
 
 import { Socials } from "./components/socials/Socials";
 import { Route, Routes } from "react-router-dom";
@@ -33,8 +34,8 @@ export const App = () => {
         <Route path="*" element={<ModalInquiry />} />
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<About/>} />
-        <Route path="/contactUs" element={<Contact />}
-        />
+        <Route path="/contactUs" element={<Contact />}/>
+        <Route path="/log" element={<Login/>}/>
       </Routes>
       <Footer />
     </section>
@@ -52,6 +53,7 @@ export const Home = () => {
       <Events />
       <Ourteam />
       <Testimonials />
+      
     </>
   );
 };

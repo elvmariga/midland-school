@@ -1,47 +1,37 @@
-
-$mobile  : 480px;
+$mobile : 480px;
 $tablet : 850px;
 
 .container {
     display: flex;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+    justify-self: center;
     justify-content: space-between;
-   
 
-    .logo{
-        
-        @media screen and (max-width: $mobile) {
-            height: 10px;
-            background-color: red;
-        }
 
-        @media screen and (max-width: $tablet) {
-            height: 40px;
-        }
-    
-    }
 
-   
 
-    .activeLink{
-        color:hsla(349, 98%, 20%, 1)
+
+
+    .activeLink {
+        color: hsla(349, 98%, 20%, 1)
     }
 
 
     .links {
         display: flex;
+        justify-self: flex-end;
         justify-content: space-between;
 
         @media screen and (max-width: $tablet) {
             display: none;
         }
 
-        @media screen and (min-width: 1090px){
-            font-size:1rem ;
+        @media screen and (min-width: 1090px) {
+            font-size: 1rem;
         }
-            
-        
+
+
         ul {
             display: flex;
             text-decoration: none;
@@ -59,14 +49,14 @@ $tablet : 850px;
                 }
 
 
-                button {
+                .login {
 
                     padding: .1rem 1.5rem;
                     gap: 10px;
                     font-family: 'Poppins';
                     font-weight: 500;
                     font-size: 1.5rem;
-                    margin-right:20px;
+                    margin-right: 20px;
 
                     // position: absolute;
                     width: max-content;
@@ -81,7 +71,7 @@ $tablet : 850px;
                     background-color: #ffffff;
                 }
 
-                button {
+                .login {
                     box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
                 }
 
@@ -96,25 +86,86 @@ $tablet : 850px;
 
     }
 
-    .humberger{
-        
+    .humberger {
+
         display: none;
+        margin-top: 1rem;
+
+        svg {
+            height: 1rem;
+            width: 1rem;
+        }
+
+        li {
+            a {
+                color: #141138;
+                text-decoration: none;
+                font-weight: 300;
+            }
+
+
+            .login {
+
+                padding: .1rem 1.5rem;
+                gap: 10px;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 1.5rem;
+                margin-right: 20px;
+
+                // position: absolute;
+                width: max-content;
+                // height: 60px;
+                // left: 1200px;
+                // top: 142px;
+
+                /* Midland-blue */
+
+                border: 2px solid #141138;
+                border-radius: 5px;
+                background-color: #ffffff;
+            }
+
+            .login {
+                box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
+            }
+
+        }
+
+        .link:hover {
+            transform: scale(1.1, 1.1);
+            font-weight: 700;
+
+        }
 
         @media screen and (max-width: $tablet) {
             display: flex;
-            height: 20px;
-            margin-right: 20px;
+            height: 1.3rem;
+            margin-right: 1.3rem;
         }
     }
 
-    .mobilelinks{
+    .mobilelinks {
         width: 100%;
         list-style: none;
-        
+
 
         @media screen and (min-width: $tablet) {
             display: none;
         }
-    
+
+    }
+
+    .logo {
+
+        @media screen and (max-width: $mobile) {
+            height: 50%;
+            // background-color: red;
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: 50%;
+        }
+
     }
 }

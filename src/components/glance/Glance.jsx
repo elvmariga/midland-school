@@ -11,7 +11,7 @@ export const Glance = () => {
         <div>
           <p className="statsNumbers">
             <b>
-              <span className="value">20</span>K+
+              <span id="value1">20</span>K+
             </b>
           </p>
           <p className="statsTitle">Enrolled Students</p>
@@ -19,7 +19,7 @@ export const Glance = () => {
         <div>
           <p className="statsNumbers">
             <b>
-              <span id="value">20</span>K+
+              <span id="value2">20</span>K+
             </b>
           </p>
           <p className="statsTitle">Enrolled Students</p>
@@ -27,7 +27,7 @@ export const Glance = () => {
         <div>
           <p className="statsNumbers">
             <b>
-              <span className="value">20</span>K+
+              <span id="values">20</span>K+
             </b>
           </p>
           <p className="statsTitle">Enrolled Students</p>
@@ -38,8 +38,9 @@ export const Glance = () => {
   );
 }
 
+
 function animateValue(obj, start, end, duration) {
-  let startTimestamp = null;
+let startTimestamp = null;
   const step = (timestamp) => {
     if (!startTimestamp) startTimestamp = timestamp;
     const progress = Math.min((timestamp - startTimestamp) / duration, 1);
@@ -51,6 +52,6 @@ function animateValue(obj, start, end, duration) {
   window.requestAnimationFrame(step);
 }
 
-const obj = document.getElementsByClassName("value");
-animateValue(obj, 0, 200, 5000);
+const obj = document.getElementById("values");
+animateValue(obj, 0, 800, 5000);
 
