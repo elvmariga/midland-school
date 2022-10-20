@@ -1,9 +1,8 @@
 .footer-container {
   display: flex;
   width: 100%;
-  background-image: url(../../../assests/footer-bg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(28, 28, 106);
+  border-radius: 50% 50% 0 0/100% 100% 0 0/100% 100% 0 0;
   min-height: 25rem;
   color: #FFFFFF;
   margin-top: 3rem;

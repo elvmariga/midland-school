@@ -1,4 +1,5 @@
 import React from "react";
+import { ModalInquiry } from "../modalInquiry/ModalInquiry";
 import "./style/style.css";
 
 
@@ -13,7 +14,8 @@ export const Homepage = () => {
           Lorem ipsum is placeholder text commonly used in the graphic, print,
           and publishing industries for previewing layouts and visual mockups.
         </p>
-        <button>Send Inquiry</button>
+        {/* <button>Send Inquiry</button> */}
+        {/* <ModalInquiry/> */}
       </div>
     </div>
   );
