@@ -55,6 +55,7 @@
   flex-direction: column;
   gap: 0.5rem;
   width: 90%;
+  align-items: center;
 }
 .concact-container .container .contact-right form input,
 .concact-container .container .contact-right form textarea {
@@ -66,6 +67,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  width: 100%;
   /* identical to box height */
   /* General black */
   color: #1F1F1F;

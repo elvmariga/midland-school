@@ -70,13 +70,15 @@
         }
 
         .contact-right {
-
+          
+           
             //  width: 70%;
             form {
                 display: flex;
                 flex-direction: column;
                 gap: .5rem;
                 width: 90%;
+                align-items: center;
 
                 input,
                 textarea {
@@ -88,6 +90,7 @@
                     font-weight: 400;
                     font-size: 20px;
                     line-height: 30px;
+                    width: 100%;
                     /* identical to box height */
 
 

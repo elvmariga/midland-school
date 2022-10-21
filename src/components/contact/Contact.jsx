@@ -32,9 +32,9 @@ export const Contact = () => {
               Syokimau, Machakos County
               {/* <span className="location">Syokimau, Machakos County</span> */}
             </p>
-            <div className="socials">
-              <Socials />
-            </div>
+          </div>
+          <div className="socials">
+            <Socials />
           </div>
         </div>
         <div className="contact-right">
