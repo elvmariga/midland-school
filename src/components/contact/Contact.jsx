@@ -7,7 +7,6 @@ import './style/style.css'
 export const Contact = () => {
   return (
     <div className="concact-container">
-    
       <div className="container">
         <div className="contact-left">
           <div className="contact-title">
@@ -15,7 +14,7 @@ export const Contact = () => {
           </div>
           <div className="contact-details">
             <a href="tel:+254702789015">
-              <i className="fa-solid fa-phone fa-2xl"></i>
+              <i className="fa-solid fa-phone "></i>
               +254 702 789 015
             </a>
             <br />
@@ -24,13 +23,14 @@ export const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa-solid fa-envelope fa-2xl"></i>
+              <i className="fa-solid fa-envelope "></i>
               midlandprep17@gmail.com
             </a>
             <p>
-              <i className="fa-solid fa-location-dot fa-2xl"></i>
-              Midland Court, Community Rd <br />
-              <span className="location">Syokimau, Machakos County</span>
+              <i className="fa-solid fa-location-dot "></i>
+              Midland Court, Community Rd, <br />
+              Syokimau, Machakos County
+              {/* <span className="location">Syokimau, Machakos County</span> */}
             </p>
             <div className="socials">
               <Socials />

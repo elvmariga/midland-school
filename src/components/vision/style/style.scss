@@ -16,6 +16,7 @@
         font-weight: 300;
     }
     
+    
     img{
         
     }
@@ -24,4 +25,11 @@
             width: 50%;
             object-fit: fill;
         }
+}
+
+@media screen and (max-width:800px) {
+    .vision-container {
+        flex-wrap: wrap;
+    }
+
 }

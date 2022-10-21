@@ -23,8 +23,10 @@
   font-size: 40px;
   line-height: 60px;
   margin: 0;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  padding-right: 0.5rem;
 }
 .hero-container .containerh .school .letter {
   display: inline-block;
@@ -68,4 +70,10 @@
 }
 .hero-container .containerh button:hover {
   transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 850px) {
+  .containerh {
+    justify-items: flex-start;
+  }
 }/*# sourceMappingURL=style.css.map */

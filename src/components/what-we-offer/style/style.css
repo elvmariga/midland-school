@@ -15,8 +15,10 @@
 }
 .offer .offerDetails {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 4rem;
   flex-wrap: wrap;
+  text-align: center;
 }
 .offer .offerDetails .cont .offerIcon {
   border-radius: 100%;
@@ -28,4 +30,10 @@
   font-size: 18px;
   margin: 0;
   color: #660113;
+}
+
+@media screen and (max-width: 480px) {
+  .offerDetails {
+    gap: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

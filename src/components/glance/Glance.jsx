@@ -36,7 +36,10 @@ export const Glance = () => {
       {/* <hr /> */}
     </div>
   );
+  
 }
+
+
 
 
 function animateValue(obj, start, end, duration) {

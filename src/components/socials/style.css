@@ -1,0 +1,18 @@
+.social-container .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-container .links .fa-envelope, .social-container .links .fa-phone {
+  display: none;
+}
+.social-container .links .fa-solid, .social-container .links .fa-brands, .social-container .links .fa-regular {
+  color: #660113;
+}
+
+@media screen and (max-width: 850px) {
+  .social-container .links .fa-envelope,
+.social-container .links .fa-phone {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

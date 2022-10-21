@@ -5,9 +5,11 @@
   padding: 2rem;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 100%;
 }
 .striveContainer .striveLeft {
   width: 50%;
+  margin: 0 1rem;
 }
 .striveContainer .striveLeft .line {
   border: 4px solid #660113;
@@ -30,4 +32,17 @@
   font-size: 24px;
   /* General black */
   color: #1F1F1F;
+}
+.striveContainer .striveRight {
+  margin: 0 1rem;
+}
+.striveContainer .striveRight img {
+  max-height: 90%;
+  max-width: 90%;
+}
+@media screen and (max-width: 850px) {
+  .striveContainer .striveLeft {
+    width: 100%;
+    color: white;
+  }
 }/*# sourceMappingURL=style.css.map */

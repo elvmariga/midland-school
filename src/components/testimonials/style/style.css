@@ -17,11 +17,12 @@
 .testimonial-container .containerT .profile {
   display: flex;
   justify-content: space-between;
-  padding-top: 2rem;
+  padding: 2rem;
+  gap: 2rem;
 }
 .testimonial-container .containerT .profile .profileT {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 .testimonial-container .containerT .profile .profileT .testimonial-name {
   font-weight: 700;
@@ -37,4 +38,13 @@
   font-weight: 100;
   color: #141138;
   margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .profile {
+    flex-wrap: wrap;
+  }
+  .profile img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

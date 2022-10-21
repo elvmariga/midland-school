@@ -1,13 +1,14 @@
 .ourTeam-container {
     background-color: hsla(0, 0%, 84%, 0.2);
     width: 100%;
+    // margin: 0 auto;
 
    
 
     .containerTeam {
         width: 80%;
         margin: 0 auto;
-        padding-top: 3rem;
+        padding:0  3rem;
         .line{
             border: 4px solid #660113;
                 width: 4rem;
@@ -26,7 +27,8 @@
 
                 .profileList{
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
+                    gap: 2rem;
                     flex-wrap: wrap;
                 .profile{
                     display: flex;
@@ -58,5 +60,11 @@
                     // justify-content: center;
                 }
             }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .profileList{
+
     }
 }

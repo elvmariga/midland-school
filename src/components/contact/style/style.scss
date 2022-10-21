@@ -22,31 +22,39 @@
 
     }
 
-    .contact-details{
+    .contact-details {
         display: grid;
         gap: 1rem;
-       p, a{
+
+        p,
+        a {
             font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 24px;
-                line-height: 36px;
-                /* identical to box height */
-            
-            
-                /* General black */
-            
-                color: #1F1F1F;
-                .location{
-                    margin-left: 3.4rem;
-                }
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            // line-height: 36px;
+            text-decoration: none;
+            /* identical to box height */
+
+
+            /* General black */
+
+            color: #1F1F1F;
+
+            .location {
+                margin-left: 3.4rem;
+            }
+
+            .fa-solid {
+                color: #660113;
+            }
         }
     }
 
     .container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         gap: 2rem;
 
         .container-left {
@@ -59,29 +67,36 @@
                 .contact-title {}
             }
         }
-        .contact-right{
-            width: 35%;
-           form{
-            display: grid;
-            gap: .5rem;
-            input, textarea{
-                padding: 1rem .3rem;
-                border-radius: 5px;
-                border:  none;
-                font-family: 'Poppins';
+
+        .contact-right {
+
+            // width: 50%;
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                width: max-content;
+
+                input,
+                textarea {
+                    padding: 1rem .3rem;
+                    border-radius: 5px;
+                    border: none;
+                    font-family: 'Poppins';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 20px;
                     line-height: 30px;
                     /* identical to box height */
-                
-                
+
+
                     /* General black */
-                
+
                     color: #1F1F1F;
-            }
-            .myBtn{
-                justify-self: center;
+                }
+
+                .myBtn {
+                    justify-self: center;
                     padding: 8px 24px;
                     gap: 5px;
                     width: max-content;
@@ -91,8 +106,15 @@
                     color: #FFFFFF;
                     border: none;
                     margin-top: 2rem;
+                }
             }
-           }
         }
+    }
+}
+
+@media screen and (max-width) {
+    .contact-right {
+        width: 100%;
+
     }
 }

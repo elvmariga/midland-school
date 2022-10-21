@@ -19,4 +19,10 @@
   width: 50%;
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+@media screen and (max-width: 800px) {
+  .history-container {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=style.css.map */

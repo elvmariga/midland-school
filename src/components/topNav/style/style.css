@@ -35,11 +35,7 @@
   padding: 0.5rem;
 }
 @media screen and (max-width: 850px) {
-  .topnav-container .containerTopnav {
-    display: grid;
-    justify-content: center;
-  }
-  .topnav-container .containerTopnav .webmail {
-    margin: 0;
+  .topnav-container .containerTopnav .webmail, .topnav-container .containerTopnav .mail, .topnav-container .containerTopnav .tel {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

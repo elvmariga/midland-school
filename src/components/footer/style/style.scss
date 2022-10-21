@@ -3,7 +3,7 @@
 .footer-container{
 display: flex;
 width: 100%;
-background-color: rgb(28, 28, 106);
+background-color: #141138;
 border-radius: 50% 50% 0 0/100% 100% 0 0/100% 100% 0 0;
 // background-image: url(../../../assests/footer-bg.svg);
 // background-repeat: no-repeat;
@@ -59,4 +59,17 @@ margin-top:3rem;
     }
     
 }
+}
+
+@media screen and (max-width: 850px) {
+    .footer-container{
+        .container{
+            display: grid;
+            .footer-left{
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }

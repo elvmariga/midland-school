@@ -5,9 +5,11 @@
     padding: 2rem;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
     
     .striveLeft{
-        width: 50%;
+         width: 50%;
+         margin: 0 1rem;
         .line{
             border: 4px solid #660113;
             width: 4rem;
@@ -38,4 +40,18 @@
                 color: #1F1F1F;
         }
     }
+    .striveRight{
+        margin: 0 1rem;
+        img{
+             max-height: 90%;
+            max-width: 90%;
+        }
+    }
+        @media screen and (max-width:850px) {
+            .striveLeft {
+                width: 100%;
+                color: white;
+            }
+        }
 }
+

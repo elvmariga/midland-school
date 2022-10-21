@@ -1,0 +1,32 @@
+.social-container{
+    .links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        .fa-envelope, .fa-phone{
+            display: none;
+
+            
+        }
+       a{
+
+       }
+       .fa-solid, .fa-brands, .fa-regular{
+color: #660113;
+       }
+    }
+}
+
+@media screen and (max-width:850px) {
+    .social-container {
+            .links {
+    
+                .fa-envelope,
+                .fa-phone {
+                    display: block;
+                }
+            }
+        }
+    
+}

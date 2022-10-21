@@ -4,7 +4,8 @@
   width: 100%;
   gap: 2rem;
   padding: 0 1rem;
-  margin: o auto;
+  margin: 0 auto;
+  background-color: #f6f6f6;
 }
 .glance h3, .glance p {
   margin: 0;
@@ -18,7 +19,7 @@
 }
 .glance .glanceStats {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   justify-content: center;
   margin-bottom: 1.3rem;
 }
@@ -26,6 +27,12 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 2rem;
   color: #141138;
+}
+
+@media screen and (max-width: 850px) {
+  .glanceStats {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=style.css.map */

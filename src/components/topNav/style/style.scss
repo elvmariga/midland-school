@@ -49,11 +49,11 @@
    
     @media screen and (max-width: 850px){
         .containerTopnav{
-            display: grid;
-            justify-content: center;
+            // display: grid;
+            // justify-content: center;
 
-            .webmail{
-                margin: 0;
+            .webmail, .mail, .tel{
+                display: none;
             }
         }
         

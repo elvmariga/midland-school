@@ -20,23 +20,29 @@
   display: grid;
   gap: 1rem;
 }
-.concact-container .contact-details p, .concact-container .contact-details a {
+.concact-container .contact-details p,
+.concact-container .contact-details a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 36px;
+  text-decoration: none;
   /* identical to box height */
   /* General black */
   color: #1F1F1F;
 }
-.concact-container .contact-details p .location, .concact-container .contact-details a .location {
+.concact-container .contact-details p .location,
+.concact-container .contact-details a .location {
   margin-left: 3.4rem;
+}
+.concact-container .contact-details p .fa-solid,
+.concact-container .contact-details a .fa-solid {
+  color: #660113;
 }
 .concact-container .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 2rem;
 }
 .concact-container .container .container-left {
@@ -45,14 +51,16 @@
   gap: 2rem;
   width: 50%;
 }
-.concact-container .container .contact-right {
-  width: 35%;
-}
 .concact-container .container .contact-right form {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
-.concact-container .container .contact-right form input, .concact-container .container .contact-right form textarea {
+.concact-container .container .contact-right form input,
+.concact-container .container .contact-right form textarea {
   padding: 1rem 0.3rem;
   border-radius: 5px;
   border: none;
@@ -78,4 +86,10 @@
   color: #FFFFFF;
   border: none;
   margin-top: 2rem;
+}
+
+@media screen and (max-width) {
+  .contact-right {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

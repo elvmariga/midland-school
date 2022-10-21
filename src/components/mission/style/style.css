@@ -1,4 +1,7 @@
-.mission-container {
+.containerm {
+  background-color: #f6f6f6;
+}
+.containerm .mission-container {
   font-family: "Poppins", sans-serif;
   color: #1F1F1F;
   display: flex;
@@ -9,13 +12,24 @@
   gap: 2rem;
   gap: 2rem;
 }
-.mission-container h2 {
+.containerm .mission-container h2 {
   font-size: 3rem;
 }
-.mission-container p {
+.containerm .mission-container p {
   font-size: 1.5rem;
   font-weight: 300;
 }
-.mission-container .mission-right {
+.containerm .mission-container .mission-left {
   width: 50%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+@media screen and (max-width: 800px) {
+  .mission-container {
+    flex-wrap: wrap;
+  }
+  .mission-right {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

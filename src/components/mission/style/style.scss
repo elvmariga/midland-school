@@ -1,25 +1,40 @@
-.mission-container{
-    font-family: 'Poppins', sans-serif;
-    color: #1F1F1F;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    gap: 2rem;
-    gap: 2rem;
+.containerm{
+    background-color: #f6f6f6;
+    .mission-container {
+            font-family: 'Poppins', sans-serif;
+            color: #1F1F1F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            gap: 2rem;
+            gap: 2rem;
     
-        h2 {
-            font-size: 3rem;
-        }
+            h2 {
+                font-size: 3rem;
+            }
     
-        p {
-            font-size: 1.5rem;
-            font-weight: 300;
+            p {
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+    
+            // color: red;
+            .mission-left {
+                width: 50%;
+                object-fit: fill;
+            }
         }
-    // color: red;
-        .mission-right {
-            width: 50%;
-            // object-fit: fill;
-        }
+}
+
+@media screen and (max-width:800px) {
+    .mission-container {
+        flex-wrap: wrap;
+    }
+         .mission-right {
+             width: 100%;
+             // object-fit: fill;
+         }
+
 }

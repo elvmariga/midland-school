@@ -8,7 +8,7 @@ export const Homepage = () => {
     <div className="hero-container">
       <div className="containerh">
         <h1 className="school">MIDLAND PREPARATORY SCHOOL</h1>
-        <p className="line"></p>
+        <div className="line"></div>
         <h2>Pragmatism, Integrity, Competency</h2>
         <p>
           Lorem ipsum is placeholder text commonly used in the graphic, print,
