@@ -1,0 +1,92 @@
+.signinContainer{
+    background-color: #f6f6f6;
+    padding: 1rem;
+    .containerS{
+        margin: 4rem auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+        padding-top: 2rem;
+        align-items: center;
+        
+
+        .signin-left{
+
+        }
+        .signin-right{
+            border-right: #1F1F1F 1px solid;
+            border-bottom: #1F1F1F 1px solid;
+            padding: 1rem;
+            border-radius: 8px;
+            form {
+                     display: grid;
+                    // flex-direction: column;
+                    gap: 3rem;
+                    width: 90%;
+                    
+                    // align-items: center;
+            
+
+                    h2{
+                        justify-self: center;
+                    }
+                    input,
+                    textarea {
+                        padding: 1rem .8rem;
+                        border-radius: 5px;
+                        border: none;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                        width: 100%;
+                        border: 2px solid #660113;
+                        /* identical to box height */
+            
+            
+                        /* General black */
+            
+                        color: #1F1F1F;
+                    }
+                    .forgot-remember{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .check{
+                                display: flex;
+                                .custom-control-input{
+                                    height: 16px;
+                                    width: 16px;
+                                }
+                            }
+
+                    }
+            
+                    .d-grid{
+
+                        justify-self: center;
+                        .myBtn {
+                                justify-self: center;
+                                padding: 8px 24px;
+                                gap: 5px;
+                                width: max-content;
+                                background: #660113;
+                                border-radius: 5px;
+                                font-size: 1.5rem;
+                                color: #FFFFFF;
+                                border: none;
+                                margin-top: 2rem;
+                            }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .signin-left{
+            display: none;
+        }
+        
+    }
+}

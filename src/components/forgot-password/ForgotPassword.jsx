@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from "axios";
 import {Link} from "react-router-dom"
+import "./style/style.css"
 
 export const ForgotPasword = () => {
 
@@ -54,29 +55,37 @@ export const ForgotPasword = () => {
 
   }
   return (
-    <div className='forgot-password'> 
+    <div className="forgot-container">
+      <div className="forgot-password">
         <div className="mb-3">
-            <label>Email address</label>
-            <input
+          <h2>Reset Password</h2>
+        </div>
+        <div className="mb-3">
+          <label>Email address</label>
+          <input
             type="email"
             className="form-control"
             placeholder="Enter email"
             onChange={handleChange}
-            />
-      </div>
-
-     
-        <div className="d-grid">
-            <button onClick={handleSubmit} type="submit" className=" mb-3 btn btn-primary">
-                Reset Password
-            </button>
+          />
         </div>
-      
 
+        <div className="d-grid">
+          <button
+            onClick={handleSubmit}
+            type="submit"
+            className=" mb-3 btn btn-primary myBtn"
+          >
+            Reset Password
+          </button>
+        </div>
+
+        {/* 
         <p className="d-grid  text-right">
          <Link to={'/sign-up'}>sign Up?</Link>
-      </p>
+      </p> */}
+      </div>
     </div>
-  )
+  );
 }
 

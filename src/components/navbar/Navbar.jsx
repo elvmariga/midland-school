@@ -4,6 +4,7 @@ import "./style/style.css";
 import { Link } from "react-router-dom";
 import {GiHamburgerMenu} from "react-icons/gi";
 import {ImCross} from "react-icons/im";
+import { Login } from "../login/Login";
 
 
 
@@ -46,7 +47,7 @@ export const Navbar = ({getModalState}) => {
             </li>
 
             <li className="link ">
-              <Link to="/log" className="login">
+              <Link to="/log-in" className="login">
                 Login
               </Link>
             </li>

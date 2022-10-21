@@ -66,7 +66,7 @@ export const Contact = () => {
                 name="message"
                 id="message"
                 cols="30"
-                rows="10"
+                rows="5"
                 placeholder="Message"
               ></textarea>
               <input className="myBtn" type="button" value="Send Inquiry" />

@@ -65,15 +65,21 @@
   list-style: none;
 }
 .container .humberger svg {
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
-.container .humberger ul li a {
+.container .humberger .mobilelinks {
+  list-style: none;
+}
+.container .humberger .mobilelinks ul ul .link {
+  list-style: none;
+}
+.container .humberger .mobilelinks ul ul .link li a {
   color: #141138;
   text-decoration: none;
   font-weight: 300;
 }
-.container .humberger ul li .login {
+.container .humberger .mobilelinks ul ul .link li .login {
   padding: 0.1rem 1.5rem;
   gap: 10px;
   font-family: "Poppins";
@@ -88,10 +94,10 @@
   border-radius: 5px;
   background-color: #ffffff;
 }
-.container .humberger ul li .login {
+.container .humberger .mobilelinks ul ul .link li .login {
   box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
 }
-.container .humberger .link:hover {
+.container .humberger .mobilelinks ul .link:hover {
   transform: scale(1.1, 1.1);
   font-weight: 700;
 }

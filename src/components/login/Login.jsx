@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from "axios";
 import {Link} from "react-router-dom"
+import Logo from "../../assests/logo.png"
+import "./style/style.css"
 
 export  const Login = () => {
 
@@ -58,52 +60,67 @@ export  const Login = () => {
   }
 
   return (
-    <form>
-      <h3>Sign In</h3>
+    <div className="signinContainer">
+      <div className="containerS">
+        <div className="signin-left">
+          <img src={Logo} alt="   logo" />
+        </div>
+        <div className="signin-right">
+          <form>
+            <h2>Sign In</h2>
 
-      <div className="mb-3">
-        <label>Email address</label>
-        <input
-          type="email"
-          className="form-control"
-          placeholder="Enter email"
-          onChange={handleChange}
-        />
-      </div>
+            <div className="mb-3">
+              <label>Email address</label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder=" Enter email"
+                onChange={handleChange}
+              />
+            </div>
 
-      <div className="mb-3">
-        <label>Password</label>
-        <input
-          type="password"
-          className="form-control"
-          placeholder="Enter password"
-          onChange={handleChange}
-        />
-      </div>
+            <div className="mb-3">
+              <label>Password</label>
+              <input
+                type="password"
+                className="form-control"
+                placeholder="Enter password"
+                onChange={handleChange}
+              />
+            </div>
 
-      <div className="mb-3">
-        <div className="custom-control custom-checkbox">
-          <input
-            type="checkbox"
-            className="custom-control-input"
-            id="customCheck1"
-            
-          />
-          <label className="custom-control-label" htmlFor="customCheck1">
-            Remember me
-          </label>
+            <div className="mb-3 forgot-remember">
+              <div className="custom-control check custom-checkbox">
+                <input
+                  type="checkbox"
+                  className="custom-control-input"
+                  id="customCheck1"
+                />
+                <label className="custom-control-label" htmlFor="customCheck1">
+                  Remember me
+                </label>
+                
+              </div>
+              <div className="forgot">
+                <p className="forgot-password text-right">
+                  Forgot <Link to={"/forgot-password"}>password?</Link>
+                </p>
+              </div>
+            </div>
+
+            <div className="d-grid">
+              <button
+                onClick={handleSubmit}
+                type="submit"
+                className="btn btn-primary myBtn"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-
-      <div className="d-grid">
-        <button onClick={handleSubmit} type="submit" className="btn btn-primary">
-          Submit
-        </button>
-      </div>
-      <p className="forgot-password text-right">
-        Forgot <Link to={'/forgot-password'}>password?</Link>
-      </p>
-    </form>
-  )
+    </div>
+  );
   
 };

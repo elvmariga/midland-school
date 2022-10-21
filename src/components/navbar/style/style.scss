@@ -7,7 +7,7 @@ $tablet : 850px;
     margin: 0 auto;
     justify-self: center;
     justify-content: space-between;
-
+    
 
 
 
@@ -93,56 +93,65 @@ $tablet : 850px;
         list-style: none;
 
         svg {
-            height: 2rem;
-            width: 2rem;
+            height: 1.5rem;
+            width: 1.5rem;
         }
 
-      ul{
-
-        
-        li {
-        
-                a {
-                    color: #141138;
-                    text-decoration: none;
-                    font-weight: 300;
-                }
-        
-        
-                .login {
-        
-                    padding: .1rem 1.5rem;
-                    gap: 10px;
-                    font-family: 'Poppins';
-                    font-weight: 500;
-                    font-size: 1.5rem;
-                    margin-right: 20px;
-        
-                    // position: absolute;
-                    width: max-content;
-                    // height: 60px;
-                    // left: 1200px;
-                    // top: 142px;
-        
-                    /* Midland-blue */
-        
-                    border: 2px solid #141138;
-                    border-radius: 5px;
-                    background-color: #ffffff;
-                }
-        
-                .login {
-                    box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
-                }
-        
+     .mobilelinks{
+        list-style: none;
+        ul{
+           
+                ul {
+                .link {
+                        list-style: none;
+                
+                        li {
+                
+                            a {
+                                color: #141138;
+                                text-decoration: none;
+                                font-weight: 300;
+                            }
+                
+                
+                            .login {
+                
+                                padding: .1rem 1.5rem;
+                                gap: 10px;
+                                font-family: 'Poppins';
+                                font-weight: 500;
+                                font-size: 1.5rem;
+                                margin-right: 20px;
+                
+                                // position: absolute;
+                                width: max-content;
+                                // height: 60px;
+                                // left: 1200px;
+                                // top: 142px;
+                
+                                /* Midland-blue */
+                
+                                border: 2px solid #141138;
+                                border-radius: 5px;
+                                background-color: #ffffff;
+                            }
+                
+                            .login {
+                                box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
+                            }
+                
+                        }
+                    }
+                
+                   
             }
-      }
-
-        .link:hover {
-            transform: scale(1.1, 1.1);
-            font-weight: 700;
-
+                         .link:hover {
+                             transform: scale(1.1, 1.1);
+                             font-weight: 700;
+            
+                         }
         }
+     }
 
         @media screen and (max-width: $tablet) {
             display: flex;
