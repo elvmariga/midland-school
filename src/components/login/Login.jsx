@@ -62,9 +62,9 @@ export  const Login = () => {
   return (
     <div className="signinContainer">
       <div className="containerS">
-        <div className="signin-left">
+        {/* <div className="signin-left">
           <img src={Logo} alt="   logo" />
-        </div>
+        </div> */}
         <div className="signin-right">
           <form>
             <h2>Sign In</h2>
