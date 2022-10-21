@@ -1,29 +1,32 @@
-.glance {
+.glance-container {
+  background-color: #f6f6f6;
+}
+.glance-container .glance {
   display: grid;
   justify-content: center;
   width: 80%;
   gap: 2rem;
   padding: 0 1rem;
   margin: 0 auto;
-  background-color: #f6f6f6;
 }
-.glance h3, .glance p {
+.glance-container .glance h3,
+.glance-container .glance p {
   margin: 0;
 }
-.glance .glanceTitle {
+.glance-container .glance .glanceTitle {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   color: #660113;
 }
-.glance .glanceStats {
+.glance-container .glance .glanceStats {
   display: flex;
   gap: 4rem;
   justify-content: center;
   margin-bottom: 1.3rem;
 }
-.glance .glanceStats .statsNumbers {
+.glance-container .glance .glanceStats .statsNumbers {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
