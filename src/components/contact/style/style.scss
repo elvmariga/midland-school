@@ -31,7 +31,7 @@
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 500;
-            font-size: 24px;
+            font-size: 1.2rem;
             // line-height: 36px;
             text-decoration: none;
             /* identical to box height */
@@ -60,8 +60,9 @@
         .container-left {
             display: flex;
             flex-direction: column;
+         
             gap: 2rem;
-            width: 50%;
+            // width: 50%;
 
             .container-left {
                 .contact-title {}
@@ -70,16 +71,16 @@
 
         .contact-right {
 
-            // width: 50%;
+            //  width: 70%;
             form {
                 display: flex;
                 flex-direction: column;
                 gap: .5rem;
-                width: max-content;
+                width: 90%;
 
                 input,
                 textarea {
-                    padding: 1rem .3rem;
+                    padding: 1rem .8rem;
                     border-radius: 5px;
                     border: none;
                     font-family: 'Poppins';
@@ -112,9 +113,12 @@
     }
 }
 
-@media screen and (max-width) {
+@media screen and (max-width:800px) {
     .contact-right {
         width: 100%;
 
+    }
+    a{
+        font-size: 1rem;
     }
 }
