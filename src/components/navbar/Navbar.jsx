@@ -83,7 +83,7 @@ export const Navbar = ({getModalState}) => {
                   </li>
 
                   <li className="link" onClick={() => handleClick()}>
-                    <Link to="/log" className="login">
+                    <Link to="/log-in" className="log-in">
                       Login
                     </Link>
                   </li>

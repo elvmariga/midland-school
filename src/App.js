@@ -15,9 +15,10 @@ import { Vision } from "./components/vision/Vision";
 import { Contact } from "./components/contact/Contact";
 import { ModalInquiry } from "./components/modalInquiry/ModalInquiry";
 import { Login } from "./components/login/Login";
-
+import {SignUp} from "./components/sign-up/SignUp"
 import { Socials } from "./components/socials/Socials";
 import { Route, Routes } from "react-router-dom";
+import { ForgotPasword } from "./components/forgot-password/ForgotPassword";
 export const App = () => {
   const [showModal, setShowModal]= React.useState(false);
   
@@ -35,7 +36,9 @@ export const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<About/>} />
         <Route path="/contactUs" element={<Contact />}/>
-        <Route path="/log" element={<Login/>}/>
+        <Route path="/log-in" element={<Login/>}/>
+        <Route path="/forgot-password" element ={<ForgotPasword/>} />
+        <Route path = "/sign-up"  element={<SignUp />} />
       </Routes>
       <Footer />
     </section>

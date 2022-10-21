@@ -1,40 +1,109 @@
-import React from 'react'
-import "./style/style.css"
-import Logo from "../../assests/logo.png"
+import React from 'react';
+import axios from "axios";
+import {Link} from "react-router-dom"
 
-export const Login = () => {
+export  const Login = () => {
+
+  const [formData, updateFormData] = React.useState();
+  const [isLoading, setIsLoading] = React.useState(false);
+
+  const handleChange = (e) => {
+    updateFormData({
+      ...formData,
+
+      // Trimming any whitespace
+      [e.target.type]: e.target.value.trim()
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    
+    // ... submit to API or something
+    logInUser();
+  };
+
+  const logInUser = async () => {
+    
+    try{
+      setIsLoading(true);
+
+      const res = await axios ({
+        method: "post",
+        url: "http://localhost:5000/login",
+        data: formData,
+       
+      })
+     
+
+      if(res.data.status === "ok" ){
+        alert("login successful");
+        window.localStorage.setItem("token",res.data.data);
+        window.location.href="/user-details"
+        console.log(res.data);
+      }
+    }
+
+    catch (error) {
+
+      console.log(error);
+      
+    }
+
+    finally{
+      setIsLoading(false);
+    }
+
+
+  }
+
   return (
-     <div className='login'>
-        <div className="loginContainer">
-            <div className="loginleft">
-                <img src="../../achadwa/art.png     " alt="logo" />
-            </div>
-            <div className="loginRight">
-                <div class="title">
-                    <h2>Staff and Parent Log in</h2>
-                </div>
-                <div class="loginForm">
-                    <form action="">
-                        <div>
-                            <label for="Username">Username</label>
-                            <input type="text" placeholder="Username"/>
-                        </div>
-                       <div>
-                        <label for="Password">Password</label>
-                        <input type="password" placeholder="Password"/>
+    <form>
+      <h3>Sign In</h3>
 
-                       </div>
-                       <div class="remember">
-                           <div>
-                            <input type="checkbox" name="rememberMe" id="rememberMe"/>rememberMe
-                           </div>
-                        <a href="http://">Forgot Password</a>
-                       </div>
-                    </form>
-                </div>
-            </div>
+      <div className="mb-3">
+        <label>Email address</label>
+        <input
+          type="email"
+          className="form-control"
+          placeholder="Enter email"
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className="mb-3">
+        <label>Password</label>
+        <input
+          type="password"
+          className="form-control"
+          placeholder="Enter password"
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className="mb-3">
+        <div className="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            className="custom-control-input"
+            id="customCheck1"
+            
+          />
+          <label className="custom-control-label" htmlFor="customCheck1">
+            Remember me
+          </label>
         </div>
-    </div>
-  )
-}
+      </div>
 
+      <div className="d-grid">
+        <button onClick={handleSubmit} type="submit" className="btn btn-primary">
+          Submit
+        </button>
+      </div>
+      <p className="forgot-password text-right">
+        Forgot <Link to={'/forgot-password'}>password?</Link>
+      </p>
+    </form>
+  )
+  
+};
