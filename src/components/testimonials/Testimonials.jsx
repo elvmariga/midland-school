@@ -1,15 +1,19 @@
 import React from 'react'
 import TestimonialImage from '../../assests/team.png'
-import './style/style.css'
+import './style/style.css';
+import Fade from 'react-reveal/Fade';
+
 
 export const Testimonials = () => {
   return (
     <div className="testimonial-container">
+    
       <div className="containerT">
         <div className="line"></div>
         <div className="ourTeam-title">
           <h2>Testimonials</h2>
         </div>
+        <Fade top cascade>
         <div className="profile">
           <div className="profileT">
             <div>
@@ -44,7 +48,9 @@ export const Testimonials = () => {
             </div>
           </div>
         </div>
+        </Fade>
       </div>
+    
     </div>
   );
 }

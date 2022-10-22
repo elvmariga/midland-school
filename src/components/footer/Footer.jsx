@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../assests/logo.png'
-import './style/style.css'
+import './style/style.css';
+import Fade from 'react-reveal/Fade';
 
 export const Footer = () => {
   return (
@@ -18,6 +19,7 @@ export const Footer = () => {
         </div>
         <div className="footer-right">
           <p>Our Quick Links</p>
+          <Fade right cascade>
           <ul className="quick-links">
             <li>
               <a href="http://"></a>About MPS
@@ -32,6 +34,7 @@ export const Footer = () => {
               <a href="http://"></a>Staff/Parent Login
             </li>
           </ul>
+          </Fade>
         </div>
       </div>
     </div>

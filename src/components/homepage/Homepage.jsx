@@ -1,15 +1,26 @@
 import React from "react";
 import { ModalInquiry } from "../modalInquiry/ModalInquiry";
 import "./style/style.css";
+import Fade from 'react-reveal/Fade';
+import Typed from 'react-typed';
 
 
 export const Homepage = () => {
   return (
     <div className="hero-container">
       <div className="containerh">
-        <h1 className="school">MIDLAND PREPARATORY SCHOOL</h1>
+      <Fade top><h1 className="school">MIDLAND PREPARATORY SCHOOL</h1></Fade>
         <div className="line"></div>
-        <h2>Pragmatism, Integrity, Competency</h2>
+        <h2>
+          <Typed
+            strings={ ['Pragmatism', 'Integrity','Competency']}
+            typeSpeed={40}
+            backSpeed={50}
+            attr="placeholder"
+            loop >
+            <input type="text"/>
+          </Typed>
+        </h2>
         <p>
           Lorem ipsum is placeholder text commonly used in the graphic, print,
           and publishing industries for previewing layouts and visual mockups.

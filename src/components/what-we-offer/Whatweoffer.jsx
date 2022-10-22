@@ -3,6 +3,7 @@ import Daycare from "../../assests/daycare.png";
 import ExtraCurriculum from "../../assests/extracurricular.png";
 import VerifiedStaff from "../../assests/verified.png";
 import KCPE from "../../assests/KCPE-certification.png";
+import Roll from 'react-reveal/Roll';
 
 import "./style/style.css";
 
@@ -26,7 +27,9 @@ export const Whatweoffer = () => {
           return (
             <div key={key} className="cont">
               <div className="offerIcon">
+              <Roll left cascade>
                 <img src={icon} alt=" Extra Curriculum Icon" />
+              </Roll>
               </div>
               <div className="offerIconDetails">
                 <p>{p}</p>

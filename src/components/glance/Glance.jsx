@@ -1,5 +1,6 @@
 import React from 'react'
-import "./style/style.css"
+import "./style/style.css";
+import CountUp from 'react-countup';
 
 export const Glance = () => {
   return (
@@ -12,7 +13,7 @@ export const Glance = () => {
           <div>
             <p className="statsNumbers">
               <b>
-                <span id="value1">20</span>K+
+                <span id="value1"> <CountUp start={0} end={20} /></span>K+
               </b>
             </p>
             <p className="statsTitle">Enrolled Students</p>
@@ -20,7 +21,7 @@ export const Glance = () => {
           <div>
             <p className="statsNumbers">
               <b>
-                <span id="value2">20</span>K+
+                <span id="value2"><CountUp start={0} end={20} /></span>K+
               </b>
             </p>
             <p className="statsTitle">Enrolled Students</p>
@@ -28,7 +29,7 @@ export const Glance = () => {
           <div>
             <p className="statsNumbers">
               <b>
-                <span id="values">20</span>K+
+                <span id="values"><CountUp useEasing={true} start={0} end={20} /></span>K+
               </b>
             </p>
             <p className="statsTitle">Enrolled Students</p>
