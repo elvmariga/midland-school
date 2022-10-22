@@ -2,6 +2,7 @@ import React from 'react'
 import TeamProfileImage from "../../assests/team.png";
 import './style/style.scss'
 import {TeamProfile} from '../teamProfile/TeamProfile'
+import Zoom from 'react-reveal/Zoom';
 
 export const Ourteam = () => {
   const teamArr = [
@@ -18,15 +19,22 @@ export const Ourteam = () => {
         <div className="ourTeam-title">
           <h2>Our Team</h2>
         </div>
+      
         <div className='profileList'>
+        
           {
             teamArr.map((team)=>{
             return(
+              <Zoom cascade>
+              
               <TeamProfile {...team} key={team.id} />
+              </Zoom>
             )})
           }
+        
      
         </div>
+      
       </div>
     </div>
   );

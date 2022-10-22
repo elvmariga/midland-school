@@ -1,6 +1,7 @@
 import React from 'react'
 import StriveImage from '../../assests/strive.png'
-import "./style/style.css"
+import "./style/style.css";
+import Slide from 'react-reveal/Slide';
 
 export const Strive = () => {
   return (
@@ -14,7 +15,9 @@ export const Strive = () => {
         </p>
       </div>
       <div className="striveRight">
+      <Slide right>
         <img src={StriveImage} alt="Strive" />
+      </Slide>
       </div>
     </div>
   );
