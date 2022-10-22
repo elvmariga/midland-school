@@ -49,6 +49,12 @@
                 color: #660113;
             }
         }
+
+                .linkContact {
+                    display: flex;
+                    background-color: #660113;
+                    justify-content: center;
+                }
     }
 
     .container {
@@ -62,15 +68,10 @@
             flex-direction: column;
          
             gap: 2rem;
-            // width: 50%;
-
-            .container-left {
-                display: grid;
+           
                 
-                .socials{
-                    justify-self: flex-start;
-                }
-            }
+                
+            
         }
 
         .contact-right {

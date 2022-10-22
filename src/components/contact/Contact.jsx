@@ -1,8 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Socials } from "../socials/Socials";
 import { ModalInquiry } from "../modalInquiry/ModalInquiry";
 import './style/style.css'
+
 
 export const Contact = () => {
   return (
@@ -32,8 +32,32 @@ export const Contact = () => {
               {/* <span className="location">Syokimau, Machakos County</span> */}
             </p>
           </div>
-          <div className="socials">
-            <Socials />
+          <div className="linkContact">
+            {/* <a
+              href="href=mailto:midlandprep17@gmail.com?subject=Inquiry&body=The%20body%20of%20the%20email"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-regular fa-envelope "></i>
+            </a>
+            <a href="tel:+2541234555">
+              <i className="fa-solid fa-phone "></i>
+            </a> */}
+            <a href="http:// ">
+              <i className="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="http://">
+              <i className="fa-brands fa-twitter"></i>
+            </a>
+            <a href="http://">
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a href="http://">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a href="http://">
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
           </div>
         </div>
         <div className="contact-right">
@@ -73,7 +97,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-      <div id="googleMap" style="width:100%;height:400px;"></div>
     </div>
   );
 };
