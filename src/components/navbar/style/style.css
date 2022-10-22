@@ -55,6 +55,12 @@
 .container .links ul li .login {
   box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
 }
+.container .links ul .link {
+  cursor: pointer;
+}
+.container .links ul .link:active {
+  color: red;
+}
 .container .links ul .link:hover {
   transform: scale(1.1, 1.1);
   font-weight: 700;

@@ -1,7 +1,7 @@
-import React from 'react'
-import "./style.scss"
+import React from "react";
+import "./style.scss";
 
- export const Socials = () => {
+export const Socials = () => {
   return (
     <div className="social-container">
       <div className="links">
@@ -13,22 +13,18 @@ import "./style.scss"
           <i className="fa-regular fa-envelope "></i>
         </a>
         <a href="tel:+2541234555">
-          <i className="fa-solid fa-phone "></i> 
+          <i className="fa-solid fa-phone "></i>
         </a>
         <a href="http:// ">
-          {" "}
           <i className="fa-brands fa-whatsapp"></i>
         </a>
         <a href="http://">
-          {" "}
           <i className="fa-brands fa-twitter"></i>
         </a>
         <a href="http://">
-          {" "}
           <i className="fa-brands fa-facebook"></i>
         </a>
         <a href="http://">
-          {" "}
           <i className="fa-brands fa-instagram"></i>
         </a>
         <a href="http://">
@@ -37,5 +33,4 @@ import "./style.scss"
       </div>
     </div>
   );
-}
-
+};

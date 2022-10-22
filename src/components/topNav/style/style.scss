@@ -9,6 +9,10 @@
                 justify-content: center;
                 align-items: center;
                 gap: 1.5rem;
+
+                .tap:hover{
+transform: scale(1.2, 1.2);
+                }
             a {
                     color: #ffffff;
                     text-decoration: none;
@@ -17,7 +21,14 @@
                 }
             
                 a:hover {
-                    color: #211969;
+                   
+                }
+                .socials{
+                    justify-items: start;
+                    color: #141138;
+                    .links{
+                        color: #141138  ;
+                    }
                 }
             
                 .webmail {

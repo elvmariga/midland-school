@@ -11,7 +11,7 @@
   display: grid;
   align-self: center;
   justify-items: center;
-  color: #FFFFFF;
+  color: #141138;
   gap: 1rem;
   width: 80%;
   margin: 0 auto;
@@ -20,13 +20,14 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 36px;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  padding-right: 0.5rem;
+  background-color: #660113;
+  padding: 1rem 0.3rem;
+  border-radius: 8px;
 }
 .hero-container .containerh .school .letter {
   display: inline-block;
@@ -34,7 +35,7 @@
 }
 .hero-container .containerh .line {
   width: 303px;
-  border: 3px solid #FDFDFD;
+  border: 3px solid #141138;
   margin: 0;
 }
 .hero-container .containerh h2 {

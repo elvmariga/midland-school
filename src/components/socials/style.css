@@ -3,11 +3,12 @@
   justify-content: center;
   align-items: center;
 }
-.social-container .links .fa-envelope, .social-container .links .fa-phone {
+.social-container .links .fa-envelope,
+.social-container .links .fa-phone {
   display: none;
 }
-.social-container .links .fa-solid, .social-container .links .fa-brands, .social-container .links .fa-regular {
-  color: #660113;
+.social-container .links a:hover {
+  transform: scale(1.4, 1.4);
 }
 
 @media screen and (max-width: 850px) {

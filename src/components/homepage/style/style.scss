@@ -2,6 +2,8 @@
     min-height: 70vh;
     background-image: url(../../../assests/homepage-bg.png);
     background-size: cover;
+    // border-bottom-left-radius: 50%;
+    //     border-bottom-right-radius: 50%;
     background-repeat: no-repeat;
     background-blend-mode: soft-light;
     display: grid;
@@ -14,7 +16,7 @@
          align-self: center;
          justify-items: center;
         // text-align: center;
-        color: #FFFFFF;
+        color: #141138;
         gap: 1rem;
         width: 80%;
         margin: 0 auto;
@@ -25,13 +27,17 @@
             font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 40px;
-                line-height: 60px;
+                font-size: 36px;
+                // line-height: 60px;
                 margin: 0;
                 text-align: center;
                 text-transform: uppercase;
                     letter-spacing: 0.2em;
-                    padding-right: .5rem;
+                    // padding-right: .5rem;
+
+                    background-color: #660113;
+                    padding: 1rem .3rem;
+                    border-radius: 8px;
         }
                 
         
@@ -42,7 +48,7 @@
 
         .line{
             width:303px;
-            border: 3px solid #FDFDFD;
+            border: 3px solid #141138;
             margin: 0;
         }
 

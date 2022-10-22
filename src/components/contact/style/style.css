@@ -42,13 +42,19 @@
 .concact-container .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 2rem;
 }
 .concact-container .container .container-left {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+.concact-container .container .container-left .container-left {
+  display: grid;
+}
+.concact-container .container .container-left .container-left .socials {
+  justify-self: flex-start;
 }
 .concact-container .container .contact-right form {
   display: flex;

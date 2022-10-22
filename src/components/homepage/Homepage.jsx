@@ -21,6 +21,8 @@ export const Homepage = () => {
   );
 };
 
+
+
 // var textWrapper = document.querySelector(".school");
 // textWrapper.innerHTML = textWrapper.textContent.replace(
 //   /\S/g,

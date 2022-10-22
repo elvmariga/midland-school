@@ -54,7 +54,7 @@
     .container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 2rem;
 
         .container-left {
@@ -65,7 +65,11 @@
             // width: 50%;
 
             .container-left {
-                .contact-title {}
+                display: grid;
+                
+                .socials{
+                    justify-self: flex-start;
+                }
             }
         }
 

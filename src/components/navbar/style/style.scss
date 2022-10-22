@@ -76,7 +76,12 @@ $tablet : 850px;
                 }
 
             }
-
+            .link{
+                cursor: pointer;
+            }
+            .link:active{
+                color: red;
+            }
             .link:hover {
                 transform: scale(1.1, 1.1);
                 font-weight: 700;

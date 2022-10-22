@@ -4,6 +4,8 @@
   background-color: #141138;
   min-height: 25rem;
   color: #FFFFFF;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
   padding-top: 3rem;
 }
 .footer-container .container {

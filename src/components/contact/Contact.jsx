@@ -28,8 +28,7 @@ export const Contact = () => {
             </a>
             <p>
               <i className="fa-solid fa-location-dot "></i>
-              Midland Court, Community Rd, <br />
-              Syokimau, Machakos County
+              Midland Court, Community Rd, Syokimau, Machakos County
               {/* <span className="location">Syokimau, Machakos County</span> */}
             </p>
           </div>
@@ -74,6 +73,7 @@ export const Contact = () => {
           </div>
         </div>
       </div>
+      <div id="googleMap" style="width:100%;height:400px;"></div>
     </div>
   );
 };
