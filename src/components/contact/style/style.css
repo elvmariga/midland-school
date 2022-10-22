@@ -39,6 +39,11 @@
 .concact-container .contact-details a .fa-solid {
   color: #660113;
 }
+.concact-container .contact-details .linkContact {
+  display: flex;
+  background-color: #660113;
+  justify-content: center;
+}
 .concact-container .container {
   display: flex;
   flex-wrap: wrap;
@@ -49,12 +54,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-.concact-container .container .container-left .container-left {
-  display: grid;
-}
-.concact-container .container .container-left .container-left .socials {
-  justify-self: flex-start;
 }
 .concact-container .container .contact-right form {
   display: flex;
