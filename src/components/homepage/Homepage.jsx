@@ -16,9 +16,9 @@ export const Homepage = () => {
             strings={ ['Pragmatism', 'Integrity','Competency']}
             typeSpeed={40}
             backSpeed={50}
-            attr="placeholder"
+            
             loop >
-            <input type="text"/>
+            {/* <intyput type="text"/> */}
           </Typed>
         </h2>
         <p>
