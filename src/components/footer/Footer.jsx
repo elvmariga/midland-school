@@ -18,7 +18,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-right">
-          <p>Our Quick Links</p>
+          <p> Quick Links</p>
           <Fade right cascade>
           <ul className="quick-links">
             <li>
