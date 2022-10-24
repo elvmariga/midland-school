@@ -1,38 +1,38 @@
-.ourTeam-container {
-  background-color: hsla(0deg, 0%, 84%, 0.2);
+.ourTeam-containerT {
+  background-color: #D0CFD7;
   width: 100%;
 }
-.ourTeam-container .containerTeam {
+.ourTeam-containerT .containerTeam {
   width: 80%;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 2rem 3rem;
 }
-.ourTeam-container .containerTeam .line {
+.ourTeam-containerT .containerTeam .line {
   border: 4px solid #660113;
   width: 4rem;
 }
-.ourTeam-container .containerTeam .ourTeam-title h2 {
+.ourTeam-containerT .containerTeam .ourTeam-title h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 2.25rem;
   color: #141138;
 }
-.ourTeam-container .containerTeam .profileList {
+.ourTeam-containerT .containerTeam .profileList {
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
   flex-wrap: wrap;
 }
-.ourTeam-container .containerTeam .profileList .profile {
+.ourTeam-containerT .containerTeam .profileList .profile {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
 }
-.ourTeam-container .containerTeam .profileList .profile .profile1 {
+.ourTeam-containerT .containerTeam .profileList .profile .profile1 {
   text-align: center;
 }
-.ourTeam-container .containerTeam .profileList .profile .profile1 .team-name {
+.ourTeam-containerT .containerTeam .profileList .profile .profile1 .team-name {
   font-weight: 700;
   font-size: 1.5rem;
   color: #141138;
@@ -40,7 +40,7 @@
   font-style: normal;
   margin: 0;
 }
-.ourTeam-container .containerTeam .profileList .profile .profile1 .team-title {
+.ourTeam-containerT .containerTeam .profileList .profile .profile1 .team-title {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 100;

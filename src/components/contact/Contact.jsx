@@ -89,17 +89,8 @@ export const Contact = () => {
               {/* <span className="location">Syokimau, Machakos County</span> */}
             </p>
           </div>
-          <div className="linkContact">
-            {/* <a
-              href="href=mailto:midlandprep17@gmail.com?subject=Inquiry&body=The%20body%20of%20the%20email"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-regular fa-envelope "></i>
-            </a>
-            <a href="tel:+2541234555">
-              <i className="fa-solid fa-phone "></i>
-            </a> */}
+          <div className="linkContact" style={{color:"red !important"}}>
+            
             <a href="http:// ">
               <i className="fa-brands fa-whatsapp"></i>
             </a>

@@ -1,6 +1,6 @@
 import React from 'react'
 import TeamProfileImage from "../../assests/team.png";
-import './style/style.scss'
+import './style/style.css'
 import {TeamProfile} from '../teamProfile/TeamProfile'
 import Zoom from 'react-reveal/Zoom';
 
@@ -13,7 +13,7 @@ export const Ourteam = () => {
 
   return (
 
-    <div className="ourTeam-container">
+    <div className="ourTeam-containerT">
       <div className="containerTeam">
         <div className="line"></div>
         <div className="ourTeam-title">
