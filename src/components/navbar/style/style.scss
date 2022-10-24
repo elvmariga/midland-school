@@ -31,7 +31,12 @@ $tablet : 850px;
         justify-self: flex-end;
         justify-content: space-between;
         
-        
+        &.active {
+            transform: scale(1.1, 1.1);
+            font-weight: 900;
+            color:red
+    
+        }
 
         @media screen and (max-width: $tablet) {
             display: none;
