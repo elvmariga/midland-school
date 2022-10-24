@@ -13,8 +13,11 @@ $tablet : 850px;
 
 
 
-    .activeLink {
-        color: hsla(349, 98%, 20%, 1)
+    .active {
+        transform: scale(1.1, 1.1);
+                font-weight: 900;
+                color:#141138
+
     }
 
 
@@ -22,6 +25,13 @@ $tablet : 850px;
         display: flex;
         justify-self: flex-end;
         justify-content: space-between;
+        
+        &.active {
+            transform: scale(1.1, 1.1);
+                    font-weight: 900;
+                    color:red
+    
+        }
 
         @media screen and (max-width: $tablet) {
             display: none;
@@ -48,10 +58,11 @@ $tablet : 850px;
                     font-weight: 300;
                 }
 
-                // &.active {
-                //     transform: scale(1.1, 1.1);
-                // font-weight: 700;
-                // }
+                &.active {
+                    transform: scale(1.1, 1.1);
+                font-weight: 700;
+                color:red;
+                }
 
                 .login {
 
@@ -84,7 +95,8 @@ $tablet : 850px;
                 cursor: pointer;
             }
             .link:active{
-                color: red;
+                transform: scale(1.1, 1.1);
+                font-weight: 700;
             }
             .link:hover {
                 transform: scale(1.1, 1.1);

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./style/style.css";
 import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 export const Glance = () => {
   return (
@@ -12,25 +13,41 @@ export const Glance = () => {
         <div className="glanceStats">
           <div>
             <p className="statsNumbers">
-              <b>
-                <span id="value1"> <CountUp start={0} end={20} /></span>K+
-              </b>
+             
+              <VisibilitySensor partialVisibility >
+              {
+                ({ isVisible }) => (
+                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={20} />}</span>K+</b>
+                )
+              }
+                
+              </VisibilitySensor>
             </p>
             <p className="statsTitle">Enrolled Students</p>
           </div>
           <div>
             <p className="statsNumbers">
-              <b>
-                <span id="value2"><CountUp start={0} end={20} /></span>K+
-              </b>
+            <VisibilitySensor partialVisibility >
+              {
+                ({ isVisible }) => (
+                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={20} />}</span>K+</b>
+                )
+              }
+                
+              </VisibilitySensor>
             </p>
             <p className="statsTitle">Enrolled Students</p>
           </div>
           <div>
             <p className="statsNumbers">
-              <b>
-                <span id="values"><CountUp useEasing={true} start={0} end={20} /></span>K+
-              </b>
+            <VisibilitySensor partialVisibility >
+              {
+                ({ isVisible }) => (
+                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={20} />}</span>K+</b>
+                )
+              }
+                
+              </VisibilitySensor>
             </p>
             <p className="statsTitle">Enrolled Students</p>
           </div>

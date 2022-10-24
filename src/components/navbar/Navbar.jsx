@@ -26,15 +26,15 @@ export const Navbar = ({getModalState}) => {
         <div className="links">
           <ul>
             <li className="link" onClick={() => handleClick()}>
-              <Link aactivestyle="activeLink" to="/">
+              <Link smooth={true} spy={true}  activeClass='active' to="/">
                 Home
               </Link>
             </li>
             <li className="link">
-              <Link to="/aboutUs">About Us</Link>
+              <Link smooth={true} spy={true}  activeClass='active' to="/aboutUs">About Us</Link>
             </li>
             <li className="link">
-              <Link to="/contactUs"> Contact Us</Link>
+              <Link smooth={true} spy={true}  activeClass='active' to="/contactUs"> Contact Us</Link>
             </li>
             <li
               className="link"
@@ -64,13 +64,13 @@ export const Navbar = ({getModalState}) => {
               <div className="mobilelinks">
                 <ul>
                   <li className="link" onClick={() => handleClick()}>
-                    <Link to="/">Home</Link>
+                    <Link smooth={true} spy={true}  activeClass='active' to="/">Home</Link>
                   </li>
                   <li className="link" onClick={() => handleClick()}>
-                    <Link to="/aboutUs">About Us</Link>
+                    <Link smooth={true} spy={true}   activeClass='active' to="/aboutUs">About Us</Link>
                   </li>
                   <li className="link" onClick={() => handleClick()}>
-                    <Link to="/contactUs"> Contact Us</Link>
+                    <Link smooth={true} spy={true}   activeClass='active' to="/contactUs"> Contact Us</Link>
                   </li>
                   <li
                     className="link"
@@ -84,7 +84,7 @@ export const Navbar = ({getModalState}) => {
                   </li>
 
                   <li className="link" onClick={() => handleClick()}>
-                    <Link to="/log-in" className="log-in">
+                    <Link spy={true}  to="/log-in" className="log-in">
                       Login
                     </Link>
                   </li>
