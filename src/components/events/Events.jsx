@@ -35,20 +35,17 @@ export const Events = () => {
       <div className="line"></div>'
       <div className="events-title">
         <h2>Events</h2>
-
       </div>
-
-      <div id="slideshow" data-component="slideshow" >
+      <div id="slideshow" data-component="slideshow">
         <div role="list">
-          
-          <div className="caroussel" >
+          <div className="caroussel">
             {/* <img className="mySlide" src={Event1} alt="" />
             <img className="mySlide" src={Event2} alt="" />
             <img className="mySlide" src={Event3} alt="" /> */}
-            <Carousel slides={slides} autoplay={true} interval={3000}/>
+            <Carousel slides={slides} autoplay={true} interval={5000} />
           </div>
-          <button>More Events</button>
         </div>
+        <a href="#">More Events</a>
       </div>
     </div>
   );

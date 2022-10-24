@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 export const Footer = () => {
   return (
+  
     <div className="footer-container container">
       <div className="containerF">
         <div className="footer-left">

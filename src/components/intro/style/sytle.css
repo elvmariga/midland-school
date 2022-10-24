@@ -1,0 +1,42 @@
+.intro .intro-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  text-align: center;
+}
+.intro .intro-container h2 {
+  font-size: 2.25rem;
+  color: #650113;
+}
+.intro .intro-container p {
+  font-size: 1.5rem;
+  color: #141138;
+}
+.intro .intro-container .container-top {
+  width: 80%;
+  padding: 1rem 0;
+  margin: 2rem 0;
+}
+.intro .intro-container .container-top a {
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  background-color: #650113;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+}
+.intro .intro-container .container-bottom {
+  background-color: #d0cfd7;
+}
+.intro .intro-container .container-bottom .details {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro .intro-container .container-bottom .details h2 {
+  color: #141138;
+}/*# sourceMappingURL=sytle.css.map */

@@ -8,6 +8,10 @@
   margin: 0 auto;
   gap: 2rem;
 }
+.vision-container img {
+  height: auto;
+  width: 100%;
+}
 .vision-container h2 {
   font-size: 3rem;
 }

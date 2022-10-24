@@ -30,6 +30,7 @@
   background-color: #660113;
   padding: 1rem;
   border-radius: 8px;
+  color: #FFFFFF;
 }
 .hero-container .containerh .school .letter {
   display: inline-block;
@@ -54,6 +55,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  color: #FFFFFF;
 }
 .hero-container .containerh button {
   display: flex;

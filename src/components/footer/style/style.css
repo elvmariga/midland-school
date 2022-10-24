@@ -2,10 +2,10 @@
   display: flex;
   width: 100%;
   background-color: #141138;
+  background-image: url(../../../assests/pattern.svg);
+  background-repeat: round;
   min-height: 25rem;
   color: #FFFFFF;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
   padding-top: 3rem;
 }
 .footer-container .containerF {

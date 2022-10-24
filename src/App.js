@@ -19,6 +19,7 @@ import {SignUp} from "./components/sign-up/SignUp"
 import { Socials } from "./components/socials/Socials";
 import { Route, Routes } from "react-router-dom";
 import { ForgotPasword } from "./components/forgot-password/ForgotPassword";
+import { Intro } from "./components/intro/Intro";
 
 export const App = () => {
   const [showModal, setShowModal]= React.useState(false);
@@ -50,6 +51,7 @@ export const Home = () => {
   return (
     <>
       <Homepage />
+      <Intro/>
       <Strive />
       <Glance />
       <hr></hr>

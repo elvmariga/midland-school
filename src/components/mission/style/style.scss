@@ -1,5 +1,10 @@
 .containerm{
-    background-color: #f6f6f6;
+    background-color: #d0cfd7;
+    padding: 1rem;
+    img{
+        height: auto;
+        width: 100%;
+    }
     .mission-container {
             font-family: 'Poppins', sans-serif;
             color: #1F1F1F;
@@ -8,8 +13,9 @@
             align-items: center;
             width: 80%;
             margin: 0 auto;
-            gap: 2rem;
-            gap: 2rem;
+            column-gap: 4rem;
+            // row-gap: 2rem;
+            
     
             h2 {
                 font-size: 3rem;
@@ -30,10 +36,11 @@
 
 @media screen and (max-width:800px) {
     .mission-container {
-        flex-wrap: wrap;
+        flex-wrap:wrap-reverse;
+        gap: 2rem;
     }
          .mission-right {
-             width: 100%;
+            //  width: 100%;
              // object-fit: fill;
          }
 
