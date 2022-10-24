@@ -1,37 +1,42 @@
 .events-container{
 width: 80%;
-margin: 3rem auto;
+margin: 5rem auto;
+
     .line {
             border: 4px solid #660113;
             width: 4rem;
-    
+
         }
         .events-title{
             h2{
                 font-weight: 700;
-                    font-size: 36px;
-                    color: #141138;
-                    margin: 0;
+                font-size: 36px;
+                color: #141138;
+                margin: 0;
             }
         }
 
-                button {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    padding:.8rem 1.3rem;
-                    gap: 10px;
-                    width: max-content;
-                    background: #660113;
-                    border-radius: 10px;
-                    font-size: 1.2rem;
-                    color: #FFFFFF;
-                    border: none;
+        .caroussel{
+            margin :60px auto
+        }
+
+        button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:.8rem 1.3rem;
+            gap: 10px;
+            width: max-content;
+            background: #660113;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            border: none;
+
+        }
         
-                }
-        
-                button:hover {
-                    transform: scale(1.1, 1.1);
-                }
+        button:hover {
+            transform: scale(1.1, 1.1);
+        }
 }

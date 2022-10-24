@@ -4,7 +4,7 @@ import "./style/style.css";
 import { NavLink} from "react-router-dom";
 import {GiHamburgerMenu} from "react-icons/gi";
 import {ImCross} from "react-icons/im";
-import { Login } from "../login/Login";
+// import { Login } from "../login/Login";
 
 
 
@@ -62,15 +62,18 @@ export const Navbar = ({getModalState}) => {
           <div>
             {showLinks && (
               <div className="mobilelinks">
-                <ul>
-                  <li className="link" onClick={() => handleClick()}>
-                    <NavLink smooth={true} spy={true}  a activeClassName="active" to="/">Home</NavLink>
+                <ul style={{listStyle:"none",textDecoration:"none",color:"black"}}>
+                  <li 
+                  className="link" 
+                  onClick={() => handleClick()}
+                  style={{textDecoration:"none"}}>
+                    <NavLink smooth={true} spy={true}  style={{textDecoration:"none"}} activeClassName="active" to="/">Home</NavLink>
                   </li>
                   <li className="link" onClick={() => handleClick()}>
-                    <NavLink smooth={true} spy={true}    activeClassName="active" to="/aboutUs">About Us</NavLink>
+                    <NavLink smooth={true} spy={true}  style={{textDecoration:"none"}}  activeClassName="active" to="/aboutUs">About Us</NavLink>
                   </li>
                   <li className="link" onClick={() => handleClick()}>
-                    <NavLink smooth={true} spy={true}    activeClassName="active" to="/contactUs"> Contact Us</NavLink>
+                    <NavLink smooth={true} spy={true} style={{textDecoration:"none"}}   activeClassName="active" to="/contactUs"> Contact Us</NavLink>
                   </li>
                   <li
                     className="link"
@@ -84,7 +87,7 @@ export const Navbar = ({getModalState}) => {
                   </li>
 
                   <li className="link" onClick={() => handleClick()}>
-                    <NavLink  activeClassName="active" to="/log-in" className="log-in">
+                    <NavLink style={{textDecoration:"none"}} activeClassName="active" to="/log-in" className="log-in">
                       Login
                     </NavLink>
                   </li>
