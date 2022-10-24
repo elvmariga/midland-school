@@ -70,11 +70,11 @@ export  const Login = () => {
             <h2>Sign In</h2>
 
             <div className="mb-3">
-              <label>Email address</label>
+              <label>Staff/Parent ID</label>
               <input
-                type="email"
+                type="number"
                 className="form-control"
-                placeholder=" Enter email"
+                placeholder=" Enter Staff/Parent ID"
                 onChange={handleChange}
               />
             </div>
@@ -99,7 +99,6 @@ export  const Login = () => {
                 <label className="custom-control-label" htmlFor="customCheck1">
                   Remember me
                 </label>
-                
               </div>
               <div className="forgot">
                 <p className="forgot-password text-right">
