@@ -1,13 +1,69 @@
-import React from "react";
+import React,{useState} from "react";
 import { Socials } from "../socials/Socials";
 import { ModalInquiry } from "../modalInquiry/ModalInquiry";
 import Zoom from 'react-reveal/Zoom';
-import './style/style.css'
+import './style/style.css';
+import axios from "axios"
 
 
 export const Contact = () => {
+  const [formData, updateFormData] = useState();
+  const [isLoading, setIsLoading] = useState(false);
+  const [mailSent, setMailSent] = useState();
+
+  const handleChange = (e) => {
+    updateFormData({
+      ...formData,
+
+      // Trimming any whitespace
+      [e.target.name]: e.target.value.trim()
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    
+    // ... submit to API or something
+    sendEmail();
+  };
+
+  const sendEmail= async () => {
+    
+    try{
+      setIsLoading(true);
+
+      const res = await axios ({
+        method: "post",
+        url: "http://localhost:5000/send-email", //backend API
+        data: formData,
+       
+      })
+     
+      console.log({res});
+
+      (res.data.status === "ok" ) ? setMailSent(true) : setMailSent(false)
+        
+     
+    }
+
+    catch (error) {
+
+      console.log(error);
+      
+    }
+
+    finally{
+      setIsLoading(false);
+    }
+
+
+  }
+
+
   return (
     <div className="concact-container">
+      
+
       <div className="container">
         <div className="contact-left">
           <div className="contact-title">
@@ -73,6 +129,7 @@ export const Contact = () => {
                 name="name"
                 id="name"
                 placeholder="Full Name"
+                onChange={handleChange}
               />
               <input type="email" name="email" id="email" placeholder="Email" />
               <input
@@ -80,12 +137,14 @@ export const Contact = () => {
                 name="tel"
                 id="tel"
                 placeholder="Phone Number"
+                onChange={handleChange}
               />
               <input
                 type="text"
                 name="subject"
                 id="subject"
                 placeholder="Subject"
+                onChange={handleChange}
               />
               <textarea
                 name="message"
@@ -93,8 +152,11 @@ export const Contact = () => {
                 cols="30"
                 rows="5"
                 placeholder="Message"
+                onChange={handleChange}
               ></textarea>
-              <input className="myBtn" type="button" value="Send Inquiry" />
+              <input onClick={()=>handleSubmit} className="myBtn" type="button" value={ isLoading ? "Sending...":"Send Inquiry"} />
+              {/* displays when the email is sent */}
+              {mailSent && <p>Your Inquiry has been recived. Thank you.</p>}
             </form>
             </Zoom>
           </div>
