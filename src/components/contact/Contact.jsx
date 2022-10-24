@@ -1,6 +1,7 @@
 import React from "react";
 import { Socials } from "../socials/Socials";
 import { ModalInquiry } from "../modalInquiry/ModalInquiry";
+import Zoom from 'react-reveal/Zoom';
 import './style/style.css'
 
 
@@ -65,6 +66,7 @@ export const Contact = () => {
             <h2>Any questions? Send us an inquiry</h2>
           </div>
           <div>
+          <Zoom cascade>
             <form action="" method="post">
               <input
                 type="text"
@@ -94,6 +96,7 @@ export const Contact = () => {
               ></textarea>
               <input className="myBtn" type="button" value="Send Inquiry" />
             </form>
+            </Zoom>
           </div>
         </div>
       </div>

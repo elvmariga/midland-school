@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assests/logo.png";
 import "./style/style.css";
-import { Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import {GiHamburgerMenu} from "react-icons/gi";
 import {ImCross} from "react-icons/im";
 import { Login } from "../login/Login";
@@ -26,15 +26,15 @@ export const Navbar = ({getModalState}) => {
         <div className="links">
           <ul>
             <li className="link" onClick={() => handleClick()}>
-              <Link smooth={true} spy={true}  activeClass='active' to="/">
+              <NavLink smooth={true} spy={true}   activeClassName="active" to="/">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="link">
-              <Link smooth={true} spy={true}  activeClass='active' to="/aboutUs">About Us</Link>
+              <NavLink smooth={true} spy={true}  activeClassName="active" to="/aboutUs">About Us</NavLink>
             </li>
             <li className="link">
-              <Link smooth={true} spy={true}  activeClass='active' to="/contactUs"> Contact Us</Link>
+              <NavLink smooth={true} spy={true}   activeClassName="active" to="/contactUs"> Contact Us</NavLink>
             </li>
             <li
               className="link"
@@ -47,9 +47,9 @@ export const Navbar = ({getModalState}) => {
             </li>
 
             <li className="link ">
-              <Link to="/log-in" className="login">
+              <NavLink  activeClassName="active" to="/log-in" className="login">
                 Login
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -64,13 +64,13 @@ export const Navbar = ({getModalState}) => {
               <div className="mobilelinks">
                 <ul>
                   <li className="link" onClick={() => handleClick()}>
-                    <Link smooth={true} spy={true}  activeClass='active' to="/">Home</Link>
+                    <NavLink smooth={true} spy={true}  a activeClassName="active" to="/">Home</NavLink>
                   </li>
                   <li className="link" onClick={() => handleClick()}>
-                    <Link smooth={true} spy={true}   activeClass='active' to="/aboutUs">About Us</Link>
+                    <NavLink smooth={true} spy={true}    activeClassName="active" to="/aboutUs">About Us</NavLink>
                   </li>
                   <li className="link" onClick={() => handleClick()}>
-                    <Link smooth={true} spy={true}   activeClass='active' to="/contactUs"> Contact Us</Link>
+                    <NavLink smooth={true} spy={true}    activeClassName="active" to="/contactUs"> Contact Us</NavLink>
                   </li>
                   <li
                     className="link"
@@ -84,9 +84,9 @@ export const Navbar = ({getModalState}) => {
                   </li>
 
                   <li className="link" onClick={() => handleClick()}>
-                    <Link spy={true}  to="/log-in" className="log-in">
+                    <NavLink  activeClassName="active" to="/log-in" className="log-in">
                       Login
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </div>

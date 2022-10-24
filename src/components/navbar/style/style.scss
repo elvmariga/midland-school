@@ -7,18 +7,23 @@ $tablet : 850px;
     margin: 0 auto;
     justify-self: center;
     justify-content: space-between;
+    // position: fixed;
+    z-index: 12;
+    padding-top: 60px;
+    background-color: #ffffff;
+   
     
 
 
 
 
 
-    .active {
-        transform: scale(1.1, 1.1);
-                font-weight: 900;
-                color:#141138
+    // .active {
+    //     transform: scale(1.1, 1.1);
+    //             font-weight: 900;
+    //             color:#141138
 
-    }
+    // }
 
 
     .links {
@@ -26,12 +31,7 @@ $tablet : 850px;
         justify-self: flex-end;
         justify-content: space-between;
         
-        &.active {
-            transform: scale(1.1, 1.1);
-                    font-weight: 900;
-                    color:red
-    
-        }
+        
 
         @media screen and (max-width: $tablet) {
             display: none;
@@ -58,10 +58,10 @@ $tablet : 850px;
                     font-weight: 300;
                 }
 
-                &.active {
+                .active {
                     transform: scale(1.1, 1.1);
-                font-weight: 700;
-                color:red;
+                    font-weight: 700;
+                    color:  hsla(349, 98%, 20%, 1);
                 }
 
                 .login {
