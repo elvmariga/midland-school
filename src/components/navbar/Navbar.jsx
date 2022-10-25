@@ -26,15 +26,41 @@ export const Navbar = ({getModalState}) => {
         <div className="links">
           <ul>
             <li className="link" onClick={() => handleClick()}>
-              <NavLink smooth={true} spy={true}   activeClassName="active" to="/">
+              <NavLink smooth={true} spy={true} activeClassName="active" to="/">
                 Home
               </NavLink>
             </li>
             <li className="link">
-              <NavLink smooth={true} spy={true}  activeClassName="active" to="/aboutUs">About Us</NavLink>
+              <NavLink
+                smooth={true}
+                spy={true}
+                activeClassName="active"
+                to="/aboutUs"
+              >
+                About Us
+              </NavLink>
             </li>
             <li className="link">
-              <NavLink smooth={true} spy={true}   activeClassName="active" to="/contactUs"> Contact Us</NavLink>
+              <NavLink
+                smooth={true}
+                spy={true}
+                activeClassName="active"
+                to="/contactUs"
+              >
+                {" "}
+                Contact Us
+              </NavLink>
+            </li>
+            <li className="link">
+              <NavLink
+                smooth={true}
+                spy={true}
+                activeClassName="active"
+                to="/calendar"
+              >
+               
+                News and Events
+              </NavLink>
             </li>
             <li
               className="link"
@@ -47,7 +73,7 @@ export const Navbar = ({getModalState}) => {
             </li>
 
             <li className="link ">
-              <NavLink  activeClassName="active" to="/log-in" className="login">
+              <NavLink activeClassName="active" to="/log-in" className="login">
                 Login
               </NavLink>
             </li>
@@ -62,18 +88,50 @@ export const Navbar = ({getModalState}) => {
           <div>
             {showLinks && (
               <div className="mobilelinks">
-                <ul style={{listStyle:"none",textDecoration:"none",color:"black"}}>
-                  <li 
-                  className="link" 
-                  onClick={() => handleClick()}
-                  style={{textDecoration:"none"}}>
-                    <NavLink smooth={true} spy={true}  style={{textDecoration:"none"}} activeClassName="active" to="/">Home</NavLink>
+                <ul
+                  style={{
+                    listStyle: "none",
+                    textDecoration: "none",
+                    color: "black",
+                  }}
+                >
+                  <li
+                    className="link"
+                    onClick={() => handleClick()}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <NavLink
+                      smooth={true}
+                      spy={true}
+                      style={{ textDecoration: "none" }}
+                      activeClassName="active"
+                      to="/"
+                    >
+                      Home
+                    </NavLink>
                   </li>
                   <li className="link" onClick={() => handleClick()}>
-                    <NavLink smooth={true} spy={true}  style={{textDecoration:"none"}}  activeClassName="active" to="/aboutUs">About Us</NavLink>
+                    <NavLink
+                      smooth={true}
+                      spy={true}
+                      style={{ textDecoration: "none" }}
+                      activeClassName="active"
+                      to="/aboutUs"
+                    >
+                      About Us
+                    </NavLink>
                   </li>
                   <li className="link" onClick={() => handleClick()}>
-                    <NavLink smooth={true} spy={true} style={{textDecoration:"none"}}   activeClassName="active" to="/contactUs"> Contact Us</NavLink>
+                    <NavLink
+                      smooth={true}
+                      spy={true}
+                      style={{ textDecoration: "none" }}
+                      activeClassName="active"
+                      to="/contactUs"
+                    >
+                      {" "}
+                      Contact Us
+                    </NavLink>
                   </li>
                   <li
                     className="link"
@@ -87,7 +145,12 @@ export const Navbar = ({getModalState}) => {
                   </li>
 
                   <li className="link" onClick={() => handleClick()}>
-                    <NavLink style={{textDecoration:"none"}} activeClassName="active" to="/log-in" className="log-in">
+                    <NavLink
+                      style={{ textDecoration: "none" }}
+                      activeClassName="active"
+                      to="/log-in"
+                      className="log-in"
+                    >
                       Login
                     </NavLink>
                   </li>

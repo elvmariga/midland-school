@@ -2,19 +2,15 @@
 
 .footer-container{
 display: flex;
+flex-direction: column;
 width: 100%;
 background-color: #141138;
 background-image: url(../../../assests/pattern.svg);
-// opacity: 0.9;
-// border-radius: 50% 50% 0 0/100% 100% 0 0/100% 100% 0 0;
-// background-image: url(../../../assests/footer-bg.svg);
-// background-repeat: no-repeat;
-// background-size: cover;
-background-repeat: round;
+
+background-repeat: space;
 min-height: 25rem;
 color: #FFFFFF;
-// border-top-left-radius: 50% ;
-//     border-top-right-radius: 50%;
+
 
 padding-top:3rem;
 
@@ -25,15 +21,15 @@ padding-top:3rem;
     margin: 0 auto;
     padding: 3rem ;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     // background-color: inherit;
-    .footer-left{
+    .footer-left {
         display: flex;
         gap: 2rem;
         align-items: center;
         p{
-            font-family: 'Times New Roman';
+            font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 700;
                 font-size: 32px;
@@ -42,7 +38,7 @@ padding-top:3rem;
                 color: #FFFFFF;
         }
     }
-    .footer-right{
+    .footer-right, .contact{
         p {
                 font-family: 'Poppins';
                 font-style: normal;
@@ -65,6 +61,9 @@ padding-top:3rem;
         }
     }
     
+}
+.copyright{
+    align-self: center;
 }
 }
 

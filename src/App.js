@@ -20,6 +20,8 @@ import { Socials } from "./components/socials/Socials";
 import { Route, Routes } from "react-router-dom";
 import { ForgotPasword } from "./components/forgot-password/ForgotPassword";
 import { Intro } from "./components/intro/Intro";
+import { ScrollUp} from "./components/scrollup/ScrollUp";
+import { Calendar } from "./components/news/Calendar";
 
 export const App = () => {
   const [showModal, setShowModal]= React.useState(false);
@@ -30,6 +32,7 @@ export const App = () => {
   return (
     <section>
       <TopNav />
+      <ScrollUp/>
       <Navbar getModalState={getModalState} />
       {showModal && <ModalInquiry getModalState={getModalState}  />}
 
@@ -38,9 +41,10 @@ export const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<About/>} />
         <Route path="/contactUs" element={<Contact />}/>
+        <Route path = "/calendar" element ={<Calendar/>}/>
         <Route path="/log-in" element={<Login/>}/>
         <Route path="/forgot-password" element ={<ForgotPasword/>} />
-        <Route path = "/sign-up"  element={<SignUp />} />
+        
       </Routes>
       <Footer />
     </section>
@@ -54,7 +58,7 @@ export const Home = () => {
       <Intro/>
       <Strive />
       <Glance />
-      <hr></hr>
+      {/* <hr></hr> */}
       <Whatweoffer />
       <Events />
       <Ourteam />

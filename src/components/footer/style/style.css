@@ -1,9 +1,10 @@
 .footer-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #141138;
   background-image: url(../../../assests/pattern.svg);
-  background-repeat: round;
+  background-repeat: space;
   min-height: 25rem;
   color: #FFFFFF;
   padding-top: 3rem;
@@ -14,7 +15,7 @@
   margin: 0 auto;
   padding: 3rem;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 .footer-container .containerF .footer-left {
@@ -23,29 +24,32 @@
   align-items: center;
 }
 .footer-container .containerF .footer-left p {
-  font-family: "Times New Roman";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 37px;
   color: #FFFFFF;
 }
-.footer-container .containerF .footer-right p {
+.footer-container .containerF .footer-right p, .footer-container .containerF .contact p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
 }
-.footer-container .containerF .footer-right ul li {
+.footer-container .containerF .footer-right ul li, .footer-container .containerF .contact ul li {
   list-style: none;
 }
-.footer-container .containerF .footer-right ul li a {
+.footer-container .containerF .footer-right ul li a, .footer-container .containerF .contact ul li a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+}
+.footer-container .copyright {
+  align-self: center;
 }
 
 @media screen and (max-width: 850px) {
