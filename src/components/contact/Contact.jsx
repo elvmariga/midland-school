@@ -1,15 +1,22 @@
 import React,{useState} from "react";
 import { Socials } from "../socials/Socials";
-import { ModalInquiry } from "../modalInquiry/ModalInquiry";
 import Zoom from 'react-reveal/Zoom';
 import './style/style.css';
 import axios from "axios"
+// import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import { Map } from "../map/Map";
 
 
 export const Contact = () => {
   const [formData, updateFormData] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [mailSent, setMailSent] = useState();
+
+  const location = {
+    address: 'JXW2+XH9, Community Rd, Nairobi',
+    lat: -1.3525940209369631,
+    lng: 36.951459742971196,
+}
 
   const handleChange = (e) => {
     updateFormData({
@@ -152,6 +159,10 @@ export const Contact = () => {
             </form>
             </Zoom>
           </div>
+        </div>
+
+        <div className="google-map">
+          <Map location={location} zoomLevel={17} />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { ModalInquiry } from "../modalInquiry/ModalInquiry";
+
 import "./style/style.css";
 import Fade from 'react-reveal/Fade';
 import Typed from 'react-typed';
@@ -38,7 +38,7 @@ export const Homepage = () => {
 // var textWrapper = document.querySelector(".school");
 // textWrapper.innerHTML = textWrapper.textContent.replace(
 //   /\S/g,
-//   "<span class='letter'>$&</span>"
+//   "<span className='letter'>$&</span>"
 // );
 // var anime;
 

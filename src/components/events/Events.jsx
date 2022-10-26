@@ -45,7 +45,7 @@ export const Events = () => {
             <Carousel slides={slides} autoplay={true} interval={5000} />
           </div>
         </div>
-        <a href="#">More Events</a>
+        {/* <a href="#">More Events</a> */}
       </div>
     </div>
   );

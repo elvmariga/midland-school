@@ -15,7 +15,7 @@ export const Intro = () => {
             <h2>Welcome to Midland Preparatory School</h2>
 
             <p>
-              <i class="fa-solid fa-quote-left"></i>
+              <i className="fa-solid fa-quote-left"></i>
               I'm constantly inspired by our young graduates. They emerge from
               their time at Brookhouse with a truly 21st Century perspective as
               young global citizens, ready to contribute to society with a
@@ -24,7 +24,7 @@ export const Intro = () => {
               prowess or artistic talent. It is about young people of good
               character, armed with the courage, compassion and humility to
               really make a difference in the world.
-              <i class="fa-solid fa-quote-right"></i>
+              <i className="fa-solid fa-quote-right"></i>
             </p>
 
             <p>

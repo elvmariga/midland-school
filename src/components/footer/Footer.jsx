@@ -23,16 +23,16 @@ export const Footer = () => {
           <Fade right cascade>
             <ul className="quick-links">
               <li>
-                <a href="http://"></a>About MPS
+                <a href="http://">About MPS</a>
               </li>
               <li>
-                <a href="http://"></a>Policy
+                <a href="http://">Policy</a>
               </li>
               <li>
-                <a href="http://"></a>Calendar
+                <a href="http://">Calendar</a>
               </li>
               <li>
-                <a href="http://"></a>Staff/Parent Login
+                <a href="http://">Staff/Parent Login</a>
               </li>
             </ul>
           </Fade>
@@ -41,16 +41,16 @@ export const Footer = () => {
           <p> Contact Us</p>
           <Fade right cascade>
             <p className="contacts">
-              <i class="fa-solid fa-location-dot"></i>: P.O. Box 98-200,
+              <i className="fa-solid fa-location-dot"></i>: P.O. Box 98-200,
               Nairobi-Kenya
             </p>
             <p className="contacts">
-              <i class="fa-solid fa-phone"></i>: 
+              <i className="fa-solid fa-phone"></i>: 
               <a href="tel:+25472999999">+25472999999</a>
             </p>
             <p className="contacts">
               <a href="mailto:midland@ac.ke">
-                <i class="fa-solid fa-envelope"></i>: midland@ac.ke
+                <i className="fa-solid fa-envelope"></i>: midland@ac.ke
               </a>
             </p>
             <Socials style={{ display: "block" }} />

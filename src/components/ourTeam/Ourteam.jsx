@@ -25,10 +25,11 @@ export const Ourteam = () => {
           {
             teamArr.map((team)=>{
             return(
-              <Zoom cascade>
+              <div key={team.id} ><Zoom cascade>
               
               <TeamProfile {...team} key={team.id} />
-              </Zoom>
+            </Zoom></div>
+              
             )})
           }
         

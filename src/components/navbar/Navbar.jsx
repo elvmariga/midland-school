@@ -26,15 +26,15 @@ export const Navbar = ({getModalState}) => {
         <div className="links">
           <ul>
             <li className="link" onClick={() => handleClick()}>
-              <NavLink smooth={true} spy={true} activeClassName="active" to="/">
+              <NavLink  smooth="true"spy="true" activeclassname="active" to="/">
                 Home
               </NavLink>
             </li>
             <li className="link">
               <NavLink
-                smooth={true}
-                spy={true}
-                activeClassName="active"
+                smooth="true"
+                spy="true"
+                activeclassname="active"
                 to="/aboutUs"
               >
                 About Us
@@ -42,9 +42,9 @@ export const Navbar = ({getModalState}) => {
             </li>
             <li className="link">
               <NavLink
-                smooth={true}
-                spy={true}
-                activeClassName="active"
+                 smooth="true"
+                 spy="true"
+                activeclassname="active"
                 to="/contactUs"
               >
                 {" "}
@@ -53,9 +53,9 @@ export const Navbar = ({getModalState}) => {
             </li>
             <li className="link">
               <NavLink
-                smooth={true}
-                spy={true}
-                activeClassName="active"
+              
+              spy="true"
+                activeclassname="active"
                 to="/calendar"
               >
                 News and Events
@@ -72,7 +72,7 @@ export const Navbar = ({getModalState}) => {
             </li>
 
             <li className="link ">
-              <NavLink activeClassName="active" to="/log-in" className="login">
+              <NavLink activeclassname="active" to="/log-in" className="login">
                 Login
               </NavLink>
             </li>
@@ -104,15 +104,15 @@ export const Navbar = ({getModalState}) => {
                     }}
                   >
                     <NavLink
-                      smooth={true}
-                      spy={true}
+                      smooth="true"
+                      spy="true"
                       style={{
                         textDecoration: "none",
                         fontSize: "1.3rem",
                         fontFamily: "Poppins",
                         color: "#141138",
                       }}
-                      activeClassName="active"
+                      activeclassname="active"
                       to="/"
                     >
                       Home
@@ -120,8 +120,8 @@ export const Navbar = ({getModalState}) => {
                   </li>
                   <li className="link" onClick={() => handleClick()}>
                     <NavLink
-                      smooth={true}
-                      spy={true}
+                      smooth="true"
+                      spy="true"
                       style={{
                         textDecoration: "none",
                         fontSize: "1.3rem",
@@ -136,8 +136,8 @@ export const Navbar = ({getModalState}) => {
                   </li>
                   <li className="link" onClick={() => handleClick()}>
                     <NavLink
-                      smooth={true}
-                      spy={true}
+                      smooth="true"
+                      spy="true"
                       style={{
                         textDecoration: "none",
                         fontSize: "1.3rem",
