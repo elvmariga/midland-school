@@ -81,7 +81,7 @@ export const Navbar = ({getModalState}) => {
 
         <div>
           <div className="humberger" onClick={() => handleClick()}>
-            {showLinks ? <ImCross /> : <GiHamburgerMenu />}
+            {showLinks ? <ImCross  /> : <GiHamburgerMenu />}
           </div>
 
           <div>
