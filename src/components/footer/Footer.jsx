@@ -41,16 +41,16 @@ export const Footer = () => {
           <p> Contact Us</p>
           <Fade right cascade>
             <p className="contacts">
-              <i className="fa-solid fa-location-dot"></i>: P.O. Box 98-200,
+              <i class="fa-solid fa-location-dot"></i>: P.O. Box 98-200,
               Nairobi-Kenya
             </p>
             <p className="contacts">
-              <i className="fa-solid fa-phone"></i>: 
+              <i class="fa-solid fa-phone"></i>: 
               <a href="tel:+25472999999">+25472999999</a>
             </p>
             <p className="contacts">
               <a href="mailto:midland@ac.ke">
-                <i className="fa-solid fa-envelope"></i>: midland@ac.ke
+                <i class="fa-solid fa-envelope"></i>: midland@ac.ke
               </a>
             </p>
             <Socials style={{ display: "block" }} />
