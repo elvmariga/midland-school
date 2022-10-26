@@ -58,7 +58,6 @@ export const Navbar = ({getModalState}) => {
                 activeClassName="active"
                 to="/calendar"
               >
-               
                 News and Events
               </NavLink>
             </li>
@@ -98,12 +97,21 @@ export const Navbar = ({getModalState}) => {
                   <li
                     className="link"
                     onClick={() => handleClick()}
-                    style={{ textDecoration: "none" }}
+                    style={{
+                      textDecoration: "none",
+                      fontSize: "1.3rem",
+                      fontFamily: "Poppins",
+                    }}
                   >
                     <NavLink
                       smooth={true}
                       spy={true}
-                      style={{ textDecoration: "none" }}
+                      style={{
+                        textDecoration: "none",
+                        fontSize: "1.3rem",
+                        fontFamily: "Poppins",
+                        color: "#141138",
+                      }}
                       activeClassName="active"
                       to="/"
                     >
@@ -114,7 +122,12 @@ export const Navbar = ({getModalState}) => {
                     <NavLink
                       smooth={true}
                       spy={true}
-                      style={{ textDecoration: "none" }}
+                      style={{
+                        textDecoration: "none",
+                        fontSize: "1.3rem",
+                        fontFamily: "Poppins",
+                        color: "#141138",
+                      }}
                       activeClassName="active"
                       to="/aboutUs"
                     >
@@ -125,7 +138,12 @@ export const Navbar = ({getModalState}) => {
                     <NavLink
                       smooth={true}
                       spy={true}
-                      style={{ textDecoration: "none" }}
+                      style={{
+                        textDecoration: "none",
+                        fontSize: "1.3rem",
+                        fontFamily: "Poppins",
+                        color: "#141138",
+                      }}
                       activeClassName="active"
                       to="/contactUs"
                     >
@@ -140,13 +158,23 @@ export const Navbar = ({getModalState}) => {
                       getModalState(showModal);
                       handleClick();
                     }}
+                    style={{
+                      fontSize: "1.3rem",
+                      fontFamily: "Poppins",
+                      color: "#141138",
+                    }}
                   >
                     Send Inquiry
                   </li>
 
                   <li className="link" onClick={() => handleClick()}>
                     <NavLink
-                      style={{ textDecoration: "none" }}
+                      style={{
+                        textDecoration: "none",
+                        fontSize: "1.3rem",
+                        fontFamily: "Poppins",
+                        color: "#141138",
+                      }}
                       activeClassName="active"
                       to="/log-in"
                       className="log-in"

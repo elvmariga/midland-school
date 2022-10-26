@@ -1,5 +1,5 @@
 import React from 'react'
-import MissionImage from '../../assests/history.png'
+import MissionImage from '../../assests/mission.png'
 import "./style/style.css"
 export const Mission = () => {
   return (

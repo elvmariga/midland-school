@@ -6,7 +6,7 @@ import { Socials } from "../socials/Socials";
 
 export const Footer = () => {
   return (
-    <div className="footer-container container">
+    <div className="footer-container ">
       <div className="containerF">
         <div className="footer-left">
           <div>
@@ -40,14 +40,29 @@ export const Footer = () => {
         <div className="contact">
           <p> Contact Us</p>
           <Fade right cascade>
-            <Socials style={{display:"grid"}} />
+            <p className="contacts">
+              <i class="fa-solid fa-location-dot"></i>: P.O. Box 98-200,
+              Nairobi-Kenya
+            </p>
+            <p className="contacts">
+              <i class="fa-solid fa-phone"></i>: 
+              <a href="tel:+25472999999">+25472999999</a>
+            </p>
+            <p className="contacts">
+              <a href="mailto:midland@ac.ke">
+                <i class="fa-solid fa-envelope"></i>: midland@ac.ke
+              </a>
+            </p>
+            <Socials style={{ display: "block" }} />
           </Fade>
         </div>
       </div>
 
       <div className="copyright">
         <div>
-          <p>Copyright &copy; {new Date().getFullYear()} Midland School</p>
+          <p>
+            Copyright &copy; {new Date().getFullYear()} <b>Midland School </b>{" "}
+          </p>
         </div>
       </div>
     </div>

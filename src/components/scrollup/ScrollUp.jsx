@@ -6,7 +6,7 @@ export const ScrollUp = () => {
   return (
     <div>
       <ScrollUpButton
-        style={{ backgroundColor: "#650113", border: "4px solid #650113", borderRadius: "8px" }}
+        style={{ backgroundColor: "#650113", border: "4px solid #650113", borderRadius: "8px", right:"1rem" }}
       />
     </div>
   );

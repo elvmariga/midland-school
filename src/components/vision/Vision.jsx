@@ -1,5 +1,5 @@
 import React from 'react'
-import VisionImage from '../../assests/history.png'
+import VisionImage from '../../assests/vision.png'
 import "./style/style.css";
 
 

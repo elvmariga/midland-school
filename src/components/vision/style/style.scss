@@ -10,7 +10,7 @@
 
     img {
             height: auto;
-            width: 100%;
+            width: 90%;
         }
 
     h2{
@@ -26,13 +26,13 @@
         
     }
     // color: red;
-        .vision-right{
-            width: 50%;
+        .vision-left{
+            // width: 50%;
             object-fit: fill;
         }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:850px) {
     .vision-container {
         flex-wrap: wrap;
     }

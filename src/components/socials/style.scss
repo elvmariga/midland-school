@@ -1,8 +1,12 @@
 .social-container {
+    
     .links {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 1rem;
+       
+        
         
 
         .fa-envelope,
@@ -11,7 +15,10 @@
 
 
         }
-
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
         a:hover{
             transform: scale(1.4, 1.4);
         }

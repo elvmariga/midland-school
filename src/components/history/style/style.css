@@ -20,7 +20,6 @@
   font-weight: 300;
 }
 .history-container .history-right {
-  width: 50%;
   -o-object-fit: fill;
      object-fit: fill;
 }

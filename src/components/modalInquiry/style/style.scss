@@ -13,9 +13,9 @@
     margin: 0 auto;
     
         .contact {
-            // display: contents;
-            //justify-content: center;
-            width: 50%;
+            display: grid;
+            justify-content: center;
+            width: 60%;
             padding: 16px;
             position: absolute;
             background-color: #FFFFFF;
@@ -24,7 +24,7 @@
             margin-top: 30px;
             margin-bottom: 30px;
             border-radius: 12px;
-            right: auto;
+            // right: auto;
 
             .close{
                 display: flex;
@@ -36,7 +36,10 @@
 
             form {
                 display: grid;
+                justify-content: center;
+                padding: 12px;
                 gap: .5rem;
+                margin: 0 auto;
 
                 input,
                 textarea {
@@ -72,4 +75,11 @@
                 }
             }
         }
+}
+
+@media screen and (max-width:850px) {
+    .contact {
+        width: 600px;
+
+    }
 }

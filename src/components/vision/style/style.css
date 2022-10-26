@@ -10,7 +10,7 @@
 }
 .vision-container img {
   height: auto;
-  width: 100%;
+  width: 90%;
 }
 .vision-container h2 {
   font-size: 3rem;
@@ -19,13 +19,12 @@
   font-size: 1.5rem;
   font-weight: 300;
 }
-.vision-container .vision-right {
-  width: 50%;
+.vision-container .vision-left {
   -o-object-fit: fill;
      object-fit: fill;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .vision-container {
     flex-wrap: wrap;
   }

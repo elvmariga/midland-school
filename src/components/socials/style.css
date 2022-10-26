@@ -2,10 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .social-container .links .fa-envelope,
 .social-container .links .fa-phone {
   display: none;
+}
+.social-container .links a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 .social-container .links a:hover {
   transform: scale(1.4, 1.4);

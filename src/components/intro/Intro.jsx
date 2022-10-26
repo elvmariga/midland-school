@@ -13,23 +13,25 @@ export const Intro = () => {
         <div className="container-bottom">
           <div className="details">
             <h2>Welcome to Midland Preparatory School</h2>
+
             <p>
-              " I'm constantly inspired by our young graduates. They emerge from
+              <i class="fa-solid fa-quote-left"></i>
+              I'm constantly inspired by our young graduates. They emerge from
               their time at Brookhouse with a truly 21st Century perspective as
               young global citizens, ready to contribute to society with a
               profound sense of justice, tolerance and understanding. A
               Brookhouse education is more than just about good grades, sporting
               prowess or artistic talent. It is about young people of good
               character, armed with the courage, compassion and humility to
-              really make a difference in the world."
+              really make a difference in the world.
+              <i class="fa-solid fa-quote-right"></i>
             </p>
+
             <p>
               <b>Elvis Mariga</b>
             </p>
             <p>
-              <i>
-                Director
-              </i>
+              <i>Director</i>
             </p>
           </div>
         </div>

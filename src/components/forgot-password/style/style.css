@@ -1,3 +1,6 @@
+.forgot-container {
+  height: 50vh;
+}
 .forgot-container .forgot-password {
   display: flex;
   flex-direction: column;
@@ -22,10 +25,10 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   width: 100%;
-  border: 2px solid #660113;
+  border: 1px solid #660113;
   /* identical to box height */
   /* General black */
   color: #1F1F1F;

@@ -16,6 +16,13 @@
   font-size: 1.5rem;
   color: #141138;
 }
+.intro .intro-container p .fa-solid {
+  margin: 0 0.4rem;
+}
+.intro .intro-container .quote {
+  font-size: 2rem;
+  margin: 0;
+}
 .intro .intro-container .container-top {
   width: 80%;
   padding: 1rem 0;

@@ -89,7 +89,7 @@ export const Contact = () => {
               {/* <span className="location">Syokimau, Machakos County</span> */}
             </p>
           </div>
-          <div className="linkContact" style={{color:"red !important"}}>
+          {/* <div className="linkContact" style={{color:"red !important"}}>
             
             <a href="http:// ">
               <i className="fa-brands fa-whatsapp"></i>
@@ -106,7 +106,8 @@ export const Contact = () => {
             <a href="http://">
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
-          </div>
+          </div> */}
+          <Socials style={{color: "red !important"}} />
         </div>
         <div className="contact-right">
           <div>
