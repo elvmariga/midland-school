@@ -96,6 +96,10 @@
   text-decoration: none;
   font-weight: 300;
 }
+.container .humberger .mobilelinks ul ul .link li a:hover {
+  background-color: #141138;
+  color: white;
+}
 .container .humberger .mobilelinks ul ul .link li .login {
   padding: 0.1rem 1.5rem;
   gap: 10px;
@@ -106,7 +110,6 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  /* Midland-blue */
   border: 2px solid #141138;
   border-radius: 5px;
   background-color: #ffffff;
@@ -117,6 +120,8 @@
 .container .humberger .mobilelinks ul .link:hover {
   transform: scale(1.1, 1.1);
   font-weight: 700;
+  background-color: #141138;
+  color: white;
 }
 @media screen and (max-width: 850px) {
   .container .humberger {

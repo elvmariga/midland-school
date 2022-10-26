@@ -39,6 +39,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
+  text-align: center;
 }
 .footer-container .containerF .footer-right ul li,
 .footer-container .containerF .contact ul li {
@@ -66,6 +67,7 @@
   font-weight: 100;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
 }
 .footer-container .containerF .footer-right .contacts a,
 .footer-container .containerF .contact .contacts a {

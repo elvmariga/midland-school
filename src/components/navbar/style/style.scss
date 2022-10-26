@@ -7,35 +7,19 @@ $tablet : 850px;
     margin: 0 auto;
     justify-self: center;
     justify-content: space-between;
-    // position: fixed;
     z-index: 12;
     padding-top: 60px;
     background-color: #f6f6f6;
-   
-    
-
-
-
-
-
-    // .active {
-    //     transform: scale(1.1, 1.1);
-    //             font-weight: 900;
-    //             color:#141138
-
-    // }
-
 
     .links {
         display: flex;
         justify-self: flex-end;
         justify-content: space-between;
-        
+
         &.active {
             transform: scale(1.1, 1.1);
             font-weight: 900;
-            color:red
-    
+            color: red
         }
 
         @media screen and (max-width: $tablet) {
@@ -66,7 +50,7 @@ $tablet : 850px;
                 .active {
                     transform: scale(1.1, 1.1);
                     font-weight: 700;
-                    color:  hsla(349, 98%, 20%, 1);
+                    color: hsla(349, 98%, 20%, 1);
                 }
 
                 .login {
@@ -96,13 +80,16 @@ $tablet : 850px;
                 }
 
             }
-            .link{
+
+            .link {
                 cursor: pointer;
             }
-            .link:active{
+
+            .link:active {
                 transform: scale(1.1, 1.1);
                 font-weight: 700;
             }
+
             .link:hover {
                 transform: scale(1.1, 1.1);
                 font-weight: 700;
@@ -121,63 +108,65 @@ $tablet : 850px;
         svg {
             height: 1.5rem;
             width: 1.5rem;
+
         }
 
-     .mobilelinks{
-        list-style: none;
-        ul{
-           
+        .mobilelinks {
+            list-style: none;
+
+            ul {
+
                 ul {
-                .link {
+                    .link {
                         list-style: none;
-                
+
                         li {
-                
+
                             a {
                                 color: #141138;
                                 text-decoration: none;
                                 font-weight: 300;
                             }
-                
-                
+
+                            a:hover {
+                                background-color: #141138;
+                                color: white;
+                            }
+
+
                             .login {
-                
+
                                 padding: .1rem 1.5rem;
                                 gap: 10px;
                                 font-family: 'Poppins';
                                 font-weight: 500;
                                 font-size: 1.5rem;
                                 margin-right: 20px;
-                
-                                // position: absolute;
                                 width: max-content;
-                                // height: 60px;
-                                // left: 1200px;
-                                // top: 142px;
-                
-                                /* Midland-blue */
-                
-                                border: 2px solid #141138;
+                               border: 2px solid #141138;
                                 border-radius: 5px;
                                 background-color: #ffffff;
                             }
-                
+
                             .login {
                                 box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
                             }
-                
+
                         }
                     }
-                
-                   
+
+
+                }
+
+                .link:hover {
+                    transform: scale(1.1, 1.1);
+                    font-weight: 700;
+                    background-color: #141138;
+                        color: white;
+
+                }
             }
-                         .link:hover {
-                             transform: scale(1.1, 1.1);
-                             font-weight: 700;
-            
-                         }
         }
-     }
 
         @media screen and (max-width: $tablet) {
             display: flex;
