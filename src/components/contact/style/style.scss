@@ -1,19 +1,11 @@
 .concact-container {
-    // background-color: hsla(0, 0%, 84%, 0.2);
-    padding: 2rem 0;
    
-
     h1 {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
-        font-size: 48px;
+        font-size: 2rem;
         line-height: 72px;
-        /* identical to box height */
-
-
-        /* Midland-blue */
-
         color: #141138;
     }
 
@@ -33,14 +25,8 @@
             font-style: normal;
             font-weight: 500;
             font-size: 1.2rem;
-            // line-height: 36px;
             text-decoration: none;
-            /* identical to box height */
-
-
-            /* General black */
-
-            color: #1F1F1F;
+           color: #1F1F1F;
 
             .location {
                 margin-left: 3.4rem;
@@ -57,7 +43,9 @@
                     justify-content: center;
                 }
     }
-
+    .content{
+        padding-top: 0;
+    }
     .container {
         display: flex;
         flex-wrap: wrap;

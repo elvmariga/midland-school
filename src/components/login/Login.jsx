@@ -14,7 +14,7 @@ export  const Login = () => {
       ...formData,
 
       // Trimming any whitespace
-      [e.target.type]: e.target.value.trim()
+      [e.target.name]: e.target.value.trim()
     });
   };
 
@@ -30,12 +30,11 @@ export  const Login = () => {
     try{
       setIsLoading(true);
 
-      const res = await axios ({
+      const res = await axios({
         method: "post",
-        url: "http://localhost:5000/login",
+        url: "https://9568-102-68-77-133.ap.ngrok.io/api/auth/login/",
         data: formData,
-       
-      })
+      });
      
 
       if(res.data.status === "ok" ){
@@ -70,22 +69,26 @@ export  const Login = () => {
             <h2>Sign In</h2>
 
             <div className="mb-3">
-              <label>Staff/Parent ID</label>
+              <label>Username</label>
               <input
-                type="number"
+              name='username'
+                type="text"
                 className="form-control"
                 placeholder=" Enter Staff/Parent ID"
                 onChange={handleChange}
+                required
               />
             </div>
 
             <div className="mb-3">
               <label>Password</label>
               <input
+              name='password'
                 type="password"
                 className="form-control"
                 placeholder="Enter password"
                 onChange={handleChange}
+                required
               />
             </div>
 

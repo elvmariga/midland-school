@@ -12,7 +12,6 @@
 .cover .contact {
   display: grid;
   justify-content: center;
-  width: 60%;
   padding: 16px;
   position: absolute;
   background-color: #FFFFFF;
@@ -64,9 +63,8 @@
   border: none;
   margin-top: 2rem;
 }
-
 @media screen and (max-width: 850px) {
-  .contact {
-    width: 600px;
+  .cover .contact {
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */

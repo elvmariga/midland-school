@@ -15,7 +15,7 @@
         .contact {
             display: grid;
             justify-content: center;
-            width: 60%;
+            // width: 80%;
             padding: 16px;
             position: absolute;
             background-color: #FFFFFF;
@@ -75,11 +75,11 @@
                 }
             }
         }
+                @media screen and (max-width:850px) {
+                    .contact {
+                        width: 80%;
+        
+                    }
+                }
 }
 
-@media screen and (max-width:850px) {
-    .contact {
-        width: 600px;
-
-    }
-}
