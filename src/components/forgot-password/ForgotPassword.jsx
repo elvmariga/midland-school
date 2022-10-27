@@ -5,15 +5,15 @@ import "./style/style.css"
 
 export const ForgotPasword = () => {
 
-    const [formData, updateFormData] = React.useState();
-    const [isLoading, setIsLoading] = React.useState(false);
+  const [formData, updateFormData] = React.useState();
+  const [isLoading, setIsLoading] = React.useState(false);
 
   const handleChange = (e) => {
     updateFormData({
       ...formData,
 
       // Trimming any whitespace
-      [e.target.type]: e.target.value.trim()
+      [e.target.name]: e.target.value.trim()
     });
   };
 
@@ -32,13 +32,13 @@ export const ForgotPasword = () => {
 
       const res = await axios ({
         method: "post",
-        url: "http://localhost:5000/forgot-password",
+        url: "https://ba57-102-68-77-133.ap.ngrok.io/api/password/forgot-password",
         data: formData,
        
       })
      
 
-        console.log(res.data.status);
+        console.log(res);
       
     }
 
@@ -61,11 +61,12 @@ export const ForgotPasword = () => {
           <h2>Reset Password</h2>
         </div>
         <div className="mb-3">
-          <label>Email address</label>
+          <label>Phone no:</label>
           <input
-            type="email"
+            name="phone_number"
+            type="tel"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="Enter phone number"
             onChange={handleChange}
           />
         </div>

@@ -1,8 +1,12 @@
 import React from 'react';
 import axios from "axios";
 import {Link} from "react-router-dom"
-import Logo from "../../assests/logo.png"
-import "./style/style.css"
+// import Logo from "../../assests/logo.png"
+import "./style/style.css";
+import { ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// toast.configure()
 
 export  const Login = () => {
 
@@ -14,7 +18,7 @@ export  const Login = () => {
       ...formData,
 
       // Trimming any whitespace
-      [e.target.type]: e.target.value.trim()
+      [e.target.name]: e.target.value.trim()
     });
   };
 
@@ -32,16 +36,16 @@ export  const Login = () => {
 
       const res = await axios({
         method: "post",
-        url: "https://a6f4-102-68-77-133.ngrok.io/api/auth/login",
+        url: "https://ba57-102-68-77-133.ap.ngrok.io/api/auth/login",
         data: formData,
        
       })
      
       console.log(res);
-      if(res.data.status === "ok" ){
-        // alert("login successful");
-        // window.localStorage.setItem("token",res.data.data);
-        // window.location.href="/user-details"
+      if(res.data.status === "success" ){
+        notify();
+        window.localStorage.setItem("token",res.data.data);
+        // window.location.href=`https://9568-102-68-77-133.ap.ngrok.io/admin?token=${res.data.token}`
         console.log(res);
       }
     }
@@ -59,9 +63,18 @@ export  const Login = () => {
 
   }
 
+  //diaplaying succes message after user login
+  const notify = () =>{
+ 
+    // Calling toast method by passing string
+    toast.success("Log in succesful, welcome", {autoClose:3000});
+  }
+
   return (
+    isLoading? <p>Loading..</p> :
     <div className="signinContainer">
       <div className="containerS">
+      <ToastContainer />
         {/* <div className="signin-left">
           <img src={Logo} alt="   logo" />
         </div> */}
@@ -72,7 +85,7 @@ export  const Login = () => {
             <div className="mb-3">
               <label>Username</label>
               <input
-              name='username'
+                name='username'
                 type="text"
                 className="form-control"
                 placeholder=" Enter Staff/Parent ID"
@@ -84,7 +97,7 @@ export  const Login = () => {
             <div className="mb-3">
               <label>Password</label>
               <input
-              name='password'
+                name='password'
                 type="password"
                 
                 className="form-control"
