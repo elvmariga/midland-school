@@ -71,7 +71,7 @@ export const Contact = () => {
     <div className="concact-container">
       
 
-      <div className="container">
+      <div className="contain er content">
         <div className="contact-left">
           <div className="contact-title">
             <h1>Reach Us</h1>

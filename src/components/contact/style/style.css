@@ -1,14 +1,9 @@
-.concact-container {
-  padding: 2rem 0;
-}
 .concact-container h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 2rem;
   line-height: 72px;
-  /* identical to box height */
-  /* Midland-blue */
   color: #141138;
 }
 .concact-container .fa-solid {
@@ -26,8 +21,6 @@
   font-weight: 500;
   font-size: 1.2rem;
   text-decoration: none;
-  /* identical to box height */
-  /* General black */
   color: #1F1F1F;
 }
 .concact-container .contact-details p .location,
@@ -42,6 +35,9 @@
   display: flex;
   background-color: #660113;
   justify-content: center;
+}
+.concact-container .content {
+  padding-top: 0;
 }
 .concact-container .container {
   display: flex;
