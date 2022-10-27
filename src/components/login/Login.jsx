@@ -14,7 +14,7 @@ export  const Login = () => {
       ...formData,
 
       // Trimming any whitespace
-      [e.target.type]: e.target.value.trim()
+      [e.target.name]: e.target.value.trim()
     });
   };
 
@@ -32,17 +32,17 @@ export  const Login = () => {
 
       const res = await axios ({
         method: "post",
-        url: "http://localhost:5000/login",
+        url: "https://a6f4-102-68-77-133.ngrok.io/api/auth/login",
         data: formData,
        
       })
      
-
+      console.log(res);
       if(res.data.status === "ok" ){
-        alert("login successful");
-        window.localStorage.setItem("token",res.data.data);
-        window.location.href="/user-details"
-        console.log(res.data);
+        // alert("login successful");
+        // window.localStorage.setItem("token",res.data.data);
+        // window.location.href="/user-details"
+        console.log(res);
       }
     }
 
@@ -72,7 +72,8 @@ export  const Login = () => {
             <div className="mb-3">
               <label>Staff/Parent ID</label>
               <input
-                type="number"
+                type="text"
+                name= "username"
                 className="form-control"
                 placeholder=" Enter Staff/Parent ID"
                 onChange={handleChange}
@@ -83,6 +84,7 @@ export  const Login = () => {
               <label>Password</label>
               <input
                 type="password"
+                name="password"
                 className="form-control"
                 placeholder="Enter password"
                 onChange={handleChange}
