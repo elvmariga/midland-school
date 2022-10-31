@@ -2,6 +2,8 @@ $mobile : 480px;
 $tablet : 850px;
 
 .container {
+
+
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -10,6 +12,11 @@ $tablet : 850px;
     z-index: 12;
     padding-top: 60px;
     background-color: #f6f6f6;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
 
     .links {
         display: flex;

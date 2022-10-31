@@ -46,4 +46,15 @@
 }
 .intro .intro-container .container-bottom .details h2 {
   color: #141138;
+}
+.intro .intro-container .partners {
+  width: 80%;
+  margin: 2rem auto;
+}
+.intro .intro-container .partners .partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }/*# sourceMappingURL=sytle.css.map */

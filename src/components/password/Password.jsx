@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./style/style.css";
+import "./styles/style.css";
 
 export const Password = () => {
   const [formData, updateFormData] = React.useState();
@@ -44,27 +44,40 @@ export const Password = () => {
     <div className="password-container">
       <div className="password-password">
         <div className="mb-3">
-          <h2>Create new Password</h2>
+          <h2>Create New Password</h2>
         </div>
-        
+        <div className="mb-3">
+          <label>OTP</label>
+          <input
+            name="otp"
+            type="number"
+            className="form-control"
+            placeholder="Enter the OTP"
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <a href="">Resend OTP</a>
         <div className="mb-3">
           <label>New Password</label>
           <input
-            name="newPassword"
+            name="password"
             type="text"
             className="form-control"
             placeholder="Enter New Password"
             onChange={handleChange}
+            required
           />
         </div>
         <div className="mb-3">
           <label>Confirm Password</label>
           <input
-            name="confirmPassword"
+            name="password_confirm"
             type="text"
             className="form-control"
             placeholder="Confirm Password"
             onChange={handleChange}
+            required
           />
         </div>
 
@@ -72,7 +85,8 @@ export const Password = () => {
           <button
             onClick={handleSubmit}
             type="submit"
-            className=" mb-3 btn btn-primary myBtn">
+            className=" mb-3 btn btn-primary myBtn"
+          >
             Password
           </button>
         </div>

@@ -1,5 +1,5 @@
 .concact-container {
-   
+   margin-top: 1rem;
     h1 {
         font-family: 'Poppins';
         font-style: normal;
@@ -63,10 +63,7 @@
                 display: flex;
                 gap: 2rem;
             }
-           
-                
-                
-            
+   
         }
 
         .contact-right {
@@ -119,6 +116,11 @@
                 }
             }
         }
+    }
+
+    .google-map{
+        margin-bottom:8rem;
+      
     }
 }
 

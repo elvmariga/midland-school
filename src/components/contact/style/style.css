@@ -1,3 +1,6 @@
+.concact-container {
+  margin-top: 1rem;
+}
 .concact-container h1 {
   font-family: "Poppins";
   font-style: normal;
@@ -98,6 +101,9 @@
   color: #FFFFFF;
   border: none;
   margin-top: 2rem;
+}
+.concact-container .google-map {
+  margin-bottom: 8rem;
 }
 
 @media screen and (max-width: 800px) {

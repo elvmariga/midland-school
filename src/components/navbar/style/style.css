@@ -8,6 +8,10 @@
   padding-top: 60px;
   background-color: #f6f6f6;
 }
+.container img {
+  width: 100%;
+  height: auto;
+}
 .container .links {
   display: flex;
   justify-self: flex-end;

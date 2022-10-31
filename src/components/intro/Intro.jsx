@@ -1,5 +1,12 @@
-import React from 'react'
-import "./style/sytle.css"
+import React from 'react';
+import moe from '../../assests/moe.png'
+import moh from "../../assests/moh.png";
+import knec from "../../assests/knec.png";
+import pta from "../../assests/pta.png";
+import board from "../../assests/board.png";
+import line from "../../assests/line.png";
+
+import "./style/sytle.css";
 
 export const Intro = () => {
   return (
@@ -34,6 +41,29 @@ export const Intro = () => {
               <i>Director</i>
             </p>
           </div>
+        </div>
+        <div className="partners">
+          <h2>Our Partners</h2>
+          <div className="partner-logos">
+            <a className="partner1" href="http://">
+              <img src={moe}  alt="Ministry of Education" />
+            </a>
+            <a className="partner2" href="http://">
+              <img src={moh} alt="Ministry of Education" />
+            </a>
+            <a className="partner3" href="http://">
+              <img src={knec} alt="Ministry of Education" />
+            </a>
+            <a className="partner4" href="http://">
+              <img src={pta} alt="Ministry of Education" />
+            </a>
+            <a className="partner5" href="http://">
+              <img src={board} alt="Ministry of Education" />
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src={line} alt="line" />
         </div>
       </div>
     </div>
