@@ -22,6 +22,7 @@ import { ForgotPasword } from "./components/forgot-password/ForgotPassword";
 import { Intro } from "./components/intro/Intro";
 import { ScrollUp} from "./components/scrollup/ScrollUp";
 import { Calendar } from "./components/news/Calendar";
+import {Password} from "./components/password/Password"
 
 export const App = () => {
   const [showModal, setShowModal]= React.useState(false);
