@@ -46,6 +46,9 @@
   text-decoration: none;
   font-weight: 300;
 }
+.container .links ul li a:focus {
+  outline: #141138;
+}
 .container .links ul li .active {
   transform: scale(1.1, 1.1);
   font-weight: 700;
