@@ -120,7 +120,7 @@ export  const Login = () => {
               </div>
               <div className="forgot">
                 <p className="forgot-password text-right">
-                  Forgot <Link to={"/forgot-password"}>password?</Link>
+                  Forgot <Link to="/forgotpassword">password?</Link>
                 </p>
               </div>
             </div>

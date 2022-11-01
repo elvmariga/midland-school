@@ -15,10 +15,10 @@ import { Vision } from "./components/vision/Vision";
 import { Contact } from "./components/contact/Contact";
 import { ModalInquiry } from "./components/modalInquiry/ModalInquiry";
 import { Login } from "./components/login/Login";
-import {SignUp} from "./components/sign-up/SignUp"
-import { Socials } from "./components/socials/Socials";
+// import {SignUp} from "./components/sign-up/SignUp"
+// import { Socials } from "./components/socials/Socials";
 import { Route, Routes } from "react-router-dom";
-import { ForgotPasword } from "./components/forgot-password/ForgotPassword";
+import { ForgotPassword } from "./components/forgot-password/ForgotPassword";
 import { Intro } from "./components/intro/Intro";
 import { ScrollUp} from "./components/scrollup/ScrollUp";
 import { Calendar } from "./components/news/Calendar";
@@ -45,7 +45,7 @@ export const App = () => {
         <Route path="/contactUs" element={<Contact />}/>
         <Route path = "/calendar" element ={<Calendar/>}/>
         <Route path="/log-in" element={<Login/>}/>
-        <Route path="/forgot-password" element ={<ForgotPasword/>} />
+        <Route path="/forgotpassword" element={<ForgotPassword/>} />
         <Route path="/newpassword" element= {<Password/>}/>
         
         

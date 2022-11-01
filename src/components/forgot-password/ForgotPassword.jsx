@@ -1,14 +1,13 @@
 import React from 'react';
 import axios from "axios";
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import { Navigate } from 'react-router-dom';
 import "./style/style.css";
 
-export const ForgotPasword = () => {
+export const ForgotPassword = () => {
 
   const [formData, updateFormData] = React.useState();
   const [isLoading, setIsLoading] = React.useState(false);
-  const navigate  = Navigate();
 
   const handleChange = (e) => {
     updateFormData({
@@ -32,13 +31,13 @@ export const ForgotPasword = () => {
       setIsLoading(true);
      
 
-      const res =
-        (await axios({
+      const res = await axios({
           method: "post",
           url: "https://ba57-102-68-77-133.ap.ngrok.io/api/password/forgot-password",
           data: formData,
-        })
-        ((res.data.status = "ok"))) && Navigate("./newpassword");
+      });
+
+      (res.data.status = "ok") && <Navigate to= "/newpassword"/>
 
         
       
@@ -79,7 +78,7 @@ export const ForgotPasword = () => {
             onClick={handleSubmit}
             type="submit"
             className=" mb-3 btn btn-primary myBtn">
-            Reset Password
+            {isLoading ? "Loading" : "Reset Password"}
           </button>
         </div>
 
