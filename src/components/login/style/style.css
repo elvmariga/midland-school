@@ -6,7 +6,7 @@
   margin: 4rem auto;
   width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-top: 2rem;
   align-items: center;
 }
@@ -69,6 +69,9 @@
   color: #FFFFFF;
   border: none;
   margin-top: 2rem;
+}
+.signinContainer .containerS .signin-right form .d-grid .diasbled {
+  background: #660113;
 }
 @media screen and (max-width: 800px) {
   .signinContainer .signin-left {

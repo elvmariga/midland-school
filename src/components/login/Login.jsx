@@ -70,11 +70,12 @@ export  const Login = () => {
     toast.success("Log in succesful, welcome", {autoClose:3000});
   }
 
-  return (
-    isLoading? <p>Loading..</p> :
+  return isLoading ? (
+    <p>Loading..</p>
+  ) : (
     <div className="signinContainer">
       <div className="containerS">
-      <ToastContainer />
+        <ToastContainer />
         {/* <div className="signin-left">
           <img src={Logo} alt="   logo" />
         </div> */}
@@ -85,7 +86,7 @@ export  const Login = () => {
             <div className="mb-3">
               <label>Username</label>
               <input
-                name='username'
+                name="username"
                 type="text"
                 className="form-control"
                 placeholder=" Enter Staff/Parent ID"
@@ -97,13 +98,12 @@ export  const Login = () => {
             <div className="mb-3">
               <label>Password</label>
               <input
-                name='password'
+                name="password"
                 type="password"
-                
                 className="form-control"
                 placeholder="Enter password"
                 onChange={handleChange}
-                required
+                required="required"
               />
             </div>
 
@@ -125,15 +125,16 @@ export  const Login = () => {
               </div>
             </div>
 
+            
             <div className="d-grid">
               <button
                 onClick={handleSubmit}
                 type="submit"
-                className="btn btn-primary myBtn"
-              >
+                // disabled
+                className="btn btn-primary myBtn ">
                 Submit
               </button>
-            </div>
+              </div>
           </form>
         </div>
       </div>
