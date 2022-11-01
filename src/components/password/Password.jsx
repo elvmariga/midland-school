@@ -1,11 +1,14 @@
 import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Navigate } from 'react-router-dom';
 import "./styles/style.css";
 
 export const Password = () => {
   const [formData, updateFormData] = React.useState();
   const [isLoading, setIsLoading] = React.useState(false);
+  const navigate  = Navigate();
+
 
   const handleChange = (e) => {
     updateFormData({
@@ -27,13 +30,13 @@ export const Password = () => {
     try {
       setIsLoading(true);
 
-      const res = await axios({
+      const res = (await axios({
         method: "post",
         url: "https://ba57-102-68-77-133.ap.ngrok.io/api/password/forgot-password",
         data: formData,
-      });
+      })
 
-      console.log(res);
+     ((res.data.status = "ok"))) && Navigate("./log-in");
     } catch (error) {
       console.log(error);
     } finally {

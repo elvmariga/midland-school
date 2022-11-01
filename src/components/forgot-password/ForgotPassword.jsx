@@ -37,7 +37,8 @@ export const ForgotPasword = () => {
           method: "post",
           url: "https://ba57-102-68-77-133.ap.ngrok.io/api/password/forgot-password",
           data: formData,
-        })((res.data.status = "ok"))) && Navigate("./newpassword");
+        })
+        ((res.data.status = "ok"))) && Navigate("./newpassword");
 
         
       
