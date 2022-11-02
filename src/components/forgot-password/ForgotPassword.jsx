@@ -14,13 +14,15 @@ export const ForgotPassword = () => {
   // formData.value() === undefined && setBtnDisabled(true) ;
 
   const handleChange = (e) => {
-    setBtnDisabled(false);
+   
     updateFormData({
       ...formData,
 
       // Trimming any whitespace
       [e.target.name]: e.target.value.trim()
     });
+
+    formData.phone_number.length ===10 && setBtnDisabled(false);
   };
 
   const handleSubmit = (e) => {
