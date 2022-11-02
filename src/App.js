@@ -23,6 +23,7 @@ import { Intro } from "./components/intro/Intro";
 import { ScrollUp} from "./components/scrollup/ScrollUp";
 import { Calendar } from "./components/news/Calendar";
 import {Password} from "./components/password/Password";
+import { Loading } from "./components/loading/Loading";
 
 
 export const App = () => {
@@ -34,6 +35,7 @@ export const App = () => {
   return (
     <section>
       <TopNav />
+      {/* <Loading/> */}
       <ScrollUp/>
       <Navbar getModalState={getModalState} />
       {showModal && <ModalInquiry getModalState={getModalState}  />}
