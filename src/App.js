@@ -29,6 +29,7 @@ import { Loading } from "./components/loading/Loading";
 export const App = () => {
   const [showModal, setShowModal]= React.useState(false);
   
+  
   const getModalState = (modalState) =>{  
   setShowModal(modalState) ;
   }

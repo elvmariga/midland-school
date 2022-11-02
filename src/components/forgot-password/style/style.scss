@@ -50,8 +50,18 @@
                 border: none;
                 margin-top: 2rem;
             }
-                        .diasbled {
-                            background: #660113;
-                        }
-        }
+                 
+            .disabled {
+                background: #989797;
+                justify-self: center;
+                padding: 8px 24px;
+                gap: 5px;
+                width: max-content;
+                border-radius: 5px;
+                font-size: 1.5rem;
+                color: #FFFFFF;
+                border: none;
+                margin-top: 2rem;
+            }
+}
 }

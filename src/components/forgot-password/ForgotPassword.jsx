@@ -3,13 +3,18 @@ import axios from "axios";
 // import {Link} from "react-router-dom"
 import { Navigate } from 'react-router-dom';
 import "./style/style.css";
+import {Loading } from "../loading/Loading";
 
 export const ForgotPassword = () => {
 
   const [formData, updateFormData] = React.useState();
   const [isLoading, setIsLoading] = React.useState(false);
+  const [btnDisabled, setBtnDisabled] = React.useState(true);
+
+  // formData.value() === undefined && setBtnDisabled(true) ;
 
   const handleChange = (e) => {
+    setBtnDisabled(false);
     updateFormData({
       ...formData,
 
@@ -56,6 +61,12 @@ export const ForgotPassword = () => {
 
   }
   return (
+    
+      isLoading ? 
+      <div>
+
+      <Loading/>
+      </div> :
     <div className="forgot-container">
       <div className="forgot-password">
         <div className="mb-3">
@@ -75,10 +86,12 @@ export const ForgotPassword = () => {
 
         <div className="d-grid">
           <button
+            required
+            disabled={btnDisabled ? true : false}
             onClick={handleSubmit}
             type="submit"
-            className=" mb-3 btn btn-primary myBtn">
-            {isLoading ? "Loading" : "Reset Password"}
+            className={btnDisabled ? "disabled mb-3 btn btn-primary " : " mb-3 btn btn-primary myBtn"}>
+            Reset Password
           </button>
         </div>
 

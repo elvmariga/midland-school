@@ -6,6 +6,7 @@ import "./style/style.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { validEmail, validPassword } from "../regex/Regex";
+import {Loading} from "../loading/Loading"
 
 // toast.configure()
 
@@ -27,7 +28,7 @@ export const Login = () => {
   };
 
   const handleChange = (e) => {
-    
+    validate();
     updateFormData({
       ...formData,
 
@@ -39,7 +40,7 @@ export const Login = () => {
   const handleSubmit = (e) => {
    
     e.preventDefault()
-    validate();
+    
     // ... submit to API or something
     logInUser();
   };
@@ -86,7 +87,7 @@ export const Login = () => {
   }
 
   return isLoading ? (
-    <p>Loading..</p>
+    <div><Loading/></div>
   ) : (
     <div className="signinContainer">
       <div className="containerS">
