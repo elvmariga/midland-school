@@ -82,14 +82,36 @@ export const ModalInquiry = ({ getModalState }) => {
         <div>
           <div></div>
           <form action="" method="post">
-            <input    onChange={handleChange} type="text" name="name" id="name" placeholder="Full Name" />
-            <input    onChange={handleChange} type="email" name="email" id="email" placeholder="Email" />
-            <input    onChange={handleChange} type="tel" name="tel" id="tel" placeholder="Phone Number" />
+            <input
+              onChange={handleChange}
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              required="required"
+            />
+            <input
+              onChange={handleChange}
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required="required"
+            />
+            <input
+              onChange={handleChange}
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Phone Number"
+              required="required"
+            />
             <input
               type="text"
               name="subject"
               id="subject"
               placeholder="Subject"
+              required="required"
               onChange={handleChange}
             />
             <textarea
@@ -98,9 +120,15 @@ export const ModalInquiry = ({ getModalState }) => {
               cols="40"
               rows="3"
               placeholder="Message"
+              required="required"
               onChange={handleChange}
             ></textarea>
-            <input onClick={handleSubmit } className="myBtn" type="button" value="Send Inquiry" />
+            <input
+              onClick={handleSubmit}
+              className="myBtn"
+              type="button"
+              value="Send Inquiry"
+            />
           </form>
         </div>
       </div>

@@ -96,9 +96,6 @@ export const Login = () => {
         </div> */}
         <div className="signin-right">
           <form>
-
-            {emailErr && <p>Your email is invalid</p>}
-            {pwdError && <p>Your password is invalid</p>}
             <h2>Sign In</h2>
 
             <div className="mb-3">
@@ -112,6 +109,7 @@ export const Login = () => {
                 required
               />
             </div>
+            {emailErr && <p>Your email is invalid</p>}
 
             <div className="mb-3">
               <label>Password</label>
@@ -124,6 +122,7 @@ export const Login = () => {
                 required="required"
               />
             </div>
+            {pwdError && <p>Your password is invalid</p>}
 
             <div className="mb-3 forgot-remember">
               <div className="custom-control check custom-checkbox">
@@ -143,13 +142,13 @@ export const Login = () => {
               </div>
             </div>
 
-
             <div className="d-grid">
               <button
                 onClick={handleSubmit}
                 type="submit"
                 // disabled
-                className="btn btn-primary myBtn ">
+                className="btn btn-primary myBtn "
+              >
                 Submit
               </button>
             </div>
