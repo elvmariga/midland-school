@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useRef, useState } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom"
 // import Logo from "../../assests/logo.png"
@@ -6,29 +6,33 @@ import "./style/style.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { validEmail, validPassword } from "../regex/Regex";
-import {Loading} from "../loading/Loading"
+import { Loading } from "../loading/Loading"
 
 // toast.configure()
 
 export const Login = () => {
 
-  const [formData, updateFormData] = useState();
+  const [formData, updateFormData] = useState({ phone_number: Number });
   const [isLoading, setIsLoading] = useState(false);
 
-  const [emailErr, setEmailErr] = useState(false);
-  const [pwdError, setPwdError] = useState(false);
+  const [userNameErr, setUserNameErr] = useState(false);
+  const [msgError, setMsgError] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
-  const validate = () => {
-    if (!validEmail.test(formData.email)) {
-      setEmailErr(true);
-    }
-    if (!validPassword.test(formData.password)) {
-      setPwdError(true);
-    }
-  };
+  const ref = useRef(null);
+
+
+  // const validate = () => {
+  //   if (!validEmail.test(formData.email)) {
+  //     setEmailErr(true);
+  //   }
+  //   if (!validPassword.test(formData.password)) {
+  //     setPwdError(true);
+  //   }
+  // };
 
   const handleChange = (e) => {
-    validate();
+    
     updateFormData({
       ...formData,
 
@@ -36,25 +40,24 @@ export const Login = () => {
       [e.target.name]: e.target.value.trim()
     });
   };
-  
+
   const handleSubmit = (e) => {
-   
+
     e.preventDefault()
-    
+
     // ... submit to API or something
     logInUser();
   };
 
   const logInUser = async () => {
-
+    
     try {
       setIsLoading(true);
 
       const res = await axios({
         method: "post",
-        url: "https://ba57-102-68-77-133.ap.ngrok.io/api/auth/login",
+        url: "https://3e66-102-68-77-133.jp.ngrok.io/api/auth/login",
         data: formData,
-
       })
 
       console.log(res);
@@ -62,14 +65,14 @@ export const Login = () => {
         notify();
         window.localStorage.setItem("token", res.data.data);
         // window.location.href=`https://9568-102-68-77-133.ap.ngrok.io/admin?token=${res.data.token}`
-        console.log(res);
+      
       }
     }
 
-    catch (error) {
-
-      console.log(error);
-
+    catch(error) {
+      error.response.status === 422 && setUserNameErr(true);
+      // console.log(error.response.status);
+      setMsgError(error.response.message);
     }
 
     finally {
@@ -87,7 +90,7 @@ export const Login = () => {
   }
 
   return isLoading ? (
-    <div><Loading/></div>
+    <div><Loading /></div>
   ) : (
     <div className="signinContainer">
       <div className="containerS">
@@ -97,12 +100,14 @@ export const Login = () => {
         </div> */}
         <div className="signin-right">
           <form>
+          {userNameErr && <p className='error'>{`${msgError}`}</p>}
             <h2>Sign In</h2>
 
             <div className="mb-3">
               <label>Username</label>
               <input
                 name="username"
+                // value={`${formData.phone_number}`}
                 type="text"
                 className="form-control"
                 placeholder=" Enter Staff/Parent ID"
@@ -110,7 +115,7 @@ export const Login = () => {
                 required
               />
             </div>
-            {emailErr && <p>Your email is invalid</p>}
+           
 
             <div className="mb-3">
               <label>Password</label>
@@ -123,18 +128,24 @@ export const Login = () => {
                 required="required"
               />
             </div>
-            {pwdError && <p>Your password is invalid</p>}
+            {/* {pwdError && <p className='error'>Your password is incorrect</p>} */}
 
             <div className="mb-3 forgot-remember">
               <div className="custom-control check custom-checkbox">
+                <label name="rememberMe" className="custom-control-label" >Remember me </label>
                 <input
+                  ref={ref}
                   type="checkbox"
                   className="custom-control-input"
                   id="customCheck1"
+                  onChange={
+                    (e) => {
+                      // e.preventDefault();
+                      setIsChecked(ref.current.checked)
+                    }}
                 />
-                <label className="custom-control-label" htmlFor="customCheck1">
-                  Remember me
-                </label>
+                {/*
+                <input  / >  */}
               </div>
               <div className="forgot">
                 <p className="forgot-password text-right">

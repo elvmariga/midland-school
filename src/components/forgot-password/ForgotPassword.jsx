@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from "axios";
 // import {Link} from "react-router-dom"
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import "./style/style.css";
 import {Loading } from "../loading/Loading";
 
@@ -12,7 +12,7 @@ export const ForgotPassword = () => {
   const [btnDisabled, setBtnDisabled] = React.useState(true);
 
   // formData.value() === undefined && setBtnDisabled(true) ;
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
    
     updateFormData({
@@ -22,7 +22,7 @@ export const ForgotPassword = () => {
       [e.target.name]: e.target.value.trim()
     });
 
-    formData.phone_number.length ===10 && setBtnDisabled(false);
+    formData.phone_number.length === 9 ? setBtnDisabled(false) : setBtnDisabled(true);
   };
 
   const handleSubmit = (e) => {
@@ -40,11 +40,12 @@ export const ForgotPassword = () => {
 
       const res = await axios({
           method: "post",
-          url: "https://ba57-102-68-77-133.ap.ngrok.io/api/password/forgot-password",
+          url: "https://3e66-102-68-77-133.jp.ngrok.io/api/password/forgot-password",
           data: formData,
       });
 
-      (res.data.status = "ok") && <Navigate to= "/newpassword"/>
+        console.log(res);
+      if(res.data.status ==="ok") { window.location.href=("/newpassword")};
 
         
       

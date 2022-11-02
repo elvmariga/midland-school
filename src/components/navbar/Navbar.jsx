@@ -58,7 +58,7 @@ export const Navbar = ({getModalState}) => {
                 activeclassname="active"
                 to="/calendar"
               >
-                News and Events
+                News & Events
               </NavLink>
             </li>
             <li

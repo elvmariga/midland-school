@@ -13,6 +13,10 @@ $tablet : 850px;
     padding-top: 60px;
     background-color: #f6f6f6;
 
+    @media screen and (max-width: 1110px) {
+        padding-top:90px;
+    }
+
     img{
         width: 100%;
         height: auto;
@@ -22,12 +26,6 @@ $tablet : 850px;
         display: flex;
         justify-self: flex-end;
         justify-content: space-between;
-
-        &.active {
-            transform: scale(1.1, 1.1);
-            font-weight: 900;
-            color: red
-        }
 
        
 
@@ -48,6 +46,17 @@ $tablet : 850px;
             font-family: 'Poppins';
             font-style: normal;
             font-size: 1.3rem;
+
+            @media screen and (max-width:  1230px) {
+                font-size: 1.3rem;
+                gap:1.6rem;
+            }
+
+            @media screen and (max-width: 1110px) {
+                font-size: 1.1rem;
+                gap:1.5rem;
+            }
+
 
             li {
 
@@ -75,7 +84,7 @@ $tablet : 850px;
                     font-family: 'Poppins';
                     font-weight: 500;
                     font-size: 1.5rem;
-                    margin-right: 20px;
+                    margin-right: 0px;
 
                     // position: absolute;
                     width: max-content;
