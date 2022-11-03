@@ -1,5 +1,5 @@
-.intro{
-    .intro-container{
+.intro {
+    .intro-container {
         margin: 0 auto;
         // width: 80%;
         display: flex;
@@ -7,32 +7,35 @@
         justify-content: center;
         align-items: center;
         font-family: 'Poppins';
-            font-style: normal;
-            text-align: center;
-            h2 {
-                    font-size: 2.25rem;
-                    color: #650113;
-                }
-            
-                p {
-                    font-size: 1.5rem;
-                    color: #141138;
-                    // margin: ;
+        font-style: normal;
+        text-align: center;
 
-                    .fa-solid{
-                        margin: 0 .4rem;
-                    }
-                }
-                .quote{
-                    font-size: 2rem;
-                    margin: 0;
-                }
+        h2 {
+            font-size: 2.25rem;
+            color: #650113;
+        }
 
-        .container-top{
+        p {
+            font-size: 1.5rem;
+            color: #141138;
+            // margin: ;
+
+            .fa-solid {
+                margin: 0 .4rem;
+            }
+        }
+
+        .quote {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .container-top {
             width: 80%;
             padding: 1rem 0;
             margin: 2rem 0;
-            a{
+
+            a {
                 color: #FFFFFF;
                 padding: .5rem 1rem;
                 background-color: #650113;
@@ -42,36 +45,47 @@
             }
 
         }
-        .container-bottom{
+
+        .container-bottom {
             background-color: #d0cfd7;
-            .details{
-                h2{
+
+            .details {
+                h2 {
                     color: #141138;
                 }
+
                 width: 80%;
                 margin: 0 auto;
                 text-align: center;
             }
         }
-        .partners{
+
+        .partners {
             width: 80%;
             margin: 2rem auto;
-            .partner-logos{
-                display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap:1rem
-                 
 
-                    // .partner1{
-                    //     background-image: url(../../../assests/moe.png);
-                    //     // background-color: blue;
-                    //     height: 200px;
-                    //     width:400px;
-                    //     display: block;
-                    //     background-size: contain;
-                    // }
+            .partner-logos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                gap:1rem;
+
+
+                 a:hover {
+                    transform: scale(1.2, 1.2);
+                 }
+
+
+                // .partner1{
+                //     background-image: url(../../../assests/moe.png);
+                //     // background-color: blue;
+                //     height: 200px;
+                //     width:400px;
+                //     display: block;
+                //     background-size: contain;
+                // }
             }
         }
 

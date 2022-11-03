@@ -15,7 +15,7 @@ export const Intro = () => {
         <div className="container-top">
           <h2>Midland Preparatory School</h2>
           <p>Admissions Open for January 2023</p>
-          <a href="../contact/Contact.jsx">Inquire</a>
+          <a href="#">Inquire</a>
         </div>
         <div className="container-bottom">
           <div className="details">
@@ -45,19 +45,19 @@ export const Intro = () => {
         <div className="partners">
           <h2>Our Partners</h2>
           <div className="partner-logos">
-            <a className="partner1" href="http://">
-              <img src={moe}  alt="Ministry of Education" />
+            <a className="partner1 pic" href="https://www.education.go.ke/">
+              <img src={moe} alt="Ministry of Education" />
             </a>
-            <a className="partner2" href="http://">
-              <img src={moh} alt="Ministry of Education" />
+            <a className="partner2 pic" href="https://www.health.go.ke/">
+              <img src={moh} alt="Ministry of Health" />
             </a>
-            <a className="partner3" href="http://">
-              <img src={knec} alt="Ministry of Education" />
+            <a className="partner3 pic" href="https://www.knec.ac.ke/">
+              <img src={knec} alt="KNEC" />
             </a>
-            <a className="partner4" href="http://">
+            <a className="partner4 pic" href="http://">
               <img src={pta} alt="Ministry of Education" />
             </a>
-            <a className="partner5" href="http://">
+            <a className="partner5 pic" href="http://">
               <img src={board} alt="Ministry of Education" />
             </a>
           </div>

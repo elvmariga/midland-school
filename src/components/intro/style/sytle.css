@@ -57,4 +57,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+.intro .intro-container .partners .partner-logos a:hover {
+  transform: scale(1.2, 1.2);
 }/*# sourceMappingURL=sytle.css.map */
