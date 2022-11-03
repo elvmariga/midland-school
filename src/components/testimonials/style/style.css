@@ -39,6 +39,31 @@
   color: #141138;
   margin: 0;
 }
+.testimonial-container .partners {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-container .partners h2 {
+  color: #650113;
+}
+.testimonial-container .partners .partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.testimonial-container .partners .partner-logos a:hover {
+  transform: scale(1.2, 1.2);
+}
+.testimonial-container .partners .partner-logos a img {
+  width: 100px;
+  height: 80px;
+}
 
 @media screen and (max-width: 850px) {
   .profile {

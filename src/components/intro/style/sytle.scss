@@ -60,34 +60,7 @@
             }
         }
 
-        .partners {
-            width: 80%;
-            margin: 2rem auto;
-
-            .partner-logos {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-
-                gap:1rem;
-
-
-                 a:hover {
-                    transform: scale(1.2, 1.2);
-                 }
-
-
-                // .partner1{
-                //     background-image: url(../../../assests/moe.png);
-                //     // background-color: blue;
-                //     height: 200px;
-                //     width:400px;
-                //     display: block;
-                //     background-size: contain;
-                // }
-            }
-        }
+      
 
     }
 }
