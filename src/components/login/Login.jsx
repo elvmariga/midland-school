@@ -56,7 +56,7 @@ export const Login = () => {
 
       const res = await axios({
         method: "post",
-        url: "https://3e66-102-68-77-133.jp.ngrok.io/api/auth/login",
+        url: "http://ondishub.co.ke/api/auth/login",
         data: formData,
       })
 

@@ -20,13 +20,16 @@ export const Navbar = ({getModalState}) => {
     <nav>
       <div className="container">
         <div className="logo">
-          <img src={Logo} alt="logo" />
+          <a href="">
+            {" "}
+            <img src={Logo} alt="logo" />
+          </a>
         </div>
 
         <div className="links">
           <ul>
             <li className="link" onClick={() => handleClick()}>
-              <NavLink  smooth="true"spy="true" activeclassname="active" to="/">
+              <NavLink smooth="true" spy="true" activeclassname="active" to="/">
                 Home
               </NavLink>
             </li>
@@ -42,8 +45,8 @@ export const Navbar = ({getModalState}) => {
             </li>
             <li className="link">
               <NavLink
-                 smooth="true"
-                 spy="true"
+                smooth="true"
+                spy="true"
                 activeclassname="active"
                 to="/contactUs"
               >
@@ -52,12 +55,7 @@ export const Navbar = ({getModalState}) => {
               </NavLink>
             </li>
             <li className="link">
-              <NavLink
-              
-              spy="true"
-                activeclassname="active"
-                to="/calendar"
-              >
+              <NavLink spy="true" activeclassname="active" to="/calendar">
                 News & Events
               </NavLink>
             </li>
@@ -81,7 +79,7 @@ export const Navbar = ({getModalState}) => {
 
         <div>
           <div className="humberger" onClick={() => handleClick()}>
-            {showLinks ? <ImCross  /> : <GiHamburgerMenu />}
+            {showLinks ? <ImCross /> : <GiHamburgerMenu />}
           </div>
 
           <div>
