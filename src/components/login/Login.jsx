@@ -1,11 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom"
 // import Logo from "../../assests/logo.png"
 import "./style/style.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { validEmail, validPassword } from "../regex/Regex";
+// import { validEmail, validPassword } from "../regex/Regex";
 import { Loading } from "../loading/Loading"
 
 // toast.configure()
@@ -15,24 +15,30 @@ export const Login = () => {
   const [formData, updateFormData] = useState({ phone_number: Number });
   const [isLoading, setIsLoading] = useState(false);
 
-  const [userNameErr, setUserNameErr] = useState(false);
-  const [msgError, setMsgError] = useState(false);
-  const [isChecked, setIsChecked] = useState(false);
+  const [userNameErr, setUserNameErr] = useState(false); //error presence
+  const [msgError, setMsgError] = useState(""); //error  message
+  const [isChecked, setIsChecked] = useState(false); //remember me
 
   const ref = useRef(null);
 
 
-  // const validate = () => {
-  //   if (!validEmail.test(formData.email)) {
-  //     setEmailErr(true);
-  //   }
-  //   if (!validPassword.test(formData.password)) {
-  //     setPwdError(true);
-  //   }
-  // };
+  useEffect(() => {
+    const getCredentials = () => {
+      //store the use credentials in the browser
+      const username  = window.localStorage.getItem("username");
+      const password =  window.localStorage.getItem("password");
+
+      updateFormData({...formData,  "username": username || ""})
+      updateFormData({...formData,  "password": password  || ""})
+    }
+     getCredentials();
+  }, []
+
+  );
+
 
   const handleChange = (e) => {
-    
+
     updateFormData({
       ...formData,
 
@@ -50,7 +56,7 @@ export const Login = () => {
   };
 
   const logInUser = async () => {
-    
+
     try {
       setIsLoading(true);
 
@@ -60,19 +66,31 @@ export const Login = () => {
         data: formData,
       })
 
-      console.log(res);
+
       if (res.data.status === "success") {
         notify();
         window.localStorage.setItem("token", res.data.data);
-        // window.location.href=`https://9568-102-68-77-133.ap.ngrok.io/admin?token=${res.data.token}`
-      
+
+
+        if(isChecked){
+          window.localStorage.setItem("username", formData.username) 
+          window.localStorage.setItem("password", formData.password)
+
+        }
+
       }
+      // window.location.href=`/`
+
+      console.log(formData);
+
+
     }
 
-    catch(error) {
+    catch (error) {
       error.response.status === 422 && setUserNameErr(true);
       // console.log(error.response.status);
-      setMsgError(error.response.message);
+      setMsgError(error.response.data.message);
+
     }
 
     finally {
@@ -100,14 +118,14 @@ export const Login = () => {
         </div> */}
         <div className="signin-right">
           <form>
-          {userNameErr && <p className='error'>{`${msgError}`}</p>}
+            {userNameErr && <p className='error'>{`${msgError}`}</p>}
             <h2>Sign In</h2>
 
             <div className="mb-3">
               <label>Username</label>
               <input
                 name="username"
-                // value={`${formData.phone_number}`}
+                value={formData.username}
                 type="text"
                 className="form-control"
                 placeholder=" Enter Staff/Parent ID"
@@ -115,13 +133,14 @@ export const Login = () => {
                 required
               />
             </div>
-           
+
 
             <div className="mb-3">
               <label>Password</label>
               <input
                 name="password"
                 type="password"
+                value={formData.password}
                 className="form-control"
                 placeholder="Enter password"
                 onChange={handleChange}
@@ -158,7 +177,7 @@ export const Login = () => {
               <button
                 onClick={handleSubmit}
                 type="submit"
-                // disabled
+                disabled={formData.username === undefined && formData.password === undefined}
                 className="btn btn-primary myBtn "
               >
                 Submit

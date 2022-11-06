@@ -92,7 +92,12 @@
             color: #ffffff;
             border: none;
             margin-top: 2rem;
+            margin-bottom: 1rem;
             // display: none;
+
+            &:disabled{
+              background-color: #efefef;
+            }
           }
         }
       }
