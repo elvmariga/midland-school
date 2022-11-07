@@ -7,9 +7,10 @@ import {Loading } from "../loading/Loading";
 
 export const ForgotPassword = () => {
 
-  const [formData, updateFormData] = React.useState();
+  const [formData, updateFormData] = React.useState({
+    phone_number:0,
+  });
   const [isLoading, setIsLoading] = React.useState(false);
-  const [btnDisabled, setBtnDisabled] = React.useState(true);
 
   // formData.value() === undefined && setBtnDisabled(true) ;
   const navigate = useNavigate();
@@ -22,8 +23,15 @@ export const ForgotPassword = () => {
       [e.target.name]: e.target.value.trim()
     });
 
-    formData.phone_number.length === 9 ? setBtnDisabled(false) : setBtnDisabled(true);
   };
+
+//   useEffect(()=>{
+//     const checkNum = ()=>{
+//       formData.phone_nuber.length === 9 ? setBtnDisabled(false) : setBtnDisabled(true);
+
+//     }
+// checkNum();
+//   },[formData])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -90,10 +98,10 @@ export const ForgotPassword = () => {
         <div className="d-grid">
           <button
             required
-            disabled={btnDisabled ? true : false}
+            disabled={formData.phone_number.length !== 10}
             onClick={handleSubmit}
             type="submit"
-            className={btnDisabled ? "disabled mb-3 btn btn-primary " : " mb-3 btn btn-primary myBtn"}>
+            className= " mb-3 btn btn-primary myBtn">
             Reset Password
           </button>
         </div>
