@@ -3,17 +3,17 @@ import { Socials } from "../socials/Socials";
 import Zoom from 'react-reveal/Zoom';
 import './style/style.css';
 import axios from "axios"
-// import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import { Map } from "../map/Map";
+import {Loading} from "../loading/Loading";
 
 
 export const Contact = () => {
   const [formData, updateFormData] = useState({
-    name: "",
-    email: "",
-    tel: "",
-    subject: "",
-    message: "",
+    name:"",
+    email:"",
+    tel:"",
+    subject:"",
+    message:"",
   });
   const [isLoading, setIsLoading] = useState(false);
   const [mailSent, setMailSent] = useState();
@@ -114,7 +114,8 @@ export const Contact = () => {
 
     </div>
         </div>
-        <div className="contact-right">
+        {isLoading ? <Loading/>:
+          <div className="contact-right">
           <div>
             <h2>Any questions? Send us an inquiry</h2>
           </div>
@@ -154,8 +155,7 @@ export const Contact = () => {
                 <button
                   onClick={() => handleSubmit}
                   className="myBtn"
-                  type="button"
-                  disabled={formData.name ==='' || formData.email ==='' || formData.tel=== '' || formData.subject ==='' || formData.message=== ''}
+                  disabled={formData.name ==='' || formData.email ==='' || formData.tel==='' || formData.subject ==='' || formData.message=== ''}
 
                 >
                  Send Inquiry  
@@ -165,7 +165,7 @@ export const Contact = () => {
               </form>
             </Zoom>
           </div>
-        </div>
+        </div>}
 
         <div className="google-map">
           <hr />

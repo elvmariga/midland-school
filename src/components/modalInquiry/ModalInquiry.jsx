@@ -33,7 +33,6 @@ export const ModalInquiry = ({ getModalState }) => {
     // ... submit to API or something
     sendInquiry();
   };
-console.log(formData)
   const sendInquiry = async () => {
 
     try {
@@ -145,7 +144,6 @@ console.log(formData)
                 onClick={handleSubmit}
                 disabled={formData.name ==='' || formData.email ==='' || formData.tel=== '' || formData.subject ==='' || formData.message=== ''}
                 className="myBtn"
-                type="button"
               > Send Inquiry</button>
             </form>
           </div>

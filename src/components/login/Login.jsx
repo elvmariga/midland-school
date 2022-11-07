@@ -26,22 +26,21 @@ export const Login = () => {
     const getCredentials = () => {
       //store the use credentials in the browser
 
-      setIsChecked(window.localStorage.getItem("isChecked"));
-      console.log({isChecked})
+      setIsChecked(window.localStorage.getItem("isChecked") || false);
 
       // update state with credentials stored in browser if present
-      updateFormData({
-        ...formData,
+      updateFormData((prev) => ({
+        ...prev,
         username: window.localStorage.getItem("username") || "",
         password: window.localStorage.getItem("password") || ""
-      });
+      }))
 
     }
+
     getCredentials();
-  }, []
-
+  },
+    []
   );
-
 
   const handleChange = (e) => {
 
@@ -84,15 +83,15 @@ export const Login = () => {
 
         } else {
 
-          window.localStorage.removeItem("username");
-          window.localStorage.removeItem("password");
+          window.localStorage.setItem("password", "")
+          window.localStorage.setItem("username", "")
         }
 
 
       }
       // window.location.href=`/`
 
-      console.log(formData);
+      // console.log(formData);
 
 
     }
@@ -118,7 +117,7 @@ export const Login = () => {
   }
 
   return isLoading ? (
-    <div><Loading /></div>
+    <div className='loader'><div className='child'><Loading /></div></div>
   ) : (
     <div className="signinContainer">
       <div className="containerS">
@@ -170,9 +169,7 @@ export const Login = () => {
                   id="customCheck1"
                   onChange={
                     (e) => {
-                      e.preventDefault();
-                      setIsChecked(!isChecked);
-                      // console.log(isChecked)
+                      e.target.checked ? setIsChecked(true) : setIsChecked(false);
                     }}
                 />
                 {/*

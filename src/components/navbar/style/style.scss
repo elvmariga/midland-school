@@ -15,7 +15,11 @@ $tablet : 850px;
 
     @media screen and (max-width: 1110px) {
         padding-top:90px;
+        width: 95%;
+
     }
+
+  
 
     img{
         width: 100%;
@@ -54,7 +58,7 @@ $tablet : 850px;
 
             @media screen and (max-width: 1110px) {
                 font-size: 1.1rem;
-                gap:1.5rem;
+                gap:1.3rem;
             }
 
 

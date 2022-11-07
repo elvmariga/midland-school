@@ -1,3 +1,13 @@
+.loader {
+  width: 100%;
+  height: 80%;
+  background-color: #d8cccc;
+  opacity: 0.5;
+}
+.loader .child {
+  z-index: 5;
+}
+
 .signinContainer {
   background-color: #efefef;
   padding: 1rem;

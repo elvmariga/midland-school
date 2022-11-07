@@ -12,7 +12,6 @@ export const ForgotPassword = () => {
   });
   const [isLoading, setIsLoading] = React.useState(false);
 
-  // formData.value() === undefined && setBtnDisabled(true) ;
   const navigate = useNavigate();
   const handleChange = (e) => {
    
@@ -25,15 +24,10 @@ export const ForgotPassword = () => {
 
   };
 
-//   useEffect(()=>{
-//     const checkNum = ()=>{
-//       formData.phone_nuber.length === 9 ? setBtnDisabled(false) : setBtnDisabled(true);
 
-//     }
-// checkNum();
-//   },[formData])
 
   const handleSubmit = (e) => {
+    navigate("/newpassword")
     e.preventDefault()
     
     // ... submit to API or something
@@ -53,8 +47,8 @@ export const ForgotPassword = () => {
       });
 
         console.log(res);
-      if(res.data.status ==="ok") { window.location.href=("/newpassword")};
-
+      if(res.data.status ==="ok") {navigate("/newpassword")};
+//redirect the user to new password page
         
       
     }
@@ -106,10 +100,7 @@ export const ForgotPassword = () => {
           </button>
         </div>
 
-        {/* 
-        <p className="d-grid  text-right">
-         <Link to={'/sign-up'}>sign Up?</Link>
-      </p> */}
+        
       </div>
     </div>
   );

@@ -1,15 +1,18 @@
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import "./styles/style.css";
 
 export const Password = () => {
-  const [formData, updateFormData] = React.useState();
+  const [formData, updateFormData] = React.useState({
+    password_confirm:0,
+    password:0
+  });
   const [isLoading, setIsLoading] = React.useState(false);
   const navigate  = useNavigate();
 
-
+console.log(isLoading)
   const handleChange = (e) => {
     updateFormData({
       ...formData,
@@ -55,14 +58,14 @@ export const Password = () => {
           <label>OTP</label>
           <input
             name="otp"
-            type="number"
+            // type="number"
             className="form-control"
             placeholder="Enter the OTP"
             onChange={handleChange}
             required
           />
         </div>
-        <a href="">Resend OTP</a>
+        <p>Resend OTP</p>
         <div className="mb-3">
           <label>New Password</label>
           <input
@@ -91,6 +94,7 @@ export const Password = () => {
             onClick={handleSubmit}
             type="submit"
             className=" mb-3 btn btn-primary myBtn"
+            disabled={formData.password !== formData.password_confirm}
           >
             Password
           </button>

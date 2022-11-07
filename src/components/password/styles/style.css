@@ -31,7 +31,7 @@
   border: 1px solid #660113;
   /* identical to box height */
   /* General black */
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 .password-container .password-password .myBtn {
   justify-self: center;
@@ -43,10 +43,10 @@
   background: #660113;
   border-radius: 5px;
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   margin-top: 2rem;
 }
-.password-container .password-password .diasbled {
-  background: #660113;
+.password-container .password-password .myBtn:disabled {
+  background-color: #848383;
 }/*# sourceMappingURL=style.css.map */
