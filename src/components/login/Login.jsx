@@ -19,19 +19,25 @@ export const Login = () => {
   const [msgError, setMsgError] = useState(""); //error  message
   const [isChecked, setIsChecked] = useState(false); //remember me
 
-  const ref = useRef(null);
+  // const ref = useRef(null);
 
 
   useEffect(() => {
     const getCredentials = () => {
       //store the use credentials in the browser
-      const username  = window.localStorage.getItem("username");
-      const password =  window.localStorage.getItem("password");
 
-      updateFormData({...formData,  "username": username || ""})
-      updateFormData({...formData,  "password": password  || ""})
+      setIsChecked(window.localStorage.getItem("isChecked"));
+      console.log({isChecked})
+
+      // update state with credentials stored in browser if present
+      updateFormData({
+        ...formData,
+        username: window.localStorage.getItem("username") || "",
+        password: window.localStorage.getItem("password") || ""
+      });
+
     }
-     getCredentials();
+    getCredentials();
   }, []
 
   );
@@ -70,13 +76,18 @@ export const Login = () => {
       if (res.data.status === "success") {
         notify();
         window.localStorage.setItem("token", res.data.data);
+        window.localStorage.setItem("isChecked", isChecked);
 
-
-        if(isChecked){
-          window.localStorage.setItem("username", formData.username) 
+        if (isChecked) {
+          window.localStorage.setItem("username", formData.username)
           window.localStorage.setItem("password", formData.password)
 
+        } else {
+
+          window.localStorage.removeItem("username");
+          window.localStorage.removeItem("password");
         }
+
 
       }
       // window.location.href=`/`
@@ -99,7 +110,6 @@ export const Login = () => {
 
 
   }
-
   //diaplaying succes message after user login
   const notify = () => {
 
@@ -153,14 +163,16 @@ export const Login = () => {
               <div className="custom-control check custom-checkbox">
                 <label name="rememberMe" className="custom-control-label" >Remember me </label>
                 <input
-                  ref={ref}
+                  // ref={ref}
                   type="checkbox"
+                  value={isChecked}
                   className="custom-control-input"
                   id="customCheck1"
                   onChange={
                     (e) => {
-                      // e.preventDefault();
-                      setIsChecked(ref.current.checked)
+                      e.preventDefault();
+                      setIsChecked(!isChecked);
+                      // console.log(isChecked)
                     }}
                 />
                 {/*
@@ -177,7 +189,7 @@ export const Login = () => {
               <button
                 onClick={handleSubmit}
                 type="submit"
-                disabled={formData.username === undefined && formData.password === undefined}
+                disabled={formData.username === "" || formData.password === ""}
                 className="btn btn-primary myBtn "
               >
                 Submit
