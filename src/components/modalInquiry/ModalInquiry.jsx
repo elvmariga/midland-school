@@ -136,7 +136,7 @@ console.log(formData)
                 name="message"
                 id="message"
                 cols="40"
-                rows="3"
+                rows="2"
                 placeholder="Message"
                 required="required"
                 onChange={handleChange}
