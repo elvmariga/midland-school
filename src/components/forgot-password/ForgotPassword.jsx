@@ -42,7 +42,7 @@ export const ForgotPassword = () => {
 
       const res = await axios({
           method: "post",
-          url: "https://3e66-102-68-77-133.jp.ngrok.io/api/password/forgot-password",
+          url: "https://ondishub.co.ke/api/password/forgot-password",
           data: formData,
       });
 
