@@ -47,7 +47,7 @@ export const ForgotPassword = () => {
       });
 
         console.log(res);
-      if(res.data.status ==="ok") {navigate("/newpassword")};
+      if(res.data.status ===200) {navigate("/newpassword")};
 //redirect the user to new password page
         
       
