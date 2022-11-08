@@ -12,35 +12,17 @@ import { Loading } from "../loading/Loading"
 
 export const Login = () => {
 
-  const [formData, updateFormData] = useState({ phone_number: Number });
+  const [formData, updateFormData] = useState({
+    username: window.localStorage.getItem("username") || "",
+    password: window.localStorage.getItem("password") || ""
+  });
+
   const [isLoading, setIsLoading] = useState(false);
 
   const [userNameErr, setUserNameErr] = useState(false); //error presence
   const [msgError, setMsgError] = useState(""); //error  message
-  const [isChecked, setIsChecked] = useState(false); //remember me
+  const [isChecked, setIsChecked] = useState(window.localStorage.getItem("isChecked") || true); //remember me
 
-  // const ref = useRef(null);
-
-
-  useEffect(() => {
-    const getCredentials = () => {
-      //store the use credentials in the browser
-
-      setIsChecked(window.localStorage.getItem("isChecked") || false);
-
-      // update state with credentials stored in browser if present
-      updateFormData((prev) => ({
-        ...prev,
-        username: window.localStorage.getItem("username") || "",
-        password: window.localStorage.getItem("password") || ""
-      }))
-
-    }
-
-    getCredentials();
-  },
-    []
-  );
 
   const handleChange = (e) => {
 
@@ -73,26 +55,11 @@ export const Login = () => {
 
 
       if (res.data.status === "success") {
+
         notify();
         window.localStorage.setItem("token", res.data.data);
-        window.localStorage.setItem("isChecked", isChecked);
-
-        if (isChecked) {
-          window.localStorage.setItem("username", formData.username)
-          window.localStorage.setItem("password", formData.password)
-
-        } else {
-
-          window.localStorage.setItem("password", "")
-          window.localStorage.setItem("username", "")
-        }
-
 
       }
-      // window.location.href=`/`
-
-      // console.log(formData);
-
 
     }
 
@@ -107,14 +74,33 @@ export const Login = () => {
       setIsLoading(false);
     }
 
-
   }
+
+      //store the value of isChecked in localStorage
+ 
+    const persistUser = () => {
+      window.localStorage.setItem("isChecked", isChecked);
+
+      if (isChecked) {
+        window.localStorage.setItem("username", formData.username)
+        window.localStorage.setItem("password", formData.password)
+
+      } else {
+
+        window.localStorage.setItem("password", "")
+        window.localStorage.setItem("username", "")
+      }
+    }
+    
+ 
   //diaplaying succes message after user login
   const notify = () => {
 
     // Calling toast method by passing string
     toast.success("Log in succesful, welcome", { autoClose: 3000 });
   }
+
+  console.log(isChecked);
 
   return isLoading ? (
     <div className='loader'><div className='child'><Loading /></div></div>
@@ -162,15 +148,17 @@ export const Login = () => {
               <div className="custom-control check custom-checkbox">
                 <label name="rememberMe" className="custom-control-label" >Remember me </label>
                 <input
-                  // ref={ref}
+                  // ref={ref
                   type="checkbox"
-                  value={isChecked}
+                  checked={isChecked}
                   className="custom-control-input"
                   id="customCheck1"
                   onChange={
                     (e) => {
                       e.target.checked ? setIsChecked(true) : setIsChecked(false);
-                    }}
+                      persistUser();
+                    }
+                  }
                 />
                 {/*
                 <input  / >  */}
