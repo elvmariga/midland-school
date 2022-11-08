@@ -153,7 +153,7 @@ export const Login = () => {
                 <input
                   // ref={ref
                   type="checkbox"
-                  checked={isChecked}
+                  checked={!isChecked}
                   className="custom-control-input"
                   id="customCheck1"
                   onChange={
