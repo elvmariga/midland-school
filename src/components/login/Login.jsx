@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom"
 // import Logo from "../../assests/logo.png"
@@ -23,6 +23,7 @@ export const Login = () => {
   const [msgError, setMsgError] = useState(""); //error  message
   const [isChecked, setIsChecked] = useState(window.localStorage.getItem("isChecked") || true); //remember me
 
+  window.localStorage.setItem("isChecked", isChecked);
 
   const handleChange = (e) => {
 
@@ -58,7 +59,7 @@ export const Login = () => {
 
         notify();
         window.localStorage.setItem("token", res.data.data);
-        isChecked && updateFormData({
+        !isChecked && updateFormData({
           username:"",
           password:""
         })
@@ -84,7 +85,7 @@ export const Login = () => {
     const persistUser = () => {
       window.localStorage.setItem("isChecked", isChecked);
 
-      if (isChecked) {
+      if (!isChecked) {
         window.localStorage.setItem("username", formData.username)
         window.localStorage.setItem("password", formData.password)
 
@@ -153,12 +154,12 @@ export const Login = () => {
                 <input
                   // ref={ref
                   type="checkbox"
-                  checked={!isChecked}
+                  checked={isChecked}
                   className="custom-control-input"
                   id="customCheck1"
                   onChange={
                     (e) => {
-                      e.target.checked ? setIsChecked(true) : setIsChecked(false);
+                      setIsChecked(e.target.checked);
                       persistUser();
                     }
                   }
