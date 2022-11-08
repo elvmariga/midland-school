@@ -1,13 +1,13 @@
 .hero-container {
     min-height: 70vh;
     // background-image: url();
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../../../assests/homepage-bg.png);
+    background-image: linear-gradient(to bottom, rgba(103, 98, 98, 0.084), rgba(0, 0, 0, 0.911)), url(../../../assests/homepage-bg.png);
     background-size: cover;
     // border-bottom-left-radius: 50%;
     //     border-bottom-right-radius: 50%;
     background-repeat: no-repeat;
  
-    background-blend-mode: soft-light;
+    // background-blend-mode: soft-light;
     background-position: center;
     display: grid;
     align-content: center;

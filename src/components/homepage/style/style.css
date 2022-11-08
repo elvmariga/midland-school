@@ -1,1 +1,83 @@
-.hero-container{min-height:70vh;background:linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),url(../../../assests/homepage-bg.png);background-size:cover;background-repeat:no-repeat;background-blend-mode:soft-light;background-position:center;display:grid;align-content:center;background-attachment:fixed}.hero-container .containerh{display:grid;align-self:center;justify-items:center;color:#fff;gap:1rem;width:80%;margin:0 auto}.hero-container .containerh .school{font-family:"Poppins";font-style:normal;font-weight:700;font-size:36px;margin:0;text-align:center;text-transform:uppercase;letter-spacing:.2em;background-color:#660113;padding:1rem;border-radius:8px;color:#fff}.hero-container .containerh .school .letter{display:inline-block;line-height:1em}.hero-container .containerh .line{width:303px;border:4px solid #660113;margin:0}.hero-container .containerh h2{font-family:"Poppins";font-style:normal;font-weight:600;font-size:24px;line-height:36px}.hero-container .containerh p{font-family:"Poppins";font-style:normal;font-weight:500;font-size:20px;line-height:30px;color:#fff}.hero-container .containerh button{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:15px 24px;gap:10px;width:-moz-max-content;width:max-content;background:#660113;border-radius:10px;font-size:1.5rem;color:#fff;border:none}.hero-container .containerh button:hover{transform:scale(1.1, 1.1)}@media screen and (max-width: 850px){.containerh{justify-items:flex-start}}
+.hero-container {
+  min-height: 70vh;
+  background-image: linear-gradient(to bottom, rgba(103, 98, 98, 0.084), rgba(0, 0, 0, 0.911)), url(../../../assests/homepage-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  align-content: center;
+  background-attachment: fixed;
+}
+.hero-container .containerh {
+  display: grid;
+  align-self: center;
+  justify-items: center;
+  color: #FFFFFF;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.hero-container .containerh .school {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: #660113;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+.hero-container .containerh .school .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.hero-container .containerh .line {
+  width: 303px;
+  border: 4px solid #660113;
+  margin: 0;
+}
+.hero-container .containerh h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+}
+.hero-container .containerh p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.hero-container .containerh button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 24px;
+  gap: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: #660113;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  border: none;
+}
+.hero-container .containerh button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 850px) {
+  .containerh {
+    justify-items: flex-start;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom"
 // import Logo from "../../assests/logo.png"
@@ -59,9 +59,10 @@ export const Login = () => {
 
         notify();
         window.localStorage.setItem("token", res.data.data);
+        //reset the formdata state
         !isChecked && updateFormData({
-          username:"",
-          password:""
+          username: "",
+          password: ""
         })
       }
 
@@ -69,7 +70,6 @@ export const Login = () => {
 
     catch (error) {
       error.response.status === 422 && setUserNameErr(true);
-      // console.log(error.response.status);
       setMsgError(error.response.data.message);
 
     }
@@ -80,23 +80,23 @@ export const Login = () => {
 
   }
 
-      //store the value of isChecked in localStorage
- 
-    const persistUser = () => {
-      window.localStorage.setItem("isChecked", isChecked);
+  //store the value of isChecked in localStorage
 
-      if (!isChecked) {
-        window.localStorage.setItem("username", formData.username)
-        window.localStorage.setItem("password", formData.password)
+  const persistUser = () => {
+    window.localStorage.setItem("isChecked", isChecked);
+    //updating formdata in localstorage evertime checkbox is changed
+    if (!isChecked) {
+      window.localStorage.setItem("username", formData.username)
+      window.localStorage.setItem("password", formData.password)
 
-      } else {
+    } else {
 
-        window.localStorage.setItem("password", "")
-        window.localStorage.setItem("username", "")
-      }
+      window.localStorage.setItem("password", "")
+      window.localStorage.setItem("username", "")
     }
-    
- 
+  }
+
+
   //diaplaying succes message after user login
   const notify = () => {
 
@@ -104,9 +104,9 @@ export const Login = () => {
     toast.success("Log in succesful, welcome", { autoClose: 3000 });
   }
 
-  console.log(isChecked);
 
   return isLoading ? (
+    //display loader when waiting for response
     <div className='loader'><div className='child'><Loading /></div></div>
   ) : (
     <div className="signinContainer">
