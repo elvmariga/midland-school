@@ -58,7 +58,10 @@ export const Login = () => {
 
         notify();
         window.localStorage.setItem("token", res.data.data);
-
+        isChecked && updateFormData({
+          username:"",
+          password:""
+        })
       }
 
     }
