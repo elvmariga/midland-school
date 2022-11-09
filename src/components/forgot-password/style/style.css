@@ -1,5 +1,7 @@
 .forgot-container {
-  height: 50vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .forgot-container .forgot-password {
   display: flex;
@@ -27,7 +29,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  width: 100%;
+  width: 50%;
   border: 1px solid #660113;
   /* identical to box height */
   /* General black */

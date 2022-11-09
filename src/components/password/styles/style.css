@@ -1,14 +1,16 @@
-.password-container {
-  height: 90vh;
-}
 .password-container .password-password {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 2rem auto;
   gap: 2rem;
-  width: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Poppins";
+  padding: 1rem 4rem 2rem 3rem;
+  border: solid 1px black;
+  border-radius: 8px;
 }
 .password-container .password-password label {
   font-family: "Poppins";
@@ -16,6 +18,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  display: block;
 }
 .password-container .password-password input,
 .password-container .password-password textarea {
@@ -33,6 +36,11 @@
   /* General black */
   color: #1f1f1f;
 }
+.password-container .password-password input:focus,
+.password-container .password-password textarea:focus {
+  outline: none;
+  outline-color: #660113;
+}
 .password-container .password-password .myBtn {
   justify-self: center;
   padding: 8px 24px;
@@ -49,4 +57,7 @@
 }
 .password-container .password-password .myBtn:disabled {
   background-color: #848383;
+}
+.password-container .password-password .myBtn:hover {
+  transform: scale(1.1, 1.1);
 }/*# sourceMappingURL=style.css.map */

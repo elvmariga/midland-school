@@ -1,5 +1,5 @@
 .forgot-container {
-  height: 50vh;
+  height: max-content;
   .forgot-password {
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 30px;
-      width: 100%;
+      width:50%;
       border: 1px solid #660113;
       /* identical to box height */
 
