@@ -35,7 +35,7 @@ console.log(isLoading)
 
       const res = await axios({
         method: "post",
-        url: "https://ba57-102-68-77-133.ap.ngrok.io/api/password/forgot-password",
+        url: "http://ondishub.co.ke/api/password/forgot-password",
         data: formData,
       })
 
