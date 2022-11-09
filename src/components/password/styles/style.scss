@@ -1,15 +1,20 @@
 .password-container {
-  height: 90vh;
+  // height: 50vh;
 
   .password-password {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     // height: 50vh;
     margin: 2rem auto;
     gap: 2rem;
-    width: 50%;
+    width: max-content;
+    font-family: "Poppins";
+    padding:  1rem 4rem 2rem 3rem;
+    border: solid 2px #650113;
+    border-radius: 8px;
+
 
     label {
       font-family: "Poppins";
@@ -17,6 +22,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 30px;
+      display: block;
     }
 
     input,
@@ -36,6 +42,10 @@
       /* General black */
 
       color: #1f1f1f;
+      &:focus{
+        outline: none;
+        outline-color: #660113;
+      }
     }
 
     .myBtn {
@@ -51,6 +61,9 @@
       margin-top: 2rem;
       &:disabled {
         background-color: #848383;
+      }
+      &:hover{
+        transform: scale(1.1, 1.1);
       }
     }
   }

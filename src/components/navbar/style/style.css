@@ -78,12 +78,9 @@
   width: -moz-max-content;
   width: max-content;
   /* Midland-blue */
-  border: 2px solid #141138;
+  border: 2px solid #650113;
   border-radius: 5px;
   background-color: #ffffff;
-}
-.container .links ul li .login {
-  box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
 }
 .container .links ul .link {
   cursor: pointer;

@@ -58,14 +58,13 @@ console.log(isLoading)
           <label>OTP</label>
           <input
             name="otp"
-            // type="number"
-            className="form-control"
             placeholder="Enter the OTP"
             onChange={handleChange}
             required
           />
+          <p style={{ margin: "2px", textAlign:"right" } }>Resend OTP</p>
         </div>
-        <p>Resend OTP</p>
+
         <div className="mb-3">
           <label>New Password</label>
           <input

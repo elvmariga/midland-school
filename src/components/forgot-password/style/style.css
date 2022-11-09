@@ -1,5 +1,7 @@
 .forgot-container {
-  height: 50vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .forgot-container .forgot-password {
   display: flex;
@@ -8,7 +10,12 @@
   align-items: center;
   margin: 2rem auto;
   gap: 2rem;
-  width: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: #650113 solid 2px;
+  padding: 2rem;
+  border-radius: 8px;
 }
 .forgot-container .forgot-password label {
   font-family: "Poppins";
@@ -16,6 +23,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  display: block;
 }
 .forgot-container .forgot-password input,
 .forgot-container .forgot-password textarea {
@@ -27,8 +35,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  width: 100%;
-  border: 1px solid #660113;
+  border: 1px solid #650113;
   /* identical to box height */
   /* General black */
   color: #1f1f1f;

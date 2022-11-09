@@ -1,5 +1,7 @@
 .footer-container {
     display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
     flex-direction: column;
     width: 100%;
     background-color: #141138;
@@ -9,9 +11,6 @@
     min-height: 25rem;
     color: #FFFFFF;
     padding-top: 3rem;
-    // background-color: #000000;
-    // opacity: 0.9;
-
 
     .containerF {
         display: flex;
@@ -22,7 +21,6 @@
         align-items: flex-start;
         flex-wrap: wrap;
 
-        // background-color: inherit;
         .footer-left {
             display: flex;
             gap: 2rem;

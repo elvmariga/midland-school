@@ -1,5 +1,7 @@
 .footer-container {
   display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
   flex-direction: column;
   width: 100%;
   background-color: #141138;
