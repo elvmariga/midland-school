@@ -48,9 +48,9 @@ export const ForgotPassword = () => {
 
       console.log(res);
 
-      
-      res.data.status === error ? setError(true) : navigate("/newpassword")  ;
       //redirect the user to new password page
+      //else display error of the no
+      res.data.status === error ? setError(true) : navigate("/newpassword")  ;
         
       
     }
