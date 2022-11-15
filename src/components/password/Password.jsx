@@ -39,11 +39,10 @@ console.log(isLoading)
         data: formData,
       })
 
-      console.log(res);
 
      res.data.status = "ok" && navigate("/log-in");
     } catch (error){
-      console.log(error);
+      console.log(error.message);
     } finally {
       setIsLoading(false);
     }
