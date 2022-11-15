@@ -42,7 +42,7 @@ console.log(isLoading)
 
      res.data.status = "ok" && navigate("/log-in");
     } catch (error){
-      console.log(error.message);
+      
     } finally {
       setIsLoading(false);
     }

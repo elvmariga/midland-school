@@ -10,8 +10,9 @@ export const ForgotPassword = () => {
   const [formData, updateFormData] = React.useState({
     phone_number:0,
   });
-  const [error,setError]  = React.useState(false);
+  const [error,setError]  = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
+  const [errorBool, setErrorBool] = React.useState(false)
 
   const navigate = useNavigate();
   const handleChange = (e) => {
@@ -46,25 +47,29 @@ export const ForgotPassword = () => {
         data: formData,
       });
 
-      console.log(res);
 
       //redirect the user to new password page
       //else display error of the no
-      res.data.status === error ? setError(true) : navigate("/newpassword")  ;
+      res.status === 200 && navigate("/newpassword"); 
         
       
     }
 
     catch (error) {
 
-      console.log(error.response);
+      //displaying the error recieved
+      setError(error.response.data.message);
+      setErrorBool(true);
+      // resetting the value of form data to empty
+      error && updateFormData({
+        phone_number: 0,
+      }) ;
       
     }
 
     finally{
       setIsLoading(false);
     }
-console.log(isLoading)
 
   }
   return (
@@ -76,11 +81,13 @@ console.log(isLoading)
       </div> :
     <div className="forgot-container">
       <div className="forgot-password">
+
         <div className="mb-3">
           <h2>Reset Password</h2>
         </div>
-        {error && <p>Please input the correct number</p>}
         <div className="mb-3">
+
+
           <label>Phone no:</label>
           <input
             name="phone_number"
@@ -90,6 +97,8 @@ console.log(isLoading)
             onChange={handleChange}
             required
           />
+      { errorBool && <p className='error'>{`${error}`}</p> }
+
         </div>
 
         <div className="d-grid">
