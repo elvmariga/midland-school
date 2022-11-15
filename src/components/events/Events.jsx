@@ -8,28 +8,28 @@ export const Events = () => {
   const [events, setEvents] = useState([]);
 //get the envents from server side
 
-useEffect(()=>{
-  const getEvents = () => {
-    axios
-      .get("https://ondishub.co.ke/events/all")
-      
-      // here we expect an array of objects
+  useEffect(()=>{
+    const getEvents = () => {
+      axios
+        .get("https://ondishub.co.ke/events/all")
+        
+        // here we expect an array of objects
 
-      .then((response) => {
-        // updating the events state
-        setEvents((prev)=>([
-          ...prev, ...response.data.events
-        ]));
-      })
+        .then((response) => {
+          // updating the events state
+          setEvents((prev)=>([
+            ...prev, ...response.data.events
+          ]));
+        })
 
-      .catch((error) => {
-        console.error(error)
-      });
-  };
- //calling the function
-  getEvents();
+        .catch((error) => {
+          console.error(error)
+        });
+    };
+  //calling the function
+    getEvents();
 
-},[])
+  },[])
   
  
   const slides =  events.map(
@@ -38,7 +38,6 @@ useEffect(()=>{
         <>
           <div key={event_path}>
             <img src={event_banner} alt={name} />
-            {/* <p>{`From ${start_date} to ${end_date}`}</p> */}
             <div dangerouslySetInnerHTML={{__html: description}}></div>
 
           </div>
