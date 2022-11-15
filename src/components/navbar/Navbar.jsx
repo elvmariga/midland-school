@@ -20,10 +20,10 @@ export const Navbar = ({getModalState}) => {
     <nav>
       <div className="container">
         <div className="logo">
-          <a href="">
-            {" "}
+          
+          <NavLink smooth="true" spy="true" to="/">
             <img src={Logo} alt="logo" />
-          </a>
+          </NavLink>
         </div>
 
         <div className="links">
