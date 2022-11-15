@@ -10,6 +10,7 @@ export const ForgotPassword = () => {
   const [formData, updateFormData] = React.useState({
     phone_number:0,
   });
+  const [error,setError]  = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(false);
 
   const navigate = useNavigate();
@@ -27,7 +28,6 @@ export const ForgotPassword = () => {
 
 
   const handleSubmit = (e) => {
-    navigate("/newpassword")
     e.preventDefault()
     
     // ... submit to API or something
@@ -41,28 +41,30 @@ export const ForgotPassword = () => {
      
 
       const res = await axios({
-          method: "post",
-          url: "https://ondishub.co.ke/api/password/forgot-password",
-          data: formData,
+        method: "post",
+        url: "https://ondishub.co.ke/api/password/forgot-password",
+        data: formData,
       });
 
-        console.log(res);
-      if(res.data.status ===200) {navigate("/newpassword")};
-//redirect the user to new password page
+      console.log(res);
+
+      
+      res.data.status === error ? setError(true) : navigate("/newpassword")  ;
+      //redirect the user to new password page
         
       
     }
 
     catch (error) {
 
-      console.log(error);
+      console.log(error.response);
       
     }
 
     finally{
       setIsLoading(false);
     }
-
+console.log(isLoading)
 
   }
   return (
@@ -77,6 +79,7 @@ export const ForgotPassword = () => {
         <div className="mb-3">
           <h2>Reset Password</h2>
         </div>
+        {error && <p>Please input the correct number</p>}
         <div className="mb-3">
           <label>Phone no:</label>
           <input
