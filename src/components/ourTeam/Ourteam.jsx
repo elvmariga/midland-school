@@ -21,16 +21,20 @@ export const Ourteam = () => {
         </div>
       
         <div className='profileList'>
-        
+        {/* creating a compnent for each team member */}
           {
-            teamArr.map((team)=>{
-            return(
-              <div key={team.id} ><Zoom cascade>
-              
-              <TeamProfile {...team} key={team.id} />
-            </Zoom></div>
-              
-            )})
+            teamArr.map(({id, ...team})=>{
+              /* destructuring unique id */
+              return(
+                <div key={id} >
+                  <Zoom cascade>
+                  {/* passing the team details as props */}
+                    <TeamProfile {...team} key ={id} />
+                  </Zoom>
+                </div>
+                
+              )
+            })
           }
         
      

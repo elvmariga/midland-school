@@ -58,7 +58,7 @@ useEffect(()=>{
         <div role="list">
           <div className="caroussel">
         
-            <Carousel slides={slides} autoplay={true} interval={5000} />
+            <Carousel slides={slides} autoplay={true} interval={6000} />
           </div>
         </div>
         {/* <a href="#">More Events</a> */}

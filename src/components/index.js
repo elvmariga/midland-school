@@ -1,0 +1,16 @@
+export {Events} from "./events/Events";
+export {Glance} from "./glance/Glance";
+export {History} from "./history/History";
+export {Homepage} from "./homepage/Homepage";
+export {Intro} from "./intro/Intro";
+export {Loading} from "./loading/Loading";
+export { Mission } from "./mission/Mission";
+export {Ourteam } from "./ourTeam/Ourteam";
+export {SignUp} from "./sign-up/SignUp";
+export {Socials} from "./socials/Socials";
+export {Strive} from "./strive/Strive";
+export {Testimonials} from "./testimonials/Testimonials";
+export {TeamProfile} from "./teamProfile/TeamProfile";
+export {Vision} from "./vision/Vision";
+export {Whatweoffer} from "./what-we-offer/Whatweoffer";
+export {Map} from "./map/Map";

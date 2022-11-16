@@ -1,0 +1,70 @@
+.topnav-container {
+  background-color: hsla(349, 98%, 20%, 1);
+  position: fixed;
+  z-index: 13;
+  width: 100%;
+  .containerTopnav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+
+    padding: 0.5rem 1.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    .tap:hover {
+      transform: scale(1.2, 1.2);
+    }
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .socials {
+      justify-items: start;
+      color: #141138;
+      .links {
+        color: #141138;
+      }
+    }
+
+    .webmail {
+      background-color: #141138;
+      padding: 0.7rem 0.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-left: 8rem;
+      display: flex;
+      width: max-content;
+
+      a:hover {
+        color: #ffffff;
+      }
+    }
+
+    .webmail:hover {
+      transform: scale(1.1, 1.1);
+    }
+
+    .links {
+      a {
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .containerTopnav {
+      // display: grid;
+      // justify-content: center;
+
+      .webmail,
+      .mail,
+      .tel {
+        display: none;
+      }
+    }
+  }
+}
