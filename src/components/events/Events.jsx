@@ -53,7 +53,6 @@ export const Events = () => {
           <div key={event_path}>
             <img src={event_banner} alt={name} />
             <p>{briefDescription}<span onClick={()=>{handleEventExpand(i,true)}}>...see more</span></p>
-            {/* <div dangerouslySetInnerHTML={{__html: description}}></div> */}
 
           </div>
         </>
