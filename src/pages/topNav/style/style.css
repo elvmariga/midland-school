@@ -1,1 +1,57 @@
-.topnav-container{background-color:#650113;position:fixed;z-index:13;width:100%}.topnav-container .containerTopnav{width:80%;margin:0 auto;display:flex;padding:.5rem 1.2rem;justify-content:center;align-items:center;gap:1.5rem}.topnav-container .containerTopnav .tap:hover{transform:scale(1.2, 1.2)}.topnav-container .containerTopnav a{color:#fff;text-decoration:none;font-weight:600}.topnav-container .containerTopnav .socials{justify-items:start;color:#141138}.topnav-container .containerTopnav .socials .links{color:#141138}.topnav-container .containerTopnav .webmail{background-color:#141138;padding:.7rem .5rem;border-radius:8px;font-weight:600;margin-left:8rem;display:flex;width:-moz-max-content;width:max-content}.topnav-container .containerTopnav .webmail a:hover{color:#fff}.topnav-container .containerTopnav .webmail:hover{transform:scale(1.1, 1.1)}.topnav-container .containerTopnav .links a{padding:.5rem}@media screen and (max-width: 850px){.topnav-container .containerTopnav .webmail,.topnav-container .containerTopnav .mail,.topnav-container .containerTopnav .tel{display:none}}
+.topnav-container {
+  background-color: hsl(349deg, 98%, 20%);
+  position: fixed;
+  z-index: 13;
+  width: 100%;
+}
+.topnav-container .containerTopnav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding: 0.5rem 1.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.topnav-container .containerTopnav .tap:hover {
+  transform: scale(1.2, 1.2);
+}
+.topnav-container .containerTopnav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.topnav-container .containerTopnav .socials {
+  justify-items: start;
+  color: #141138;
+}
+.topnav-container .containerTopnav .socials .links {
+  color: #141138;
+}
+.topnav-container .containerTopnav .webmail {
+  background-color: #141138;
+  padding: 0.7rem 0.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-left: 8rem;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.topnav-container .containerTopnav .webmail a:hover {
+  color: #ffffff;
+}
+.topnav-container .containerTopnav .webmail:hover {
+  transform: scale(1.1, 1.1);
+}
+.topnav-container .containerTopnav .links a {
+  padding: 0.5rem;
+}
+@media screen and (max-width: 850px) {
+  .topnav-container .containerTopnav .webmail,
+.topnav-container .containerTopnav .mail,
+.topnav-container .containerTopnav .tel {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

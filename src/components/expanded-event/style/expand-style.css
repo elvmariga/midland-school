@@ -1,0 +1,7 @@
+.expanded-event-container span {
+  color: #650113;
+}
+.expanded-event-container span:hover {
+  text-decoration: underline;
+  color: blue;
+}/*# sourceMappingURL=expand-style.css.map */

@@ -1,13 +1,12 @@
-
-.loader{
+.loader {
   width: 100%;
   height: 90vh;
- 
+
   background-color: #d8cccc;
   opacity: 0.5;
 
-  .child{
- z-index: 5;
+  .child {
+    z-index: 5;
   }
 }
 .signinContainer {
@@ -23,9 +22,7 @@
     // padding-top: 2rem;
     align-items: center;
 
-    .signin-left {
-    }
-
+    
     .signin-right {
       border: #660113 1px solid;
       padding: 1rem 4rem 2rem 3rem;
@@ -42,11 +39,11 @@
 
         label {
           font-family: "Poppins";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 30px;
-            display: block;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          display: block;
         }
 
         h2 {
@@ -65,25 +62,25 @@
         input,
         textarea {
           padding: 0.8rem;
-            border-radius: 5px;
-            border: none;
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 30px;
-            width: 100%;
-            border: 1px solid #660113;
-            /* identical to box height */
-          
-            /* General black */
-          
-            color: #1f1f1f;
-          
-            &:focus {
-              outline: none;
-              outline-color: #660113;
-            }
+          border-radius: 5px;
+          border: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 30px;
+          width: 100%;
+          border: 1px solid #660113;
+          /* identical to box height */
+
+          /* General black */
+
+          color: #1f1f1f;
+
+          &:focus {
+            outline: none;
+            outline-color: #660113;
+          }
         }
 
         .forgot-remember {
@@ -120,7 +117,7 @@
             margin-bottom: 1rem;
             // display: none;
 
-            &:disabled{
+            &:disabled {
               background-color: #848383;
             }
           }
