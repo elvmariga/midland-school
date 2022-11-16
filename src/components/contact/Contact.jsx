@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Socials } from "../socials/Socials";
 import Zoom from 'react-reveal/Zoom';
 import './style/style.css';
@@ -8,21 +8,38 @@ import {Loading} from "../loading/Loading";
 
 
 export const Contact = () => {
+  // form inputs
   const [formData, updateFormData] = useState({
     name:"",
     email:"",
     tel:"",
     subject:"",
     message:"",
-  });
+  })
+  // loading state
   const [isLoading, setIsLoading] = useState(false);
+  // mailstatus
   const [mailSent, setMailSent] = useState();
 
+
+  //geolocation pointer
   const location = {
     address: 'JXW2+XH9, Community Rd, Nairobi',
     lat: -1.3525940209369631,
     lng: 36.951459742971196,
   }
+
+  //function to activate btn
+  // useEffect(()=>{
+  //   const activateBtn = () =>{
+  //     (formData.name ==='' || 
+  //     formData.email ==='' || 
+  //     formData.tel ==='' || 
+  //     formData.subject ==='' || 
+  //     formData.message=== '' ) && setBtnActive(false);
+  //   }
+  //   activateBtn();
+  // },[formData])
 
   const handleChange = (e) => {
     updateFormData({
@@ -31,6 +48,8 @@ export const Contact = () => {
       // Trimming any whitespace
       [e.target.name]: e.target.value.trim()
     });
+
+    console.log(formData)
   };
 
   const handleSubmit = (e) => {
@@ -40,6 +59,7 @@ export const Contact = () => {
     sendEmail();
   };
 
+  //submiting form data
   const sendEmail = async () => {
 
     try {
@@ -129,7 +149,14 @@ export const Contact = () => {
                   placeholder="Full Name"
                   onChange={handleChange}
                 />
-                <input type="email" name="email" id="email" placeholder="Email" />
+                <input 
+                  type="email" 
+                  name="email" 
+                  id="email" 
+                  placeholder="Email" 
+                  onChange={handleChange}
+
+                />
                 <input
                   type="tel"
                   name="tel"
@@ -155,7 +182,7 @@ export const Contact = () => {
                 <button
                   onClick={() => handleSubmit}
                   className="myBtn"
-                  disabled={formData.name ==='' || formData.email ==='' || formData.tel==='' || formData.subject ==='' || formData.message=== ''}
+                  disabled={formData.name ==='' || formData.email ==='' || formData.tel=== '' || formData.subject ==='' || formData.message=== ''}
 
                 >
                  Send Inquiry  

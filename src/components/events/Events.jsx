@@ -14,8 +14,9 @@ useEffect(()=>{
       .get("https://ondishub.co.ke/events/all")
       
       // here we expect an array of objects
-
       .then((response) => {
+      console.log(response.data.events)
+
         // updating the events state
         setEvents((prev)=>([
           ...prev, ...response.data.events
