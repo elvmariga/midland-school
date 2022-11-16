@@ -9,7 +9,9 @@ export const ForgotPassword = () => {
   const [formData, updateFormData] = React.useState({
     phone_number:0,
   });
+  const [error,setError]  = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
+  const [errorBool, setErrorBool] = React.useState(false)
 
   const navigate = useNavigate();
   const handleChange = (e) => {
@@ -26,7 +28,6 @@ export const ForgotPassword = () => {
 
 
   const handleSubmit = (e) => {
-    navigate("/newpassword")
     e.preventDefault()
     
     // ... submit to API or something
@@ -40,28 +41,34 @@ export const ForgotPassword = () => {
      
 
       const res = await axios({
-          method: "post",
-          url: "https://ondishub.co.ke/api/password/forgot-password",
-          data: formData,
+        method: "post",
+        url: "https://ondishub.co.ke/api/password/forgot-password",
+        data: formData,
       });
 
-        console.log(res);
-      if(res.data.status ===200) {navigate("/newpassword")};
-//redirect the user to new password page
+
+      //redirect the user to new password page
+      //else display error of the no
+      res.status === 200 && navigate("/newpassword"); 
         
       
     }
 
     catch (error) {
 
-      console.log(error);
+      //displaying the error recieved
+      setError(error.response.data.message);
+      setErrorBool(true);
+      // resetting the value of form data to empty
+      error && updateFormData({
+        phone_number: 0,
+      }) ;
       
     }
 
     finally{
       setIsLoading(false);
     }
-
 
   }
   return (
@@ -73,10 +80,13 @@ export const ForgotPassword = () => {
       </div> :
     <div className="forgot-container">
       <div className="forgot-password">
+
         <div className="mb-3">
           <h2>Reset Password</h2>
         </div>
         <div className="mb-3">
+
+
           <label>Phone no:</label>
           <input
             name="phone_number"
@@ -86,6 +96,8 @@ export const ForgotPassword = () => {
             onChange={handleChange}
             required
           />
+      { errorBool && <p className='error'>{`${error}`}</p> }
+
         </div>
 
         <div className="d-grid">

@@ -41,11 +41,10 @@ export const Password = () => {
         data: formData,
       })
 
-      console.log(res);
 
      res.data.status = "ok" && navigate("/log-in");
     } catch (error){
-      console.log(error);
+      
     } finally {
       setIsLoading(false);
     }

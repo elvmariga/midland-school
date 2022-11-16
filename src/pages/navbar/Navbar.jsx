@@ -18,8 +18,9 @@ export const Navbar = ({getModalState}) => {
     <nav>
       <div className="container">
         <div className="logo">
-          <NavLink smooth="true" spy="true"  to="/home" >
+        <NavLink smooth="true" spy="true"  to="/home" >
            
+
             <img src={Logo} alt="logo" />
           </NavLink>
         </div>
