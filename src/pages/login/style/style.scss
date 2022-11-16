@@ -33,7 +33,7 @@
         display: grid;
         // flex-direction: column;
         gap: 1rem;
-        width: 90%;
+        width: 100%;
 
         // align-items: center;
 
@@ -71,10 +71,6 @@
           line-height: 30px;
           width: 100%;
           border: 1px solid #660113;
-          /* identical to box height */
-
-          /* General black */
-
           color: #1f1f1f;
 
           &:focus {

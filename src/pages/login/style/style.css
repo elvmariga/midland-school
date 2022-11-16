@@ -28,7 +28,7 @@
 .signinContainer .containerS .signin-right form {
   display: grid;
   gap: 1rem;
-  width: 90%;
+  width: 100%;
 }
 .signinContainer .containerS .signin-right form label {
   font-family: "Poppins";
@@ -61,8 +61,6 @@
   line-height: 30px;
   width: 100%;
   border: 1px solid #660113;
-  /* identical to box height */
-  /* General black */
   color: #1f1f1f;
 }
 .signinContainer .containerS .signin-right form input:focus,

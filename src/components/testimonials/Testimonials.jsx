@@ -62,19 +62,19 @@ export const Testimonials = () => {
         </div>
         <h2>Our Partners</h2>
         <div className="partner-logos">
-          <a className="partner1 pic" href="https://www.education.go.ke/">
+          <a target="_blank" rel="noreferrer"  className="partner1 pic" href="https://www.education.go.ke/">
             <img src={moe} alt="Ministry of Education" />
           </a>
-          <a className="partner2 pic" href="https://www.health.go.ke/">
+          <a target="_blank" rel="noreferrer"  className="partner2 pic" href="https://www.health.go.ke/">
             <img src={moh} alt="Ministry of Health" />
           </a>
-          <a className="partner3 pic" href="https://www.knec.ac.ke/">
+          <a target="_blank" rel="noreferrer" className="partner3 pic" href="https://www.knec.ac.ke/">
             <img src={knec} alt="KNEC" />
           </a>
-          <a className="partner4 pic" href="http://">
+          <a className="partner4 pic"  href="javascript:(0)">
             <img src={pta} alt="Ministry of Education" />
           </a>
-          <a className="partner5 pic" href="http://">
+          <a className="partner5 pic" href="javascript:(0)">
             <img src={board} alt="Ministry of Education" />
           </a>
         </div>
