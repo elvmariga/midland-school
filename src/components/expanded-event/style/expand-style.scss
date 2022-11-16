@@ -1,0 +1,11 @@
+.expanded-event-container{
+    span{
+        color: #650113;
+    
+        &:hover{
+            text-decoration: underline;
+            color: blue
+        }
+      
+    }
+}

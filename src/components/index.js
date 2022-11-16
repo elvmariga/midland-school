@@ -14,3 +14,4 @@ export {TeamProfile} from "./teamProfile/TeamProfile";
 export {Vision} from "./vision/Vision";
 export {Whatweoffer} from "./what-we-offer/Whatweoffer";
 export {Map} from "./map/Map";
+export {ExpandedEvent} from "./expanded-event/ExpandedEvent";
