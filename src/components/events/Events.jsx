@@ -8,19 +8,21 @@ export const Events = () => {
   const [events, setEvents] = useState([]);
 //get the envents from server side
 
-  useEffect(()=>{
-    const getEvents = () => {
-      axios
-        .get("https://ondishub.co.ke/events/all")
-        
-        // here we expect an array of objects
 
-        .then((response) => {
-          // updating the events state
-          setEvents((prev)=>([
-            ...prev, ...response.data.events
-          ]));
-        })
+useEffect(()=>{
+  const getEvents = () => {
+    axios
+      .get("https://ondishub.co.ke/events/all")
+      
+      // here we expect an array of objects
+      .then((response) => {
+      console.log(response.data.events)
+
+        // updating the events state
+        setEvents((prev)=>([
+          ...prev, ...response.data.events
+        ]));
+      })
 
         .catch((error) => {
           console.error(error)
@@ -55,8 +57,9 @@ export const Events = () => {
       <div id="slideshow" data-component="slideshow">
         <div role="list">
           <div className="caroussel">
-        
-            <Carousel arrows slides={slides} autoplay={true} interval={5000} />
+
+            <Carousel slides={slides} autoplay={true} interval={6000} />
+
           </div>
         </div>
         {/* <a href="#">More Events</a> */}
