@@ -78,7 +78,6 @@ export const Contact = () => {
       setIsLoading(false);
     }
 
-
   }
 
 
@@ -112,13 +111,13 @@ export const Contact = () => {
             </p>
           </div>
     <div style={{ 
-      display:"flex",
-      backgroundColor:"#660113",
-      justifyContent:"center",
-      textAlign:"center",
-      height:"30px",
-      paddingTop:"15px"
-       }}>
+        display:"flex",
+        backgroundColor:"#660113",
+        justifyContent:"center",
+        textAlign:"center",
+        height:"30px",
+        paddingTop:"15px"
+      }}>
     <Socials  />
 
     </div>

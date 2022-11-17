@@ -20,7 +20,7 @@ export const Navbar = ({getModalState}) => {
         <div className="logo">
         <NavLink smooth="true" spy="true"  to="/home" >
           
-          <img onClick={ window.scrollTo(0, 0)}  src={Logo} alt="logo" />
+          <img onClick={ window.scrollTo(0,0)}  src={Logo} alt="logo" />
           </NavLink>
         </div>
 

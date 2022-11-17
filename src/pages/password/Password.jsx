@@ -63,7 +63,7 @@ export const Password = () => {
             onChange={handleChange}
             required
           />
-          <p style={{ margin: "2px", textAlign:"right" } }>Resend OTP</p>
+          <p onClick={()=>handleSubmit()} style={{ margin: "2px", textAlign:"right" } }>Resend OTP</p>
         </div>
 
         <div className="mb-3">

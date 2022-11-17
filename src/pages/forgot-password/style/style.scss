@@ -1,12 +1,13 @@
 .forgot-container {
   height: max-content;
+  padding: 150px 0;
   .forgot-password {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     // height: 50vh;
-    margin: 2rem auto;
+    margin: 0rem auto;
     gap: 2rem;
     width: max-content;
     border: #650113 solid 2px;
