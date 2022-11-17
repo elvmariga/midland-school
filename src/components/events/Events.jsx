@@ -34,7 +34,7 @@ export const Events = () => {
       //calling the function
       getEvents();
 
-    },[]
+    },[current]
   )
 
   const handleEventExpand = (i,s) => {
