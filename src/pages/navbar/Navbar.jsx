@@ -80,7 +80,7 @@ export const Navbar = ({getModalState}) => {
             {showLinks ? <ImCross /> : <GiHamburgerMenu />}
           </div>
 
-          <div>
+          <div >
             {showLinks && (
               <div className="mobilelinks">
                 <ul
