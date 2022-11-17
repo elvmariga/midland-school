@@ -1,7 +1,10 @@
-.expanded-event-container span {
+.expanded-event-container .left img {
+  width: 20%;
+}
+.expanded-event-container .right span {
   color: #650113;
 }
-.expanded-event-container span:hover {
+.expanded-event-container .right span:hover {
   text-decoration: underline;
   color: blue;
 }/*# sourceMappingURL=expand-style.css.map */

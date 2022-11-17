@@ -1,6 +1,6 @@
 import React from "react";
 import { TopNav, Navbar, Home, Footer ,ScrollUp, About ,Contact, ForgotPassword , ModalInquiry , Login, Calendar, Password}  from "./pages"
-import { Route, Routes } from "react-router-dom";
+import {Navigate,  Route, Routes } from "react-router-dom";
 
 
 export const App = () => {
@@ -19,14 +19,17 @@ export const App = () => {
       {showModal && <ModalInquiry getModalState={getModalState}  />}
 
       <Routes>
-        <Route path="*" element={<ModalInquiry />} />
-        <Route path="/home" element={<Home />} />
+        {/* navigating to the default route */}
+        <Route path="/" element={<Navigate to="/home" />} /> 
+        <Route  path="/home" element={<Home />} />
         <Route path="/aboutUs" element={<About/>} />
         <Route path="/contactUs" element={<Contact />}/>
         <Route path = "/calendar" element ={<Calendar/>}/>
         <Route path="/log-in" element={<Login/>}/>
         <Route path="/forgotpassword" element={<ForgotPassword/>} />
         <Route path="/newpassword" element= {<Password/>}/>
+        {/* <Route path="*" element={<ModalInquiry />} /> */}
+
         
         
       </Routes>
