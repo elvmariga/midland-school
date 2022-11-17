@@ -9,6 +9,11 @@ export const Events = () => {
   const [events, setEvents] = useState([]);
   const [expandEvent, setExpandEvent] = useState(false);
   const [current, setCurrent] = useState(Number);
+
+  // use useCallback to memoize our forceUpdate function, thus keeping it constant throughout the component lifecycle 
+  const [, updateState] = React.useState();
+  // creates a new object in the state.
+  const forceUpdate = React.useCallback(() => updateState({}), []);
   //get the envents from server side
 
 
@@ -38,6 +43,8 @@ export const Events = () => {
   )
 
   const handleEventExpand = (i,s) => {
+    forceUpdate();
+
     setExpandEvent(s);
     setCurrent(i);
   }
