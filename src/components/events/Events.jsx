@@ -55,15 +55,23 @@ export const Events = () => {
       // showing a small part of the description
       const briefDescription = description.slice(3,90);
       
-      return(
+      return (
         <>
           <div key={event_path}>
             <img src={event_banner} alt={name} />
-            <p>{briefDescription}<span onClick={()=>{handleEventExpand(i,true)}}>...see more</span></p>
-
+            <p>{briefDescription}</p>
+            <p className="seeMore">
+              <span
+                onClick={() => {
+                  handleEventExpand(i, true);
+                }}
+              >
+                ...see more
+              </span>
+            </p>
           </div>
         </>
-      )
+      );
       })
   ;
 
@@ -76,7 +84,7 @@ export const Events = () => {
       <div id="slideshow" data-component="slideshow">
         <div role="list">
           <div className="caroussel">
-            {!expandEvent ?  <Carousel slides={slides} autoplay={true} interval={8000} /> : <ExpandedEvent handleEventExpand={handleEventExpand} event={events[current]} /> }
+            {!expandEvent ?  <Carousel slides={slides} autoplay={true} interval={4000} /> : <ExpandedEvent handleEventExpand={handleEventExpand} event={events[current]} /> }
 
           </div>
         </div>
