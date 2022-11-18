@@ -1,6 +1,11 @@
+$mobile : 1080px;
 .password-container {
   // height: 50vh;
   padding: 150px 0 50px 0;
+
+  @media screen and (max-width: $mobile) {
+    padding: 250px 0 50px 0;
+  }
 
   .password-password {
     display: flex;
