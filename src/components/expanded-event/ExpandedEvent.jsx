@@ -13,16 +13,33 @@ export const ExpandedEvent = ({handleEventExpand, event:{name,start_date,end_dat
     console.log()
   return (
     <div className="expanded-event-container">
-        <div className="left"><img src={event_thumbnail} alt="event"/></div>
-        <div className="right"><h4>{name}<span onClick={()=>{handleClick()}}>back to all events </span></h4>
-      
-      <p>{`The ${name} event begins on ${start_date} and ends on ${end_date}`}</p>
-      <div dangerouslySetInnerHTML={{__html: description}}></div></div>
-      
-       
+      <div className="left">
+        <img src={event_thumbnail} alt="event" />
+      </div>
+      <div className="right">
+        <div className="top">
+          <div>
+            <h4 className='title'>{name}</h4>
+          </div>
+          
+            <div>
+              <h4
+                className="back"
+                onClick={() => {
+                  handleClick();
+                }}
+              >
+                {" "}
+                <i class="fa-solid fa-person-walking-arrow-loop-left"></i>  all
+                events{" "}
+              </h4>
+            
+          </div>
+        </div>
 
-
+        <p>{`The ${name} event begins on ${start_date} and ends on ${end_date}`}</p>
+        <div dangerouslySetInnerHTML={{ __html: description }}></div>
+      </div>
     </div>
-
-  )
+  );
 }
