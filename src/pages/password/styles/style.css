@@ -1,6 +1,11 @@
 .password-container {
   padding: 150px 0 50px 0;
 }
+@media screen and (max-width: 1080px) {
+  .password-container {
+    padding: 250px 0 50px 0;
+  }
+}
 .password-container .password-password {
   display: flex;
   flex-direction: column;

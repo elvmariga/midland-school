@@ -6,11 +6,11 @@ export const ExpandedEvent = ({handleEventExpand, event:{name,start_date,end_dat
 
   const handleClick = () =>{
     setExpandEvent(false);
-    // trigger fuction to hide expanded page
+    // trigger function to hide expanded page
     handleEventExpand(null,expandEvent);
 
   }
-    console.log()
+    
   return (
     <div className="expanded-event-container">
       <div className="left">
