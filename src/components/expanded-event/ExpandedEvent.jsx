@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./style/expand-style.css";
 
-export const ExpandedEvent = ({handleEventExpand, event:{name,start_date,end_date,description,event_thumbnail}}) => {
+export const ExpandedEvent = ({handleEventExpand, event:{name,start_date,end_date,description,event_banner}}) => {
   const [expandEvent, setExpandEvent] = useState(false);
 
   const handleClick = () =>{
@@ -14,7 +14,7 @@ export const ExpandedEvent = ({handleEventExpand, event:{name,start_date,end_dat
   return (
     <div className="expanded-event-container">
       <div className="left">
-        <img src={event_thumbnail} alt="event" />
+        <img src={event_banner} alt={name} />
       </div>
       <div className="right">
         <div className="top">
