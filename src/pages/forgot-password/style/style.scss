@@ -1,6 +1,15 @@
+$mobile: 1150px;
+
 .forgot-container {
   height: max-content;
   padding: 150px 0;
+
+  @media screen and (max-width: $mobile) {
+    padding: 250px 0;
+    width: 100vw;
+  }
+
+
   .forgot-password {
     display: flex;
     flex-direction: column;
@@ -14,6 +23,9 @@
     padding: 2rem;
     border-radius: 8px;
 
+    @media screen and (max-width: 550px) {
+      width: 80%;
+    }
 
     label {
       font-family: "Poppins";
@@ -41,6 +53,10 @@
       /* General black */
 
       color: #1f1f1f;
+
+      @media screen and (max-width: 550px) {
+        width: 80%;
+      }
     }
 
     .error {
@@ -69,7 +85,5 @@
         background-color: #848383;
       }
     }
-
-  
   }
 }
