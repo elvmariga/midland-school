@@ -74,23 +74,16 @@ export const ModalInquiry = ({ getModalState }) => {
         <div className="contact">
           <div className="close">
           <ToastContainer />
-            <ImCross
+          <div className="close-icon">
+          <ImCross
               onClick={() => {
                 setShowModal(false);
                 getModalState(showModal);
               }}
-              style={{
-                opacity: "0.9",
-                with: "25px",
-                padding: "5px",
-                color: "black",
-                display: "flex",
-                justifyItems: "end",
-                height: "30px",
-                width: "30px",
-                alignSelf: "end",
-              }}
+             
             />
+          </div>
+           
           </div>
 
           <div>

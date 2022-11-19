@@ -30,7 +30,25 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-end;
-                cursor: pointer;
+              
+
+                .close-icon{
+                    cursor: pointer;
+                    padding: 9px;
+                    &:hover{
+                        background-color: #a3a2a2;
+                        transform: rotate(90deg);
+                    }
+                //     opacity: "0.9",
+                // with: "25px",
+                // padding: "5px",
+                // color: "black",
+                // display: "flex",
+                // justifyItems: "end",
+                // height: "30px",
+                // width: "30px",
+                // alignSelf: "end",
+                }
             }
            
 
@@ -75,6 +93,7 @@
                     margin-top: 2rem;
                     &:disabled{
                         background-color:  #848383; 
+                        cursor: not-allowed;
                     }
                 }
             }

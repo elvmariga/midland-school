@@ -18,9 +18,9 @@ export const Navbar = ({getModalState}) => {
     <nav>
       <div className="container">
         <div className="logo">
-        <NavLink smooth="true" spy="true"  to="/home" >
-          
-          <img onClick={ window.scrollTo(0,0)}  src={Logo} alt="logo" />
+          <NavLink smooth="true" spy="true"  to="/home" >
+            
+            <img onClick={ window.scrollTo(0,0)}  src={Logo} alt="logo" />
           </NavLink>
         </div>
 
@@ -80,7 +80,7 @@ export const Navbar = ({getModalState}) => {
             {showLinks ? <ImCross /> : <GiHamburgerMenu />}
           </div>
 
-          <div >
+          <div className="mobile-container" >
             {showLinks && (
               <div className="mobilelinks">
                 <ul
@@ -114,6 +114,7 @@ export const Navbar = ({getModalState}) => {
                       Home
                     </NavLink>
                   </li>
+                  <hr/>
                   <li className="link" onClick={() => handleClick()}>
                     <NavLink
                       smooth="true"
@@ -130,6 +131,7 @@ export const Navbar = ({getModalState}) => {
                       About Us
                     </NavLink>
                   </li>
+                  <hr/>
                   <li className="link" onClick={() => handleClick()}>
                     <NavLink
                       smooth="true"
@@ -147,6 +149,7 @@ export const Navbar = ({getModalState}) => {
                       Contact Us
                     </NavLink>
                   </li>
+                  <hr/>
                   <li
                     className="link"
                     onClick={() => {
@@ -162,6 +165,7 @@ export const Navbar = ({getModalState}) => {
                   >
                     Send Inquiry
                   </li>
+                  <hr/>
 
                   <li className="link" onClick={() => handleClick()}>
                     <NavLink
@@ -178,6 +182,7 @@ export const Navbar = ({getModalState}) => {
                       Login
                     </NavLink>
                   </li>
+                  
                 </ul>
               </div>
             )}
