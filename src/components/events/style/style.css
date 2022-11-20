@@ -38,6 +38,9 @@
 }
 .events-container .caroussel .slider-single, .events-container .caroussel .preactive {
   background-color: #f2f2f2;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 .events-container p {
   width: 90%;

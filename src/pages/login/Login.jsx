@@ -104,8 +104,8 @@ export const Login = () => {
 
   return isLoading ? (
     //display loader when waiting for response
-    <div className='loader'>
-      <div className='child'>
+    <div className="loader">
+      <div className="child">
         <Loading />
       </div>
     </div>
@@ -118,7 +118,7 @@ export const Login = () => {
         </div> */}
         <div className="signin-right">
           <form>
-            {userNameErr && <p className='error'>{`${msgError}`}</p>}
+            {userNameErr && <p className="error">{`${msgError}`}</p>}
             <h2>Sign In</h2>
 
             <div className="mb-3">
@@ -134,7 +134,6 @@ export const Login = () => {
               />
             </div>
 
-
             <div className="mb-3">
               <label>Password</label>
               <input
@@ -146,32 +145,35 @@ export const Login = () => {
                 onChange={handleChange}
                 required="required"
               />
+              <p className="forgot-password text-right">
+                <Link to="/forgotpassword"> Forgot Password?</Link>
+              </p>
             </div>
             {/* {pwdError && <p className='error'>Your password is incorrect</p>} */}
 
             <div className="mb-3 forgot-remember">
               <div className="custom-control check custom-checkbox">
-                <label name="rememberMe" className="custom-control-label" >Remember me </label>
+                <label name="rememberMe" className="custom-control-label">
+                  Remember me{" "}
+                </label>
                 <input
                   // ref={ref
                   type="checkbox"
                   checked={isChecked}
                   className="custom-control-input"
                   id="customCheck1"
-                  onChange={
-                    (e) => {
-                      setIsChecked(e.target.checked);
-                      persistUser();
-                    }
-                  }
+                  onChange={(e) => {
+                    setIsChecked(e.target.checked);
+                    persistUser();
+                  }}
                 />
                 {/*
                 <input  / >  */}
               </div>
               <div className="forgot">
-                <p className="forgot-password text-right">
+                {/* <p className="forgot-password text-right">
                   Forgot <Link to="/forgotpassword">password?</Link>
-                </p>
+                </p> */}
               </div>
             </div>
 
