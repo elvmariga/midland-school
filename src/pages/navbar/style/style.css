@@ -1,3 +1,8 @@
+.bigCont {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   position: fixed;
   display: flex;
@@ -5,7 +10,7 @@
   padding-left: 40px;
   margin: 0 auto;
   justify-self: center;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 12;
   padding-top: 60px;
   background-color: #f6f6f6;
@@ -21,15 +26,15 @@
   .container .logo {
     width: 50%;
   }
+  .container .logo img {
+    width: 30%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 850px) {
   .container .logo {
     height: 50%;
   }
-}
-.container .logo img {
-  width: 100%;
-  height: auto;
 }
 .container .links {
   display: flex;
