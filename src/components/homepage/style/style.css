@@ -26,7 +26,7 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  padding-right: 0.5rem;
   background-color: #660113;
   padding: 1rem;
   border-radius: 8px;
@@ -37,7 +37,7 @@
   line-height: 1em;
 }
 .hero-container .containerh .line {
-  width: 303px;
+  width: 30%;
   border: 4px solid #660113;
   margin: 0;
 }

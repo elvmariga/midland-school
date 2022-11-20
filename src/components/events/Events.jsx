@@ -84,8 +84,14 @@ export const Events = () => {
       <div id="slideshow" data-component="slideshow">
         <div role="list">
           <div className="caroussel">
-            {!expandEvent ?  <Carousel slides={slides} autoplay={true} interval={4000} /> : <ExpandedEvent handleEventExpand={handleEventExpand} event={events[current]} /> }
-
+            {!expandEvent ? (
+              <Carousel slides={slides} autoplay={true} interval={4000} />
+            ) : (
+              <ExpandedEvent
+                handleEventExpand={handleEventExpand}
+                event={events[current]}
+              />
+            )}
           </div>
         </div>
         {/* <a href="#">More Events</a> */}

@@ -8,6 +8,14 @@
   width: 100%;
   height: auto;
 }
+.events-container .fa {
+  color: #650113;
+  font-size: 1.25rem;
+}
+.events-container .line {
+  border: 4px solid #660113;
+  width: 4rem;
+}
 .events-container .events-title h2 {
   font-weight: 700;
   font-size: 36px;
@@ -16,20 +24,20 @@
 }
 .events-container .caroussel {
   margin: 0px auto;
+  width: 100%;
+}
+.events-container .caroussel img {
+  width: 100%;
 }
 .events-container .caroussel p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 100;
-  font-size: 1.25rem;
   color: #141138;
   margin-left: 10px;
 }
 .events-container .caroussel .slider-single, .events-container .caroussel .preactive {
   background-color: #f2f2f2;
-  width: -webkit-max-content !important;
-  width: -moz-max-content !important;
-  width: max-content !important;
 }
 .events-container p {
   width: 90%;
