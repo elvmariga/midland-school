@@ -19,7 +19,7 @@
 }
 @media screen and (max-width: 480px) {
   .container .logo {
-    height: 50%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 850px) {

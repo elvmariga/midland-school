@@ -75,7 +75,7 @@ export const Navbar = ({getModalState}) => {
           </ul>
         </div>
 
-        <div>
+        <div style={{marginRight: "1rem"}}>
           <div className="humberger" onClick={() => handleClick()}>
             {showLinks ? <ImCross /> : <GiHamburgerMenu />}
           </div>

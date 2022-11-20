@@ -21,7 +21,9 @@ $tablet: 850px;
 
   .logo {
     @media screen and (max-width: $mobile) {
-      height: 50%;
+      // height: 50%;
+      width: 50%;
+     
       // background-color: red;
     }
 
