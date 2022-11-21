@@ -75,7 +75,7 @@ export const Events = () => {
       })
   ;
 
-  return (
+  return(
     <div className="events-container">
       <div className="line"></div>'
       <div className="events-title">
@@ -85,7 +85,9 @@ export const Events = () => {
         <div role="list">
           <div className="caroussel">
             {!expandEvent ? (
-              <Carousel slides={slides} autoplay={true} interval={4000} />
+              <div className="mini-events">
+                <Carousel slides={slides} autoplay={true} interval={4000} />
+              </div>
             ) : (
               <ExpandedEvent
                 handleEventExpand={handleEventExpand}

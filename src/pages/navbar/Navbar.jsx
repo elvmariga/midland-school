@@ -6,7 +6,7 @@ import {GiHamburgerMenu} from "react-icons/gi";
 import {ImCross} from "react-icons/im";
 
 
-export const Navbar = ({getModalState}) => {
+export const Navbar = () => {
   const [showLinks, setShowLinks] = React.useState(false);
   const [showModal, setShowModal] = React.useState(false);
 
@@ -62,7 +62,7 @@ export const Navbar = ({getModalState}) => {
                   News & Events
                 </NavLink>
               </li>
-              <li
+              {/* <li
                 className="link"
                 onClick={() => {
                   setShowModal(true);
@@ -70,7 +70,7 @@ export const Navbar = ({getModalState}) => {
                 }}
               >
                 Send Inquiry
-              </li>
+              </li> */}
 
               <li className="link ">
                 <NavLink
@@ -159,7 +159,7 @@ export const Navbar = ({getModalState}) => {
                       </NavLink>
                     </li>
                     <hr />
-                    <li
+                    {/* <li
                       className="link"
                       onClick={() => {
                         setShowModal(true);
@@ -173,8 +173,8 @@ export const Navbar = ({getModalState}) => {
                       }}
                     >
                       Send Inquiry
-                    </li>
-                    <hr />
+                    </li> */}
+                  
 
                     <li className="link" onClick={() => handleClick()}>
                       <NavLink

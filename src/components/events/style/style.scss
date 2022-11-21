@@ -1,6 +1,6 @@
 .events-container {
   width: 80%;
-  margin: 5rem auto;
+  margin: 7rem auto;
   display: flex;
   flex-direction: column;
 
@@ -31,10 +31,16 @@
     }
 
     .caroussel {
-        margin: 0px auto;
+        margin: 60px auto;
         width: 100%;
+       
+        
+        .mini-events{
+            height: 300px;
+        
         img{
             width: 100%;
+            
         }
         p{
             font-family: "Poppins";
@@ -49,6 +55,7 @@
                     background-color: #f2f2f2;
                   width: fit-content !important;
                 }
+            }
     }
  p{
     width: 90%;
