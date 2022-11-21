@@ -66,8 +66,8 @@ export const Contact = () => {
   };
 
   return (
-    <div className="concact-container">
-      <div className="container content">
+    <div className="contact-container">
+      <div className="container-content">
         <div className="contact-left">
           <div className="contact-title">
             <h1>Reach Us</h1>
@@ -174,9 +174,9 @@ export const Contact = () => {
 
         <div className="google-map">
           <hr />
-          <Map location={location} zoomLevel={17} />
+          <Map location={location} zoomLevel={15} />
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

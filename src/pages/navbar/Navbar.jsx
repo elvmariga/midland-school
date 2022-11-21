@@ -8,7 +8,7 @@ import {ImCross} from "react-icons/im";
 
 export const Navbar = () => {
   const [showLinks, setShowLinks] = React.useState(false);
-  const [showModal, setShowModal] = React.useState(false);
+  // const [showModal, setShowModal] = React.useState(false);
 
   const handleClick = () =>{
     setShowLinks(!showLinks )

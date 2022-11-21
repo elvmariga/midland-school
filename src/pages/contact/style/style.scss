@@ -1,5 +1,8 @@
-.concact-container {
-  padding-top: 9rem;
+.contact-container {
+  padding: 9rem;
+  display: flex;
+  gap: 1rem;
+
 
   @media screen and (max-width: 1200px) {
     padding-top: 10rem;
@@ -22,6 +25,7 @@
   .contact-details {
     display: grid;
     gap: 1rem;
+    width: 40%;
 
     p,
     a {
