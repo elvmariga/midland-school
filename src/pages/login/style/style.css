@@ -19,7 +19,7 @@
   }
 }
 .signinContainer .containerS {
-  margin: 4rem auto;
+  margin: 8rem auto;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -34,6 +34,10 @@
   display: grid;
   gap: 1rem;
   width: 100%;
+}
+.signinContainer .containerS .signin-right form .forgot-password {
+  text-align: right;
+  margin: 4px 0 0 0;
 }
 .signinContainer .containerS .signin-right form label {
   font-family: "Poppins";
@@ -74,7 +78,6 @@
   outline-color: #660113;
 }
 .signinContainer .containerS .signin-right form .forgot-remember {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }

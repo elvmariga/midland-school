@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
 
+
   img {
         width: 100%;
         height: auto;
@@ -11,12 +12,14 @@
 
     .fa{
         // display: none;
+        color: #650113;
+        font-size: 1.25rem;
     }
 
-    // .line {
-    //     border: 4px solid #660113;
-    //     width: 4rem;
-    // }
+    .line {
+        border: 4px solid #660113;
+        width: 4rem;
+    }
 
     .events-title {
         h2 {
@@ -29,18 +32,22 @@
 
     .caroussel {
         margin: 0px auto;
+        width: 100%;
+        img{
+            width: 100%;
+        }
         p{
             font-family: "Poppins";
             font-style: normal;
             font-weight: 100;
-            font-size: 1.25rem;
+            // font-size: 1.25rem;
             color: #141138;
             margin-left: 10px;
             // background-color: #141138;
         }
                 .slider-single, .preactive{
                     background-color: #f2f2f2;
-                 width: max-content !important;
+                  width: fit-content !important;
                 }
     }
  p{
