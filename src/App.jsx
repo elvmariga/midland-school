@@ -1,22 +1,22 @@
 import React from "react";
-import { TopNav, Navbar, Home, Footer ,ScrollUp, About ,Contact, ForgotPassword , ModalInquiry , Login, Calendar, Password}  from "./pages"
+import { TopNav, Navbar, Home, Footer ,ScrollUp, About ,Contact, ForgotPassword  , Login, Calendar, Password}  from "./pages"
 import {Navigate,  Route, Routes } from "react-router-dom";
 
 
 export const App = () => {
-  const [showModal, setShowModal]= React.useState(false);
+  // const [showModal, setShowModal]= React.useState(false);
 
   //getting the modalstate state from navbar
-  const getModalState = (modalState) =>{  
-    setShowModal(modalState) ;
-  }
+  // const getModalState = (modalState) =>{  
+  //   setShowModal(modalState) ;
+  // }
   return (
     <section>
       <TopNav />
       {/* <Loading/> */}
       <ScrollUp/>
-      <Navbar getModalState={getModalState} />
-      {showModal && <ModalInquiry getModalState={getModalState}  />}
+      <Navbar  />
+      {/* {showModal && <ModalInquiry getModalState={getModalState}  />} */}
 
       <Routes>
         {/* navigating to the default route */}

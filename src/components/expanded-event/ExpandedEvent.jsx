@@ -14,7 +14,7 @@ export const ExpandedEvent = ({handleEventExpand, event:{name,start_date,end_dat
   return (
     <div className="expanded-event-container">
       <div className="left">
-        <img src={event_banner} alt={name} />
+        <img loading="lazy" src={event_banner} alt={name} />
       </div>
       <div className="right">
         <div className="top">

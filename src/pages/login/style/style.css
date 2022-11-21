@@ -13,6 +13,11 @@
   padding: 1rem;
   padding-top: 6rem;
 }
+@media screen and (max-width: 1200px) {
+  .signinContainer {
+    padding-top: 7rem;
+  }
+}
 .signinContainer .containerS {
   margin: 8rem auto;
   width: 80%;

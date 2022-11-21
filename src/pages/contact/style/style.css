@@ -1,8 +1,14 @@
-.concact-container {
-  margin-top: 0rem;
-  padding-top: 9rem;
+.contact-container {
+  padding: 9rem;
+  display: flex;
+  gap: 1rem;
 }
-.concact-container h1 {
+@media screen and (max-width: 1200px) {
+  .contact-container {
+    padding-top: 10rem;
+  }
+}
+.contact-container h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -10,55 +16,56 @@
   line-height: 72px;
   color: #141138;
 }
-.concact-container .fa-solid {
+.contact-container .fa-solid {
   color: #141138;
   margin-right: 1rem;
 }
-.concact-container .contact-details {
+.contact-container .contact-details {
   display: grid;
   gap: 1rem;
+  width: 40%;
 }
-.concact-container .contact-details p,
-.concact-container .contact-details a {
+.contact-container .contact-details p,
+.contact-container .contact-details a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
-.concact-container .contact-details p .location,
-.concact-container .contact-details a .location {
+.contact-container .contact-details p .location,
+.contact-container .contact-details a .location {
   margin-left: 3.4rem;
 }
-.concact-container .contact-details p .fa-solid,
-.concact-container .contact-details a .fa-solid {
+.contact-container .contact-details p .fa-solid,
+.contact-container .contact-details a .fa-solid {
   color: #660113;
 }
-.concact-container .contact-details .linkContact {
+.contact-container .contact-details .linkContact {
   display: flex;
   background-color: #660113;
   justify-content: center;
 }
-.concact-container .content {
+.contact-container .content {
   padding-top: 0;
 }
-.concact-container .container {
+.contact-container .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
 }
-.concact-container .container .container-left {
+.contact-container .container .container-left {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.concact-container .container .container-left .linkContact {
+.contact-container .container .container-left .linkContact {
   display: flex;
   gap: 2rem;
 }
-.concact-container .container .contact-right {
+.contact-container .container .contact-right {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 1.5rem 2rem 2rem 5rem;
   border-radius: 2rem;
@@ -67,15 +74,15 @@
   flex-direction: column;
   align-items: center;
 }
-.concact-container .container .contact-right form {
+.contact-container .container .contact-right form {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   width: 95%;
   align-items: center;
 }
-.concact-container .container .contact-right form input,
-.concact-container .container .contact-right form textarea {
+.contact-container .container .contact-right form input,
+.contact-container .container .contact-right form textarea {
   padding: 0.8rem 1.2rem;
   border-radius: 5px;
   border: none;
@@ -87,9 +94,9 @@
   width: 100%;
   /* identical to box height */
   /* General black */
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
-.concact-container .container .contact-right form .myBtn {
+.contact-container .container .contact-right form .myBtn {
   justify-self: center;
   padding: 8px 24px;
   gap: 5px;
@@ -99,14 +106,14 @@
   background: #660113;
   border-radius: 5px;
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   margin-top: 1.5rem;
 }
-.concact-container .container .contact-right form .myBtn:disabled {
+.contact-container .container .contact-right form .myBtn:disabled {
   background-color: #848383;
 }
-.concact-container .google-map {
+.contact-container .google-map {
   margin-bottom: 8rem;
 }
 
