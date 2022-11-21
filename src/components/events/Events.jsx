@@ -85,9 +85,11 @@ export const Events = () => {
         <div role="list">
           <div className="caroussel">
             {!expandEvent ? (
+
               <div className="mini-events">
                 <Carousel slides={slides} autoplay={true} interval={4000} />
               </div>
+
             ) : (
               <ExpandedEvent
                 handleEventExpand={handleEventExpand}

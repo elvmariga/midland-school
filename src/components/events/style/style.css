@@ -16,6 +16,14 @@
   border: 4px solid #660113;
   width: 4rem;
 }
+.events-container .fa {
+  color: #650113;
+  font-size: 1.25rem;
+}
+.events-container .line {
+  border: 4px solid #660113;
+  width: 4rem;
+}
 .events-container .events-title h2 {
   font-weight: 700;
   font-size: 36px;
@@ -32,27 +40,27 @@
 .events-container .caroussel .mini-events img {
   width: 100%;
 }
-.events-container .caroussel .mini-events p {
+.events-container .caroussel p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 100;
   color: #141138;
   margin-left: 10px;
 }
-.events-container .caroussel .mini-events .slider-single, .events-container .caroussel .mini-events .preactive {
+.events-container .caroussel .slider-single, .events-container .caroussel .preactive {
   background-color: #f2f2f2;
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
 }
-.events-container p {
+.events-container .caroussel p {
   width: 90%;
   margin: 1rem auto;
 }
-.events-container p span {
+.events-container .caroussel p span {
   color: #650113;
 }
-.events-container p span:hover {
+.events-container .caroussel p span:hover {
   text-decoration: underline;
   color: #141138;
   transform: scale(1.2, 1.2);
