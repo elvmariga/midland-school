@@ -5,6 +5,7 @@
   background-color: #d8cccc;
   opacity: 0.5;
 
+
   .child {
     z-index: 5;
   }
@@ -13,6 +14,12 @@
   background-color: #efefef;
   padding: 1rem;
   padding-top: 6rem;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 7rem;
+  }
+
+
 
   .containerS {
     margin: 4rem auto;
