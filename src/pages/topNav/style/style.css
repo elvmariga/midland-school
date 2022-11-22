@@ -2,7 +2,7 @@
   background-color: hsl(349deg, 98%, 20%);
   position: fixed;
   z-index: 13;
-  width: 100%;
+  width: 100vw;
 }
 .topnav-container .containerTopnav {
   width: 80%;

@@ -176,8 +176,8 @@ export const Contact = () => {
           <hr />
           <Map location={location} zoomLevel={17} />
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
