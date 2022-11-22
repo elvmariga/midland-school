@@ -6,9 +6,9 @@ import {GiHamburgerMenu} from "react-icons/gi";
 import {ImCross} from "react-icons/im";
 
 
-export const Navbar = ({getModalState}) => {
+export const Navbar = () => {
   const [showLinks, setShowLinks] = React.useState(false);
-  const [showModal, setShowModal] = React.useState(false);
+  // const [showModal, setShowModal] = React.useState(false);
 
   const handleClick = () =>{
     setShowLinks(!showLinks )
@@ -62,7 +62,11 @@ export const Navbar = ({getModalState}) => {
                   News & Events
                 </NavLink>
               </li>
+
+              {/* <li
+=======
               <li
+
                 className="link"
                 onClick={() => {
                   setShowModal(true);
@@ -70,7 +74,10 @@ export const Navbar = ({getModalState}) => {
                 }}
               >
                 Send Inquiry
-              </li>
+<<<<<<< HEAD
+              </li> */}
+
+
 
               <li className="link ">
                 <NavLink
@@ -106,6 +113,7 @@ export const Navbar = ({getModalState}) => {
                         textDecoration: "none",
                         fontSize: "1.3rem",
                         fontFamily: "Poppins",
+
                       }}
                     >
                       <NavLink
@@ -159,7 +167,7 @@ export const Navbar = ({getModalState}) => {
                       </NavLink>
                     </li>
                     <hr />
-                    <li
+                    {/* <li
                       className="link"
                       onClick={() => {
                         setShowModal(true);
@@ -173,8 +181,79 @@ export const Navbar = ({getModalState}) => {
                       }}
                     >
                       Send Inquiry
+                    </li> */}
+                  
+
+                      
+                    <li>
+                      <NavLink
+                        smooth="true"
+                        spy="true"
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "1.3rem",
+                          fontFamily: "Poppins",
+                          color: "#141138",
+                        }}
+                        activeclassname="active"
+                        to="/"
+                      >
+                        Home
+                      </NavLink>
                     </li>
                     <hr />
+                    <li className="link" onClick={() => handleClick()}>
+                      <NavLink
+                        smooth="true"
+                        spy="true"
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "1.3rem",
+                          fontFamily: "Poppins",
+                          color: "#141138",
+                        }}
+                        activeClassName="active"
+                        to="/aboutUs"
+                      >
+                        About Us
+                      </NavLink>
+                    </li>
+                    <hr />
+                    <li className="link" onClick={() => handleClick()}>
+                      <NavLink
+                        smooth="true"
+                        spy="true"
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "1.3rem",
+                          fontFamily: "Poppins",
+                          color: "#141138",
+                        }}
+                        activeClassName="active"
+                        to="/contactUs"
+                      >
+                        {" "}
+                        Contact Us
+                      </NavLink>
+                    </li>
+                    <hr />
+                    {/* <li
+                      className="link"
+                      onClick={() => {
+                        setShowModal(true);
+                        getModalState(showModal);
+                        handleClick();
+                      }}
+                      style={{
+                        fontSize: "1.3rem",
+                        fontFamily: "Poppins",
+                        color: "#141138",
+                      }}
+                    >
+                      Send Inquiry
+                    </li> */}
+                    <hr />
+
 
                     <li className="link" onClick={() => handleClick()}>
                       <NavLink

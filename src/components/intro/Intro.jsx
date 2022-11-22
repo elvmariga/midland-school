@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,7 +12,7 @@ export const Intro = () => {
         <div className="container-top">
           <h2>Midland Preparatory School</h2>
           <p>Admissions Open for January 2023</p>
-          <a href="#">Inquire</a>
+          <Link  to="/contactUs">Inquire</Link>
         </div>
         <div className="container-bottom">
           <div className="details">
