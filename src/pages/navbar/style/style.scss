@@ -4,12 +4,14 @@ $tablet: 850px;
 .bigCont{
   display: flex;
   justify-content: center;
+  
 }
 .container {
   position: fixed;
   display: flex;
   width: 100vw;
   padding-left:3rem;
+  padding-bottom: 8px;
   margin: 0 auto;
   justify-self: center;
   justify-content: space-around;
@@ -17,6 +19,7 @@ $tablet: 850px;
   z-index: 12;
   padding-top: 4rem;
   background-color: #f6f6f6;
+    border-bottom: #650113 2px solid;
 
   @media screen and (max-width: 1110px) {
     // padding-top: 90px;
@@ -36,6 +39,9 @@ $tablet: 850px;
     }
 
     @media screen and (max-width: $tablet) {
+      .bigCont{
+     
+      }
       height: 50%;
       img {
           width: 30%;

@@ -8,6 +8,7 @@
   display: flex;
   width: 100vw;
   padding-left: 3rem;
+  padding-bottom: 8px;
   margin: 0 auto;
   justify-self: center;
   justify-content: space-around;
@@ -15,6 +16,7 @@
   z-index: 12;
   padding-top: 4rem;
   background-color: #f6f6f6;
+  border-bottom: #650113 2px solid;
 }
 @media screen and (max-width: 1110px) {
   .container {
