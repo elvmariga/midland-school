@@ -1,18 +1,17 @@
 import React from "react";
 import Logo from "../../assests/logo.png";
 import "./style/style.css";
-import { NavLink} from "react-router-dom";
-import {GiHamburgerMenu} from "react-icons/gi";
-import {ImCross} from "react-icons/im";
-
+import { NavLink } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
 
 export const Navbar = () => {
   const [showLinks, setShowLinks] = React.useState(false);
   // const [showModal, setShowModal] = React.useState(false);
 
-  const handleClick = () =>{
-    setShowLinks(!showLinks )
-  }
+  const handleClick = () => {
+    setShowLinks(!showLinks);
+  };
 
   return (
     <nav>
@@ -77,8 +76,6 @@ export const Navbar = () => {
 <<<<<<< HEAD
               </li> */}
 
-
-
               <li className="link ">
                 <NavLink
                   activeclassname="active"
@@ -113,7 +110,6 @@ export const Navbar = () => {
                         textDecoration: "none",
                         fontSize: "1.3rem",
                         fontFamily: "Poppins",
-
                       }}
                     >
                       <NavLink
@@ -166,7 +162,7 @@ export const Navbar = () => {
                         Contact Us
                       </NavLink>
                     </li>
-                    <hr />
+                    {/* <hr /> */}
                     {/* <li
                       className="link"
                       onClick={() => {
@@ -182,10 +178,8 @@ export const Navbar = () => {
                     >
                       Send Inquiry
                     </li> */}
-                  
 
-                      
-                    <li>
+                    {/* <li>
                       <NavLink
                         smooth="true"
                         spy="true"
@@ -235,8 +229,8 @@ export const Navbar = () => {
                         {" "}
                         Contact Us
                       </NavLink>
-                    </li>
-                    <hr />
+                    </li> */}
+                    {/* <hr /> */}
                     {/* <li
                       className="link"
                       onClick={() => {
@@ -253,7 +247,6 @@ export const Navbar = () => {
                       Send Inquiry
                     </li> */}
                     <hr />
-
 
                     <li className="link" onClick={() => handleClick()}>
                       <NavLink
@@ -280,9 +273,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-
-
-
- 
-
-
