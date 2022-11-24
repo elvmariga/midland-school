@@ -47,6 +47,13 @@
   justify-content: center;
   align-items: center;
 }
+.testimonial-container .partners .line {
+  align-self: center;
+}
+.testimonial-container .partners .line img {
+  width: 100%;
+  height: auto;
+}
 .testimonial-container .partners h2 {
   color: #650113;
 }
