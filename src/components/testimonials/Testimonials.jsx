@@ -57,7 +57,7 @@ export const Testimonials = () => {
       </div>
 
       <div className="partners">
-        <div>
+        <div className='line'>
           <img src={line} alt="line" />
         </div>
         <h2>Our Partners</h2>

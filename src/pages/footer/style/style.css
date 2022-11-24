@@ -30,33 +30,19 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 37px;
   margin: 0;
   color: #FFFFFF;
 }
 .footer-container .containerF .footer-right p,
 .footer-container .containerF .contact p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
   text-align: center;
 }
-.footer-container .containerF .footer-right ul li,
-.footer-container .containerF .contact ul li {
-  list-style: none;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 100;
+.footer-container .containerF .footer-right p i,
+.footer-container .containerF .contact p i {
   font-size: 14px;
-  line-height: 30px;
 }
-.footer-container .containerF .footer-right ul li a,
-.footer-container .containerF .contact ul li a {
-  font-family: "Poppins";
-  font-style: normal;
+.footer-container .containerF .footer-right a,
+.footer-container .containerF .contact a {
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -64,9 +50,20 @@
 .footer-container .containerF .contact .contacts {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 100;
+}
+.footer-container .containerF .footer-right ul li,
+.footer-container .containerF .contact ul li {
+  list-style: none;
   font-size: 14px;
-  line-height: 30px;
+}
+.footer-container .containerF .footer-right ul li a,
+.footer-container .containerF .contact ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer-container .containerF .footer-right .contacts,
+.footer-container .containerF .contact .contacts {
+  font-size: 14px;
   text-align: center;
 }
 .footer-container .containerF .footer-right .contacts a,

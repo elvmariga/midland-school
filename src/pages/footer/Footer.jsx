@@ -19,7 +19,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-right">
-          <p> Quick Links</p>
+          <p className="contacts"> Quick Links</p>
           <Fade right cascade>
             <ul className="quick-links">
               <li>
@@ -38,17 +38,17 @@ export const Footer = () => {
           </Fade>
         </div>
         <div className="contact">
-          <p> Contact Us</p>
+          <p className="contacts"> Contact Us</p>
           <Fade right cascade>
-            <p className="contacts">
-              <i className="fa-solid fa-location-dot fa-xl"></i> P.O. Box 98-200,
-              Nairobi-Kenya
+            <p >
+              <i className="fa-solid fa-location-dot fa-xl"></i> P.O. Box
+              98-200, Nairobi-Kenya
             </p>
-            <p className="contacts">
-              <i className="fa-solid fa-phone fa-xl"></i> 
+            <p >
+              <i className="fa-solid fa-phone fa-xl"></i>
               <a href="tel:+25472999999">+25472999999</a>
             </p>
-            <p className="contacts">
+            <p >
               <a href="mailto:midland@ac.ke">
                 <i className="fa-solid fa-envelope fa-xl"></i> midland@ac.ke
               </a>
