@@ -4,29 +4,32 @@ $tablet: 850px;
 .bigCont{
   display: flex;
   justify-content: center;
+  
 }
 .container {
   position: fixed;
   display: flex;
   width: 100vw;
-  padding-left: 40px;
+  padding-left:3rem;
+  padding-bottom: 8px;
   margin: 0 auto;
   justify-self: center;
   justify-content: space-around;
   align-items: center;
   z-index: 12;
-  padding-top: 60px;
+  padding-top: 4rem;
   background-color: #f6f6f6;
+    border-bottom: #650113 2px solid;
 
   @media screen and (max-width: 1110px) {
     // padding-top: 90px;
-    width: 100%;
+    width: 100vw;
     padding-left: 20px;
   }
 
   .logo {
     @media screen and (max-width: $mobile) {
-      // height: 50%;
+      height: 50%;
       width: 50%;
       img {
           width: 30%;
@@ -36,9 +39,12 @@ $tablet: 850px;
     }
 
     @media screen and (max-width: $tablet) {
+      .bigCont{
+     
+      }
       height: 50%;
       img {
-          width: 50%;
+          width: 30%;
           height: auto;
         }
     }
@@ -141,7 +147,7 @@ $tablet: 850px;
     display: none;
     margin-top: 1rem;
     list-style: none;
-    margin-right: 40px;
+    margin-right: 2rem;
     text-align: right;
     justify-content: right;
 
@@ -212,13 +218,13 @@ $tablet: 850px;
     }
   }
   .mobile-container {
-    margin-right: 20px;
+    margin-right: 1,25rem;
 
     .mobilelinks {
       width: 85vw;
       list-style: none;
       text-align: center;
-      padding-right: 30px;
+      padding-right: 1.5rem;
 
 
       @media screen and (min-width: $tablet) {
