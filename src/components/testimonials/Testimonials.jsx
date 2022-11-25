@@ -49,6 +49,7 @@ export const Testimonials = () => {
                 <p className="testimony">
                   Lorem ipsum is placeholder text commonly used in the graphic,
                   print, and publishing industries for previ
+                  
                 </p>
               </div>
             </div>
