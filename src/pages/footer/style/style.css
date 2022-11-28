@@ -33,6 +33,10 @@
   margin: 0;
   color: #FFFFFF;
 }
+.footer-container .containerF .footer-right,
+.footer-container .containerF .contact {
+  text-align: center;
+}
 .footer-container .containerF .footer-right p,
 .footer-container .containerF .contact p {
   text-align: center;
@@ -50,20 +54,30 @@
 .footer-container .containerF .contact .contacts {
   font-family: "Poppins";
   font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.footer-container .containerF .footer-right .quick-links,
+.footer-container .containerF .contact .quick-links {
+  padding: 0;
+}
+.footer-container .containerF .footer-right ul,
+.footer-container .containerF .contact ul {
+  text-align: center;
 }
 .footer-container .containerF .footer-right ul li,
 .footer-container .containerF .contact ul li {
   list-style: none;
-  font-size: 14px;
 }
 .footer-container .containerF .footer-right ul li a,
 .footer-container .containerF .contact ul li a {
   text-decoration: none;
   color: #FFFFFF;
+  font-size: 14px;
 }
 .footer-container .containerF .footer-right .contacts,
 .footer-container .containerF .contact .contacts {
-  font-size: 14px;
   text-align: center;
 }
 .footer-container .containerF .footer-right .contacts a,
@@ -75,8 +89,14 @@
 .footer-container .containerF .contact .contacts .fa-solid {
   margin-right: 1rem;
 }
+.footer-container .containerF .footer-right .contacts .socialMedia,
+.footer-container .containerF .contact .contacts .socialMedia {
+  margin-top: 1rem;
+}
 .footer-container .copyright {
   align-self: center;
+  font-size: 14px;
+  padding-top: 1rem;
 }
 
 @media screen and (max-width: 850px) {

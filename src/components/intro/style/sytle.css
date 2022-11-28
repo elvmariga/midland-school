@@ -7,6 +7,7 @@
   font-family: "Poppins";
   font-style: normal;
   text-align: center;
+  /* Extra small devices (phones, 600px and down) */
 }
 .intro .intro-container h2 {
   font-size: 2.25rem;
@@ -27,6 +28,7 @@
   width: 80%;
   padding: 1rem 0;
   margin: 2rem 0;
+  /* Extra small devices (phones, 600px and down) */
 }
 .intro .intro-container .container-top a {
   color: #FFFFFF;
@@ -35,6 +37,22 @@
   text-decoration: none;
   border-radius: 8px;
   font-size: 1.3rem;
+}
+@media only screen and (max-width: 600px) {
+  .intro .intro-container .container-top {
+    margin-top: 0;
+  }
+  .intro .intro-container .container-top h2 {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .intro .intro-container p {
+    font-size: 1.1rem;
+  }
+  .intro .intro-container h2 {
+    font-size: 1.5rem;
+  }
 }
 .intro .intro-container .container-bottom {
   background-color: #d0cfd7;

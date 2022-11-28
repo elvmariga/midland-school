@@ -17,6 +17,12 @@
   gap: 1rem;
   width: 80%;
   margin: 0 auto;
+  /* Extra small devices (phones, 600px and down) */
+}
+@media only screen and (max-width: 600px) {
+  .hero-container .containerh {
+    padding-top: 3rem;
+  }
 }
 .hero-container .containerh .school {
   font-family: "Poppins";

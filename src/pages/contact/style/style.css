@@ -1,11 +1,6 @@
 .contact-container {
   font-family: "Poppins";
   font-style: normal;
-  /* Extra small devices (phones, 600px and down) */
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  /* Medium devices (landscape tablets, 768px and up) */
-  /* Large devices (laptops/desktops, 992px and up) */
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
 }
 .contact-container .container-content {
   width: 80%;
@@ -88,13 +83,4 @@
 }
 .contact-container .container-content .google-map {
   margin-bottom: 8rem;
-}
-@media only screen and (min-width: 768px) {
-  .contact-container .container-content {
-    padding-top: 11rem;
-  }
-  .contact-container .container-content .contacts {
-    display: flex;
-    gap: 1rem;
-  }
 }/*# sourceMappingURL=style.css.map */

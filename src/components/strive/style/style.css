@@ -16,6 +16,7 @@
 .striveContainer .striveLeft .line {
   border: 4px solid #660113;
   width: 4rem;
+  background-color: #660113;
 }
 .striveContainer .striveLeft .head {
   font-family: "Poppins";
@@ -25,13 +26,25 @@
   /* identical to box height */
   /* Midland-blue */
   color: #141138;
+  /* Extra small devices (phones, 600px and down) */
 }
-.striveContainer .striveLeft .details {
+@media only screen and (max-width: 600px) {
+  .striveContainer .striveLeft .head {
+    font-size: 1.5rem;
+  }
+}
+.striveContainer .striveLeft .head .details {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
   font-size: 1.5rem;
   color: #1F1F1F;
+  /* Extra small devices (phones, 600px and down) */
+}
+@media only screen and (max-width: 600px) {
+  .striveContainer .striveLeft .head .details {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 850px) {
   .striveContainer {
