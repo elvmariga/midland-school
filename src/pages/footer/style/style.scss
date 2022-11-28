@@ -40,31 +40,44 @@
 
         .footer-right,
         .contact {
+            text-align: center;
+
             p {
-          
+
                 text-align: center;
+
                 i {
-                        font-size: 14px;
-                    }
+                    font-size: 14px;
+                }
             }
-            a{
+
+            a {
                 text-decoration: none;
-                    color: #FFFFFF;
-                    
-            }
-            .contacts{
-font-family: 'Poppins';
-    font-style: normal;
+                color: #FFFFFF;
 
             }
 
+            .contacts {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.2rem;
+                text-align: center;
+
+            }
+
+            .quick-links {
+                padding: 0;
+            }
 
             ul {
+                text-align: center;
+
                 li {
                     list-style: none;
-                //    font-style: normal;
+                    //    font-style: normal;
                     // font-weight: 100;
-                    font-size: 14px;
+
                     // line-height: 30px;
 
                     a {
@@ -75,6 +88,7 @@ font-family: 'Poppins';
                         // line-height: 30px;
                         text-decoration: none;
                         color: #FFFFFF;
+                        font-size: 14px;
                     }
                 }
             }
@@ -84,7 +98,7 @@ font-family: 'Poppins';
                 // font-family: 'Poppins';
                 // font-style: normal;
                 //font-weight: 100;
-                font-size: 14px;
+                // font-size: 14px;
                 // line-height: 30px;
                 text-align: center;
 
@@ -98,6 +112,9 @@ font-family: 'Poppins';
                 .fa-solid {
                     margin-right: 1rem;
                 }
+                .socialMedia{
+                    margin-top: 1rem;
+                }
             }
         }
 
@@ -105,6 +122,8 @@ font-family: 'Poppins';
 
     .copyright {
         align-self: center;
+        font-size: 14px;
+        padding-top: 1rem;
     }
 }
 
@@ -115,7 +134,7 @@ font-family: 'Poppins';
 
             // .footer-left {
             //     flex-wrap: wrap;
-                
+
             //     p {
             //         font-size: 16px;
             //         margin: 0;
