@@ -19,16 +19,23 @@
                 font-style: normal;
                 font-weight: 700;
                 font-size: 32px;
+                text-align: center;
     
                 color: #660113;
+                /* Extra small devices (phones, 600px and down) */
+                    @media only screen and (max-width: 600px) {
+                        font-size: 1.5rem;
+                    }
             }
     
             .glanceStats {
     
                 display: flex;
-                gap: 4rem;
+                gap: 3rem;
                 justify-content: center;
                 margin-bottom: 1.3rem;
+                font-family: 'Poppins';
+                text-align: center;
     
                 .statsNumbers {
                     font-family: 'Poppins';

@@ -9,7 +9,7 @@ import "./style/style.css";
 
 export const Whatweoffer = () => {
   const whatWeOfferArray = [
-    { key: 1, p: "Extracurricular Activities", icon: ExtraCurriculum },
+    { key: 1, p: "Extracurricular Activities ", icon: ExtraCurriculum },
     { key: 2, p: "Day care school", icon: Daycare },
     { key: 3, p: "Verified staff", icon: VerifiedStaff },
     { key: 4, p: "KCPE certification", icon: KCPE },

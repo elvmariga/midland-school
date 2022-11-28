@@ -1,8 +1,9 @@
 .events-container {
   width: 80%;
-  margin: 7rem auto;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
+  font-family: "Poppins";
 }
 .events-container img {
   width: 100%;
@@ -15,22 +16,34 @@
 .events-container .line {
   border: 4px solid #660113;
   width: 4rem;
+  background-color: #650113;
 }
 .events-container .events-title h2 {
   font-weight: 700;
   font-size: 36px;
   color: #141138;
   margin: 0;
+  /* Extra small devices (phones, 600px and down) */
+}
+@media only screen and (max-width: 600px) {
+  .events-container .events-title h2 {
+    font-size: 1.5rem;
+  }
 }
 .events-container .caroussel {
-  margin: 60px auto;
+  margin: 2rem auto;
   width: 100%;
-}
-.events-container .caroussel .mini-events {
-  height: 300px;
 }
 .events-container .caroussel .mini-events img {
   width: 100%;
+  height: auto;
+  /* Extra small devices (phones, 600px and down) */
+}
+@media only screen and (max-width: 600px) {
+  .events-container .caroussel .mini-events img img {
+    width: 70%;
+    height: 100%;
+  }
 }
 .events-container .caroussel .mini-events img p {
   font-family: "Poppins";
@@ -44,6 +57,8 @@
   width: -webkit-max-content !important;
   width: -moz-max-content !important;
   width: max-content !important;
+  opacity: 0.1 !important;
+  color: #f2f2f2 !important;
 }
 .events-container .caroussel p {
   width: 90%;

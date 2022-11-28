@@ -43,8 +43,25 @@
                 border-radius: 8px;
                 font-size: 1.3rem;
             }
-
+                        /* Extra small devices (phones, 600px and down) */
+                        @media only screen and (max-width: 600px) {
+                           margin-top: 0;
+                           h2{
+                            margin-bottom: 0;
+                           }
+                        }
+                       
         }
+
+                /* Extra small devices (phones, 600px and down) */
+                @media only screen and (max-width: 600px) {
+                  p{
+                    font-size: 1.1rem;
+                  }
+                  h2{
+                    font-size: 1.5rem;
+                  }
+                }
 
         .container-bottom {
             background-color: #d0cfd7;
