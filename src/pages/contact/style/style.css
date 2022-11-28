@@ -4,8 +4,11 @@
 }
 .contact-container .container-content {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding-top: 9rem;
+}
+.contact-container .container-content .contacts {
+  /* Extra small devices (phones, 600px and down) */
 }
 .contact-container .container-content .contacts .contact-left .contact-title h1 {
   font-family: "Poppins";
@@ -80,6 +83,12 @@
 }
 .contact-container .container-content .contacts .contact-right form .myBtn:disabled {
   background-color: #848383;
+}
+@media only screen and (min-width: 600px) {
+  .contact-container .container-content .contacts {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .contact-container .container-content .google-map {
   margin-bottom: 8rem;
