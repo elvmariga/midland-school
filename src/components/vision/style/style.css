@@ -19,6 +19,14 @@
   font-size: 1.5rem;
   font-weight: 300;
 }
+@media screen and (max-width: 600px) {
+  .vision-container h2 {
+    font-size: 1.5rem;
+  }
+  .vision-container p {
+    font-size: 1rem;
+  }
+}
 .vision-container .vision-left {
   -o-object-fit: fill;
      object-fit: fill;
