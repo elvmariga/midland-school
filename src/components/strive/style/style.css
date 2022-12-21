@@ -23,7 +23,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  /* identical to box height */
   /* Midland-blue */
   color: #141138;
   /* Extra small devices (phones, 600px and down) */
@@ -33,7 +32,7 @@
     font-size: 1.5rem;
   }
 }
-.striveContainer .striveLeft .head .details {
+.striveContainer .striveLeft .details {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
@@ -42,7 +41,7 @@
   /* Extra small devices (phones, 600px and down) */
 }
 @media only screen and (max-width: 600px) {
-  .striveContainer .striveLeft .head .details {
+  .striveContainer .striveLeft .details {
     font-size: 1rem;
   }
 }
