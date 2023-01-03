@@ -1,5 +1,19 @@
  .glance-container{
     background-color: #D0CFD7;
+    .glanceTitle {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            text-align: center;
+    
+            color: #660113;
+    
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {
+                font-size: 1.5rem;
+            }
+        }
     .glance {
             display: grid;
             justify-content: center;
@@ -7,6 +21,8 @@
             gap: 2rem;
             padding: 3rem 1rem;
             margin: 0 auto;
+
+            
            
     
             h3,
@@ -14,19 +30,7 @@
                 margin: 0;
             }
     
-            .glanceTitle {
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 32px;
-                text-align: center;
-    
-                color: #660113;
-                /* Extra small devices (phones, 600px and down) */
-                    @media only screen and (max-width: 600px) {
-                        font-size: 1.5rem;
-                    }
-            }
+            
     
             .glanceStats {
     
@@ -47,6 +51,34 @@
                 }
             }
     
+        }
+        .kcpe{
+            padding-bottom: 1rem;
+            p{
+                text-align: center;
+                font-family: "Poppins";
+                    text-align: center;
+                    // margin: 0;
+                   
+            }
+            .report{
+                margin-bottom: 0;
+            }
+            .results{
+                text-align: center;
+                padding-top: 1rem;
+
+
+                a{
+                    padding: .5rem 1rem;
+                    background-color: #660113;
+                    color: #ffffff;
+                    font-family: "Poppins";
+                    border-radius: 6px;
+                    text-decoration: none;
+
+                }
+            }
         }
  }
  @media screen and (max-width:850px) {

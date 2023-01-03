@@ -13,46 +13,79 @@ export const Glance = () => {
         <div className="glanceStats">
           <div>
             <p className="statsNumbers">
-             
-              <VisibilitySensor partialVisibility >
-              {
-                ({ isVisible }) => (
-                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={20} />}</span>+</b>
-                )
-              }
-                
+              <VisibilitySensor partialVisibility>
+                {({ isVisible }) => (
+                  <b>
+                    <span id="value1">
+                      {" "}
+                      {isVisible && (
+                        <CountUp enableScrollSpy={true} start={0} end={20} />
+                      )}
+                    </span>
+                    +
+                  </b>
+                )}
               </VisibilitySensor>
             </p>
             <p className="statsTitle">Staff Members</p>
           </div>
           <div>
             <p className="statsNumbers">
-            <VisibilitySensor partialVisibility >
-              {
-                ({ isVisible }) => (
-                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={20} end={500} />}</span>+</b>
-                )
-              }
-                
+              <VisibilitySensor partialVisibility>
+                {({ isVisible }) => (
+                  <b>
+                    <span id="value1">
+                      {" "}
+                      {isVisible && (
+                        <CountUp enableScrollSpy={true} start={20} end={500} />
+                      )}
+                    </span>
+                    +
+                  </b>
+                )}
               </VisibilitySensor>
             </p>
             <p className="statsTitle">Enrolled Students</p>
           </div>
           <div>
             <p className="statsNumbers">
-            <VisibilitySensor partialVisibility >
-              {
-                ({ isVisible }) => (
-                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={15} />}</span>+</b>
-                )
-              }
-                
+              <VisibilitySensor partialVisibility>
+                {({ isVisible }) => (
+                  <b>
+                    <span id="value1">
+                      {" "}
+                      {isVisible && (
+                        <CountUp enableScrollSpy={true} start={0} end={15} />
+                      )}
+                    </span>
+                    +
+                  </b>
+                )}
               </VisibilitySensor>
             </p>
             <p className="statsTitle">Courses Offered</p>
           </div>
         </div>
         {/* <hr /> */}
+      </div>
+      <div className="kcpe">
+        <div>
+          <h3 className="glanceTitle report">KCPE 2023 Results Report</h3>
+          <p>
+            At Midland School, we are proud that our students hardworking,
+            displine and consistently achieve outstanding academic results.
+          </p>
+        </div>
+        <div>
+          <p className="results">
+            <a href="../../assests/Landingpage.pdf"> View KCPE 2022 results</a>
+          </p>
+
+          <p style={{paddingTop:"2rem"}}>
+           " Congratulations to the A level class of 2022 on their excellent
+            results! "
+          </p>
+        </div>
       </div>
     </div>
   );

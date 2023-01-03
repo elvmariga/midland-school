@@ -23,7 +23,7 @@
   display: grid;
   gap: 1rem;
 }
-.contact-container .container-content .contacts .contact-left .contact-details .fa-solid {
+.contact-container .container-content .contacts .contact-left .contact-details .fa-solid, .contact-container .container-content .contacts .contact-left .contact-details .fa-regular {
   color: #660113;
   margin-right: 1rem;
 }

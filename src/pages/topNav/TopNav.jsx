@@ -25,7 +25,9 @@ export const TopNav = () => {
           <Socials />
         </div>
         <div className="webmail tap">
-          <a href="http://">Staff Web Mail</a>
+          <a href="https://rs2.noc254.com:2096/cpsess4461410082/3rdparty/roundcube/" target="_blank">
+            Staff Web Mail
+          </a>
         </div>
       </div>
     </div>

@@ -1,12 +1,17 @@
 .striveContainer {
     font-family: 'Poppins', sans-serif;
     color: #1F1F1F;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr ;
     justify-content: space-between;
     // align-items: center;
     width: 80%;
     margin: 2rem auto;
     gap: 2rem;
+    @media only screen and (min-width: 875px) {
+            grid-template-columns: 1fr 1fr;
+    
+        }
 
     img {
         height: auto;
@@ -15,7 +20,7 @@
     }
 
     .striveLeft {
-        width: 50%;
+        // width: 50%;
         .line {
             border: 4px solid #660113;
             width: 4rem;
