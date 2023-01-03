@@ -1,7 +1,7 @@
 import React from 'react'
-import TeamProfileImage1 from "../../assests/Ellipse 9.png";
-import TeamProfileImage2 from "../../assests/Ellipse 8.png";
-import TeamProfileImage3 from "../../assests/Ellipse 11.png";
+import TeamProfileImage1 from "../../assests/Ellipse 12.png";
+import TeamProfileImage2 from "../../assests/Ellipse 15.png";
+import TeamProfileImage3 from "../../assests/Ellipse 14.png";
 import TeamProfileImage4 from "../../assests/Ellipse 10.png";
 import './style/style.css'
 import {TeamProfile} from '../teamProfile/TeamProfile'
