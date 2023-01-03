@@ -17,7 +17,20 @@ export const Glance = () => {
               <VisibilitySensor partialVisibility >
               {
                 ({ isVisible }) => (
-                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={20} />}</span>K+</b>
+                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={20} />}</span>+</b>
+                )
+              }
+                
+              </VisibilitySensor>
+            </p>
+            <p className="statsTitle">Staff Members</p>
+          </div>
+          <div>
+            <p className="statsNumbers">
+            <VisibilitySensor partialVisibility >
+              {
+                ({ isVisible }) => (
+                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={20} end={500} />}</span>+</b>
                 )
               }
                 
@@ -30,26 +43,13 @@ export const Glance = () => {
             <VisibilitySensor partialVisibility >
               {
                 ({ isVisible }) => (
-                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={20} />}</span>K+</b>
+                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={15} />}</span>+</b>
                 )
               }
                 
               </VisibilitySensor>
             </p>
-            <p className="statsTitle">Enrolled Students</p>
-          </div>
-          <div>
-            <p className="statsNumbers">
-            <VisibilitySensor partialVisibility >
-              {
-                ({ isVisible }) => (
-                  <b><span id="value1"> {isVisible && <CountUp enableScrollSpy={true} start={0} end={20} />}</span>K+</b>
-                )
-              }
-                
-              </VisibilitySensor>
-            </p>
-            <p className="statsTitle">Enrolled Students</p>
+            <p className="statsTitle">Courses Offered</p>
           </div>
         </div>
         {/* <hr /> */}

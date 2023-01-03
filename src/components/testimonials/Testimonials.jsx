@@ -1,5 +1,6 @@
 import React from 'react'
-import TestimonialImage from '../../assests/team.png'
+import TestimonialImage1 from '../../assests/Ellipse 12.png'
+import TestimonialImage2 from "../../assests/Ellipse 13.png";
 import './style/style.css';
 import moe from "../../assests/moe.png";
 import moh from "../../assests/moh.png";
@@ -24,15 +25,16 @@ export const Testimonials = () => {
               <div>
                 <img
                   className="testimonial-profile-image"
-                  src={TestimonialImage}
+                  src={TestimonialImage1}
                   alt="profile"
                 />
               </div>
               <div>
-                <h3 className="testimonial-name">Elvis</h3>
+                <h3 className="testimonial-name">Dr. Alusa</h3>
                 <p className="testimony">
-                  Lorem ipsum is placeholder text commonly used in the graphic,
-                  print, and publishing industries for previ
+                  " I have been consistently impressed by the quality of teaching
+                  at this school. My child is always engaged and challenged in
+                  their learning, and I can see the progress they are making"
                 </p>
               </div>
             </div>
@@ -40,40 +42,54 @@ export const Testimonials = () => {
               <div>
                 <img
                   className="testimonial-profile-image"
-                  src={TestimonialImage}
+                  src={TestimonialImage2}
                   alt="profile"
                 />
               </div>
               <div>
-                <h3 className="testimonial-name">Elvis</h3>
+                <h3 className="testimonial-name">Emmy's Parent</h3>
                 <p className="testimony">
-                  Lorem ipsum is placeholder text commonly used in the graphic,
-                  print, and publishing industries for previ
-
+                 " Since starting at this school, my child has shown tremendous
+                  growth in their knowledge and understanding of the material.
+                  The teachers here are truly exceptional"
                 </p>
               </div>
-              
             </div>
           </div>
         </Fade>
       </div>
 
       <div className="partners">
-        <div className='line'>
+        <div className="line">
           <img src={line} alt="line" />
         </div>
         <h2>Our Partners</h2>
         <div className="partner-logos">
-          <a target="_blank" rel="noreferrer"  className="partner1 pic" href="https://www.education.go.ke/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="partner1 pic"
+            href="https://www.education.go.ke/"
+          >
             <img src={moe} alt="Ministry of Education" />
           </a>
-          <a target="_blank" rel="noreferrer"  className="partner2 pic" href="https://www.health.go.ke/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="partner2 pic"
+            href="https://www.health.go.ke/"
+          >
             <img src={moh} alt="Ministry of Health" />
           </a>
-          <a target="_blank" rel="noreferrer" className="partner3 pic" href="https://www.knec.ac.ke/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="partner3 pic"
+            href="https://www.knec.ac.ke/"
+          >
             <img src={knec} alt="KNEC" />
           </a>
-          <a className="partner4 pic"  href="javascript:(0)">
+          <a className="partner4 pic" href="javascript:(0)">
             <img src={pta} alt="Ministry of Education" />
           </a>
           <a className="partner5 pic" href="javascript:(0)">

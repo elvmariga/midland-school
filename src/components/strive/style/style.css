@@ -9,9 +9,12 @@
 }
 .striveContainer img {
   height: auto;
-  width: 100%;
+  width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.striveContainer .striveLeft {
+  width: 50%;
 }
 .striveContainer .striveLeft .line {
   border: 4px solid #660113;
