@@ -12,20 +12,23 @@ export const TopNav = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-regular fa-envelope "></i> info@midland.co.ke
+            <i className="fa-regular fa-envelope "></i> info@midlandschool.co.ke
           </a>
         </div>
 
         <div className="tel tap">
-          <a href="tel:+254123455 ">
-            <i className="fa-solid fa-phone "></i> +2541234555
+          <a href="tel:+254729960675 ">
+            <i className="fa-solid fa-phone "></i>+2547 2996 0675
           </a>
         </div>
         <div className="socials ">
           <Socials />
         </div>
         <div className="webmail tap">
-          <a href="https://rs2.noc254.com:2096/cpsess4461410082/3rdparty/roundcube/" target="_blank">
+          <a
+            href="https://rs2.noc254.com:2096/cpsess4461410082/3rdparty/roundcube/"
+            target="_blank"
+          >
             Staff Web Mail
           </a>
         </div>

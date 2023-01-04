@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style/style.css";
-import results from "../../assests/Landingpage.pdf";
+import results from "../../assests/midland_rollup_banner_revised.pdf";
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 

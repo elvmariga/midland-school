@@ -30,11 +30,12 @@ export const Testimonials = () => {
                 />
               </div>
               <div>
-                <h3 className="testimonial-name">Dr. Alusa</h3>
+                <h3 className="testimonial-name">Mr. Diribo Hassan</h3>
                 <p className="testimony">
-                  " I have been consistently impressed by the quality of teaching
-                  at this school. My child is always engaged and challenged in
-                  their learning, and I can see the progress they are making"
+                  " I have been consistently impressed by the quality of
+                  teaching at this school. My child is always engaged and
+                  challenged in their learning, and I can see the progress they
+                  are making"
                 </p>
               </div>
             </div>
@@ -49,7 +50,7 @@ export const Testimonials = () => {
               <div>
                 <h3 className="testimonial-name">Emmy's Parent</h3>
                 <p className="testimony">
-                 " Since starting at this school, my child has shown tremendous
+                  " Since starting at this school, my child has shown tremendous
                   growth in their knowledge and understanding of the material.
                   The teachers here are truly exceptional"
                 </p>
