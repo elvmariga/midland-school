@@ -97,6 +97,7 @@ export const Contact = () => {
               </a>
               <p>
                 <i className="fa-solid fa-location-dot "></i>
+                
                 Midland Court, Community Rd, Syokimau, Machakos County
                 {/* <span className="location">Syokimau, Machakos County</span> */}
               </p>

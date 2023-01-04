@@ -26,7 +26,7 @@ export const TopNav = () => {
         </div>
         <div className="webmail tap">
           <a
-            href="https://rs2.noc254.com:2096/cpsess4461410082/3rdparty/roundcube/"
+            href="https://midlandschool.co.ke/webmail"
             target="_blank"
           >
             Staff Web Mail

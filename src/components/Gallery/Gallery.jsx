@@ -14,7 +14,7 @@ export const Gallery = () => {
     <div className="gallery">
       <div className="line"></div>
       <div className="galleryTitle ">
-        <h2>Our Gallery</h2>
+        <h2>Media Gallery</h2>
       </div>
 
       <div className="galleryDetails">

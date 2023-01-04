@@ -1,6 +1,6 @@
 import React from 'react'
-import TestimonialImage1 from '../../assests/Ellipse 11.png'
-import TestimonialImage2 from "../../assests/Ellipse 13.png";
+import TestimonialImage1 from '../../assests/Ellipse 11 1.svg'
+import TestimonialImage2 from "../../assests/Ellipse 13.svg";
 import './style/style.css';
 import moe from "../../assests/moe.png";
 import moh from "../../assests/moh.png";
@@ -48,7 +48,7 @@ export const Testimonials = () => {
                 />
               </div>
               <div>
-                <h3 className="testimonial-name">Emmy's Parent</h3>
+                <h3 className="testimonial-name">Mohamed Hussein</h3>
                 <p className="testimony">
                   " Since starting at this school, my child has shown tremendous
                   growth in their knowledge and understanding of the material.

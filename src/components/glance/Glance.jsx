@@ -20,7 +20,7 @@ export const Glance = () => {
                     <span id="value1">
                       {" "}
                       {isVisible && (
-                        <CountUp enableScrollSpy={true} start={0} end={20} />
+                        <CountUp enableScrollSpy={true} start={0} end={30} />
                       )}
                     </span>
                     +
