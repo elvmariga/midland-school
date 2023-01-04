@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import SMTPJS from 'smtpjs';
 import { Socials, Loading, Map } from "../../components";
 import { Footer } from "../footer/Footer";
 import Zoom from "react-reveal/Zoom";
 import "./style/style.css";
 import axios from "axios";
+
+
 
 export const Contact = () => {
   // form inputs
@@ -26,6 +29,29 @@ export const Contact = () => {
     lng: 36.951459742971196,
   };
 
+  
+  //sending the mail via emailjs
+    function sendEmail(e) {
+      e.preventDefault();
+     
+      setIsLoading(true);
+
+      SMTPJS.send({
+        Host: 'smtp.gmail.com',
+        Username: 'info@midlandschool.co.ke',
+        Password: 'midland@2023',
+        To: formData.to,
+        Subject: formData.subject,
+        Body: formData.body,
+      }).then((message) => {
+        console.log(message);
+        setMailSent(true);
+        setIsLoading(false);
+      });
+    }
+  
+  
+
   const handleChange = (e) => {
     updateFormData({
       ...formData,
@@ -45,28 +71,29 @@ export const Contact = () => {
   };
 
   //submiting form data
-  const sendEmail = async () => {
-    try {
-      setIsLoading(true);
+  // const sendEmail = async () => {
+  //   try {
+  //     setIsLoading(true);
 
-      const res = await axios({
-        method: "post",
-        url: "http://localhost:5000/send-email", //backend API
-        data: formData,
-      });
+  //     const res = await axios({
+  //       method: "post",
+  //       url: "http://localhost:5000/send-email", //backend API
+  //       data: formData,
+  //     });
 
-      console.log({ res });
+  //     console.log({ res });
 
-      res.data.status === "ok" ? setMailSent(true) : setMailSent(false);
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  //     res.data.status === "ok" ? setMailSent(true) : setMailSent(false);
+  //   } catch (error) {
+  //     console.log(error);
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
 
   return (
     <div className="contact-container">
+      
       <div className="container-content">
         <div className="contacts">
           <div className="contact-left">
