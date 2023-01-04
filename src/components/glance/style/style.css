@@ -1,6 +1,20 @@
 .glance-container {
   background-color: #D0CFD7;
 }
+.glance-container .glanceTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #660113;
+  /* Extra small devices (phones, 600px and down) */
+}
+@media only screen and (max-width: 600px) {
+  .glance-container .glanceTitle {
+    font-size: 1.5rem;
+  }
+}
 .glance-container .glance {
   display: grid;
   justify-content: center;
@@ -12,20 +26,6 @@
 .glance-container .glance h3,
 .glance-container .glance p {
   margin: 0;
-}
-.glance-container .glance .glanceTitle {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  text-align: center;
-  color: #660113;
-  /* Extra small devices (phones, 600px and down) */
-}
-@media only screen and (max-width: 600px) {
-  .glance-container .glance .glanceTitle {
-    font-size: 1.5rem;
-  }
 }
 .glance-container .glance .glanceStats {
   display: flex;
@@ -41,6 +41,29 @@
   font-weight: 800;
   font-size: 2rem;
   color: #141138;
+}
+.glance-container .kcpe {
+  padding-bottom: 1rem;
+}
+.glance-container .kcpe p {
+  text-align: center;
+  font-family: "Poppins";
+  text-align: center;
+}
+.glance-container .kcpe .report {
+  margin-bottom: 0;
+}
+.glance-container .kcpe .results {
+  text-align: center;
+  padding-top: 1rem;
+}
+.glance-container .kcpe .results a {
+  padding: 0.5rem 1rem;
+  background-color: #660113;
+  color: #ffffff;
+  font-family: "Poppins";
+  border-radius: 6px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 850px) {

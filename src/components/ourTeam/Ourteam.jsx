@@ -1,15 +1,34 @@
 import React from 'react'
-import TeamProfileImage from "../../assests/team.png";
+import TeamProfileImage1 from "../../assests/Ellipse 12.png";
+import TeamProfileImage2 from "../../assests/Ellipse 15.png";
+import TeamProfileImage3 from "../../assests/Ellipse 14.png";
+import TeamProfileImage4 from "../../assests/Ellipse 10.png";
 import './style/style.css'
 import {TeamProfile} from '../teamProfile/TeamProfile'
 import Zoom from 'react-reveal/Zoom';
 
 export const Ourteam = () => {
   const teamArr = [
-    {id:1,name:"John Doe", image:TeamProfileImage,position:"CEO"},
-    {id:2,name:"Elvis Mariga", image:TeamProfileImage,position:"Head of PR"},
-    {id:3,name:"Donult Trump", image:TeamProfileImage, position:"Senior Dev"},
-  ]
+    { id: 1, name: "Mr. Matkher", image: TeamProfileImage1, position: "Director" },
+    {
+      id: 2,
+      name: "Elvis Mariga",
+      image: TeamProfileImage2,
+      position: "HeadTeacher",
+    },
+    {
+      id: 3,
+      name: "Mr. Okeri",
+      image: TeamProfileImage3,
+      position: "Deputy Teacher",
+    },
+    {
+      id: 3,
+      name: "Miss Elizabeth",
+      image: TeamProfileImage4,
+      position: "Accountant",
+    },
+  ];
 
   return (
 

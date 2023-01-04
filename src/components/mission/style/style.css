@@ -22,11 +22,18 @@
 }
 .containerm .mission-container p {
   font-size: 1.5rem;
-  font-weight: 300;
 }
 .containerm .mission-container .mission-left {
   -o-object-fit: fill;
      object-fit: fill;
+}
+@media screen and (max-width: 600px) {
+  .containerm .mission-container h2 {
+    font-size: 1.5rem;
+  }
+  .containerm .mission-container p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 800px) {

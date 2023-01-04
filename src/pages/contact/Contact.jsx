@@ -78,14 +78,22 @@ export const Contact = () => {
                 <i className="fa-solid fa-phone "></i>
                 +254 702 789 015
               </a>
-              <br />
+
               <a
                 href="mailto:midlandprep17@gmail.com?subject=Inquiry&body=The%20body%20of%20the%20email"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-solid fa-envelope "></i>
+                <i className="fa-regular fa-envelope "></i>
                 midlandprep17@gmail.com
+              </a>
+              <a
+                href="mailto:info@midlandschool.co.ke?subject=Inquiry&body=The%20body%20of%20the%20email"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-solid fa-envelope "></i>
+                info@midlandschool.co.ke
               </a>
               <p>
                 <i className="fa-solid fa-location-dot "></i>
@@ -106,6 +114,7 @@ export const Contact = () => {
               <Socials />
             </div>
           </div>
+          <hr style={{ margin: "2rem 0" }} />
 
           <div className="contact-right">
             {isLoading ? (

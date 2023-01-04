@@ -10,14 +10,19 @@ export const Strive = () => {
         <div className="line"></div>
         <h2 className="head">Striving towards Success</h2>
         <p className="details">
-          Lorem ipsum is placeholder text commonly used in the graphic, print,
-          and publishing industries for previewing layouts and visual mockups.
+          At our school, we believe that every student has the potential to
+          achieve success in their studies and in their personal lives. We are
+          committed to supporting our students as they work towards their goals,
+          and offer a wide range of resources and services to help them succeed.
+          This includes academic support as well as extracurricular activities.
+          We encourage all of our students to set and work towards their own
+          goals, and we support them every step of the way.   
         </p>
       </div>
       <div className="striveRight">
-      <Slide right>
-        <img src={StriveImage} alt="Strive" />
-      </Slide>
+        <Slide right>
+          <img src={StriveImage} alt="Strive" />
+        </Slide>
       </div>
     </div>
   );

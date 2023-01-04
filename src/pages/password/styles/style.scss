@@ -1,10 +1,10 @@
 $mobile : 1080px;
 .password-container {
   // height: 50vh;
-  padding: 150px 0 50px 0;
+  padding: 200px 0 50px 0;
 
   @media screen and (max-width: $mobile) {
-    padding: 250px 0 50px 0;
+    padding: 200px 0 50px 0;
   }
 
   .password-password {
@@ -14,12 +14,16 @@ $mobile : 1080px;
     align-items: center;
     // height: 50vh;
     margin: 0rem auto;
-    gap: 2rem;
-    width: max-content;
+    gap: 1rem;
+    width: fit-content;
     font-family: "Poppins";
     padding:  1rem 4rem 2rem 3rem;
-    border: solid 2px #650113;
+    border: solid 1px #650113;
     border-radius: 8px;
+
+    @media only screen and (max-width: 600px) {
+      margin: 0 1rem;
+    }
 
 
     label {

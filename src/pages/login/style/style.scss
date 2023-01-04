@@ -10,6 +10,7 @@
     z-index: 5;
   }
 }
+
 .signinContainer {
   background-color: #efefef;
   padding: 1rem;
@@ -26,14 +27,18 @@
     width: 80%;
     display: flex;
     justify-content: center;
-    // padding-top: 2rem;
     align-items: center;
 
-    
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+
     .signin-right {
       border: #660113 1px solid;
       padding: 1rem 4rem 2rem 3rem;
       border-radius: 8px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       // box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.25);
 
       form {
@@ -42,9 +47,16 @@
         gap: 1rem;
         width: 100%;
 
-        .forgot-password{
+        .forgot-password {
           text-align: right;
-          margin: 4px 0 0 0 ;
+          margin: 4px 0 0 0;
+          font-size: 14px;
+          color: #660113;
+          font-family: "Poppins" ;
+          
+          a{
+            color: #660113;
+          }
         }
 
         // align-items: center;
@@ -71,6 +83,7 @@
           padding-left: 40px;
           line-height: 30px;
         }
+
         input,
         textarea {
           padding: 0.8rem;
@@ -140,6 +153,7 @@
     }
   }
 }
+
 .diasbled {
   background: #660113;
 }

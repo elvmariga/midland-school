@@ -8,19 +8,22 @@ export const Homepage = () => {
   return (
     <div className="hero-container">
       <div className="containerh">
-      <Fade top><h1 className="school">MIDLAND PREPARATORY SCHOOL</h1></Fade>
+        <Fade top>
+          <h1 className="school">MIDLAND PREPARATORY SCHOOL</h1>
+        </Fade>
         <div className="line"></div>
         <h2>
           <Typed
-            strings={ ['Pragmatism', 'Integrity','Competency']}
+            strings={["Pragmatism", "Integrity", "Competency"]}
             typeSpeed={40}
             backSpeed={50}
-            loop >
-          </Typed>
+            loop
+          ></Typed>
         </h2>
         <p>
-          Lorem ipsum is placeholder text commonly used in the graphic, print,
-          and publishing industries for previewing layouts and visual mockups.
+          Exemplary Leadership,
+          Exemplary Education,
+           Exemplary Results.
         </p>
       </div>
     </div>
