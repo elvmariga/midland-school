@@ -28,7 +28,7 @@ $tablet: 850px;
   }
 
   .logo {
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 600px) {
       height: 50%;
       width: 50%;
       img {
@@ -38,13 +38,13 @@ $tablet: 850px;
       // background-color: red;
     }
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (min-width: 600px) {
       .bigCont{
      
       }
       height: 50%;
       img {
-          width: 30%;
+          width: 70%;
           height: auto;
         }
     }

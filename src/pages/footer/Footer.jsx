@@ -45,15 +45,17 @@ export const Footer = () => {
               98-200, Nairobi-Kenya
             </p>
             <p>
-              <i className="fa-solid fa-phone fa-xl"></i>
-              <a href="tel:+25472999999">+25472999999</a>
+              <i className="fa-solid fa-phone fa-xl"></i>  
+              <a href="tel:+254729960675">
+                  0729 960 675 || 0758 267 311 || 0723 269 643
+              </a>
             </p>
             <p>
               <a href="mailto:midland@ac.ke">
                 <i className="fa-solid fa-envelope fa-xl"></i> midland@ac.ke
               </a>
             </p>
-            <div className="socialMedia" style={{paddingTop:"1 rem"}}>
+            <div className="socialMedia" style={{ paddingTop: "1 rem" }}>
               <Socials style={{ display: "block" }} />
             </div>
           </Fade>
