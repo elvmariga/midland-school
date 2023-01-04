@@ -21,6 +21,18 @@
     font-size: 1.5rem;
   }
 }
+.gallery .results {
+  text-align: center;
+  padding-top: 1rem;
+}
+.gallery .results a {
+  padding: 0.5rem 1rem;
+  background-color: #660113;
+  color: #ffffff;
+  font-family: "Poppins";
+  border-radius: 6px;
+  text-decoration: none;
+}
 .gallery .galleryDetails {
   display: grid;
   grid-template-columns: 1fr;

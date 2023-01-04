@@ -1,5 +1,6 @@
 import React from 'react'
 import "./style/style.css";
+import results from "../../assests/Landingpage.pdf";
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
@@ -78,12 +79,11 @@ export const Glance = () => {
         </div>
         <div>
           <p className="results">
-            <a href="../../assests/Landingpage.pdf"> View KCPE 2022 results</a>
+            <a href={results} target="_blank"> View KCPE 2022 results</a>
           </p>
 
-          <p style={{paddingTop:"2rem"}}>
-           " Congratulations to the A level class of 2022 on their excellent
-            results! "
+          <p style={{ paddingTop: "2rem" }}>
+            " Congratulations to the class of 2022 on their excellent results! "
           </p>
         </div>
       </div>
