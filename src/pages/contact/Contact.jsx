@@ -38,11 +38,11 @@ export const Contact = () => {
 
       SMTPJS.send({
         Host: 'smtp.gmail.com',
-        Username: 'info@midlandschool.co.ke',
+        Username: 'Midland',
         Password: 'midland@2023',
-        To: formData.to,
+        To: "info@midlandschool.co.ke" ,
         Subject: formData.subject,
-        Body: formData.body,
+        Body: formData.message,
       }).then((message) => {
         console.log(message);
         setMailSent(true);
