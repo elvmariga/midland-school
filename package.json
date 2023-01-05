@@ -30,7 +30,6 @@
     "react-typed": "^1.2.0",
     "react-visibility-sensor": "^5.1.1",
     "scss": "^0.2.4",
-    "smtpjs": "^0.0.1",
     "tls": "^0.0.1",
     "util": "^0.12.5",
     "web-vitals": "^2.1.4"
