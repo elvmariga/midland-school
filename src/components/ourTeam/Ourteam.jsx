@@ -1,32 +1,37 @@
 import React from 'react'
-import TeamProfileImage1 from "../../assests/Ellipse 12.png";
-import TeamProfileImage2 from "../../assests/Ellipse 15.png";
-import TeamProfileImage3 from "../../assests/Ellipse 14.png";
-import TeamProfileImage4 from "../../assests/Ellipse 10.png";
+import Director from "../../assests/director.png";
+import Headteacher from "../../assests/headteacher.png";
+import Deputy from "../../assests/deputy.png";
+import Principal from "../../assests/principal.png";
 import './style/style.css'
 import {TeamProfile} from '../teamProfile/TeamProfile'
 import Zoom from 'react-reveal/Zoom';
 
 export const Ourteam = () => {
   const teamArr = [
-    { id: 1, name: "Mr. Matkher", image: TeamProfileImage1, position: "Director" },
+    {
+      id: 1,
+      name: "Matkher Mohammed Noor",
+      image: Director,
+      position: "Director",
+    },
     {
       id: 2,
-      name: "Elvis Mariga",
-      image: TeamProfileImage2,
-      position: "HeadTeacher",
+      name: "Said Hiribae Gayoye",
+      image: Headteacher,
+      position: "Headteacher",
     },
     {
       id: 3,
-      name: "Mr. Okeri",
-      image: TeamProfileImage3,
-      position: "Deputy Teacher",
+      name: "Rehema Hawa",
+      image: Deputy,
+      position: "Deputy Headteacher",
     },
     {
       id: 3,
-      name: "Miss Elizabeth",
-      image: TeamProfileImage4,
-      position: "Accountant",
+      name: "Mr. Fredrick Olumbo",
+      image: Principal,
+      position: "Principal Junior High School",
     },
   ];
 

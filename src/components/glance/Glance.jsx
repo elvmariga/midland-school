@@ -71,7 +71,7 @@ export const Glance = () => {
       </div>
       <div className="kcpe">
         <div>
-          <h3 className="glanceTitle report">KCPE 2023 Results Report</h3>
+          <h3 className="glanceTitle report">KCPE 2022 Results Report</h3>
           <p>
             At Midland School, we are proud that our students hardworking,
             displine and consistently achieve outstanding academic results.

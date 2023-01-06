@@ -29,7 +29,7 @@ export const Intro = () => {
             </p>
 
             <p>
-              <b>Mr. Matkher</b>
+              <b> Matkher Mohammed Noor</b>
             </p>
             <p>
               <i>Director</i>

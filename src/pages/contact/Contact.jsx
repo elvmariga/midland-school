@@ -97,7 +97,6 @@ export const Contact = () => {
               </a>
               <p>
                 <i className="fa-solid fa-location-dot "></i>
-                
                 Midland Court, Community Rd, Syokimau, Machakos County
                 {/* <span className="location">Syokimau, Machakos County</span> */}
               </p>
@@ -190,7 +189,27 @@ export const Contact = () => {
         </div>
         <div className="google-map">
           <hr />
-          <Map location={location} zoomLevel={10} />
+          {/* <Map location={location} zoomLevel={10} /> */}
+          <div
+            className="google-map-code"
+            style={{ width: "80%", margin: "0 auto" }}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.706616426128!2d36.949271!3d-1.3525886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0d805ba00975%3A0x6d8ac13ce32d467d!2sMidland%20School!5e0!3m2!1sen!2ske!4v1672856636417!5m2!1sen!2ske"
+              width="100%"
+              height="500"
+              frameborder="0"
+              style={{
+                border: "2px",
+                display: "grid",
+                gridTemplateColumns: "row",
+                justifyContent: "center",
+              }}
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
