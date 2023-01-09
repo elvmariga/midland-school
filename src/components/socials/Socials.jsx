@@ -22,7 +22,7 @@ export const Socials = () => {
           <i className="fa-brands fa-twitter"></i>
         </a>
         <a
-          href="https://www.facebook.com/profile.php?id=100089223128991"
+          href="https://www.facebook.com/profile.php?id=100089164727926"
           target="_blank"
         >
           <i className="fa-brands fa-facebook"></i>
