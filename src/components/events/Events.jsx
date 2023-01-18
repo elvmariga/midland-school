@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from "react";
 import './style/style.css';
 import axios from "axios";
-import {Carousel} from '3d-react-carousal';
+// import {Carousel} from '3d-react-carousal';
 import { ExpandedEvent } from "../expanded-event/ExpandedEvent";
 
 export const Events = () => {
@@ -50,7 +50,7 @@ export const Events = () => {
   }
   
  
-  const slides =  events.map(
+   events.map(
     ({name,description,event_banner,event_path},i)=>{
       // showing a small part of the description
       const briefDescription = description.slice(3,90);
