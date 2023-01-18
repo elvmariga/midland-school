@@ -17,6 +17,7 @@ export const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
     console.log(form.current);
+   
     emailjs
       .sendForm(
         "service_886sh85",
@@ -99,10 +100,7 @@ export const Contact = () => {
               </div>
               <div>
                 <Zoom cascade>
-                  <form ref={form} onSubmit={()=>{
-                    sendEmail();
-                    // console.log(form.current)
-                  }}>
+                  <form ref={form} onSubmit={sendEmail}>
                     <input
                       type="text"
                       name="name"
