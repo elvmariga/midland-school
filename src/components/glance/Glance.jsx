@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useState } from "react";
 import "./style/style.css";
 import results from "../../assests/midland_rollup_banner_revised.pdf";
-import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
+// import {Document, Page} from react-pdf;
+
+const pdfFiles = [
+  {
+    name: " 2022 Results",
+    path: "../../assests/midland_rollup_banner_revised.pdf",
+  },
+  { name: "PDF 2", path: { results } },
+  { name: "PDF 3", path: { results } },
+];
 
 export const Glance = () => {
+  const [selectedPDF, setSelectedPDF] = useState("");
+
+  const handleClick = (pdf) => {
+    setSelectedPDF(pdf);
+  };
+
   return (
     <div className="glance-container">
       <div className="glance">
@@ -79,7 +95,34 @@ export const Glance = () => {
         </div>
         <div>
           <p className="results">
-            <a href={results} target="_blank"> View KCPE 2022 results</a>
+            <a href={results} target="_blank">
+              {" "}
+              View KCPE 2022 results
+            </a>
+            <div>
+              {/* <select>
+                <option value="" disabled selected>
+                  Select a PDF
+                </option>
+                {pdfFiles.map((pdf, index) => (
+                  <option key={index} onClick={() => handleClick(pdf.path)}>
+                    {pdf.name}
+                  </option>
+                ))}
+              </select> */}
+
+              <select onChange={(e) => handleClick(e.target.value)}>
+                <option value="" disabled selected>
+                  Select Year
+                </option>
+                {pdfFiles.map((pdf, index) => (
+                  <option key={index} value={pdf.path}>
+                    {pdf.name}
+                  </option>
+                ))}
+              </select>
+              {selectedPDF && <a href={`../../assests/${selectedPDF}`} target="_blank" rel="noopener noreferrer"> View</a>}
+            </div>
           </p>
 
           <p style={{ paddingTop: "2rem" }}>
@@ -89,11 +132,7 @@ export const Glance = () => {
       </div>
     </div>
   );
-  
-}
-
-
-
+};
 
 // function animateValue(obj, start, end, duration) {
 // let startTimestamp = null;
@@ -110,4 +149,3 @@ export const Glance = () => {
 
 // const obj = document.getElementById("values");
 // animateValue(obj, 0, 800, 5000);
-

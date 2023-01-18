@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Socials, Loading, Map } from "../../components";
 import { Footer } from "../footer/Footer";
 import Zoom from "react-reveal/Zoom";
 import "./style/style.css";
-import axios from "axios";
+// import axios from "axios";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   // form inputs
-  const [formData, updateFormData] = useState({
-    name: "",
-    email: "",
-    tel: "",
-    subject: "",
-    message: "",
-  });
+  // const [formData, updateFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   tel: "",
+  //   subject: "",
+  //   message: "",
+  // });
   // loading state
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
   // mailstatus
-  const [mailSent, setMailSent] = useState();
+  // const [mailSent, setMailSent] = useState();
 
   //geolocation pointer
   const location = {
@@ -26,44 +27,67 @@ export const Contact = () => {
     lng: 36.951459742971196,
   };
 
-  const handleChange = (e) => {
-    updateFormData({
-      ...formData,
+  // const handleChange = (e) => {
+  //   updateFormData({
+  //     ...formData,
 
-      // Trimming any whitespace
-      [e.target.name]: e.target.value.trim(),
-    });
+  //     // Trimming any whitespace
+  //     [e.target.name]: e.target.value.trim(),
+  //   });
 
-    console.log(formData);
-  };
+  //   console.log(formData);
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    // ... submit to API or something
-    sendEmail();
-  };
+  //   // ... submit to API or something
+  //   sendEmail();
+  // };
 
-  //submiting form data
-  const sendEmail = async () => {
-    try {
-      setIsLoading(true);
+  // //submiting form data
+  // const sendEmail = async () => {
+  //   try {
+  //     setIsLoading(true);
 
-      const res = await axios({
-        method: "post",
-        url: "http://localhost:5000/send-email", //backend API
-        data: formData,
-      });
+  //     const res = await axios({
+  //       method: "post",
+  //       url: "http://localhost:5000/send-email", //backend API
+  //       data: formData,
+  //     });
 
-      console.log({ res });
+  //     console.log({ res });
 
-      res.data.status === "ok" ? setMailSent(true) : setMailSent(false);
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  //     res.data.status === "ok" ? setMailSent(true) : setMailSent(false);
+  //   } catch (error) {
+  //     console.log(error);
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
+
+
+   const form = useRef();
+
+   const sendEmail = (e) => {
+     e.preventDefault();
+
+     emailjs
+       .sendForm(
+         "service_886sh85",
+         "template_ybaee3f",
+         form.current,
+         "3ELD80oB0_0MwUc2d"
+       )
+       .then(
+         (result) => {
+           alert("success");
+         },
+         (error) => {
+            alert("failed");
+         }
+       );
+   };
 
   return (
     <div className="contact-container">
@@ -117,16 +141,54 @@ export const Contact = () => {
           <hr style={{ margin: "2rem 0" }} />
 
           <div className="contact-right">
-            {isLoading ? (
+            {/* {isLoading ? (
               <Loading />
-            ) : (
+            ) : ( */}
               <div>
                 <div>
                   <h2>Any questions? Send us an inquiry</h2>
                 </div>
                 <div>
                   <Zoom cascade>
-                    <form action="" method="post">
+                    <form ref={form} onSubmit={sendEmail}>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Full Name"
+                      />
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                      />
+                      <input
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        placeholder="Phone Number"
+                      />
+                      <input
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        placeholder="Subject"
+                      />
+                      <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="3"
+                        placeholder="Message"
+                      ></textarea>
+                      <input type="submit" value="Send Inquiry " />
+                      {/* displays when the email is sent */}
+                      {/* {mailSent && (
+                        <p>Your Inquiry has been recived. Thank you.</p>
+                      )} */}
+                    </form>
+                    {/* <form action="" method="post">
                       <input
                         type="text"
                         name="name"
@@ -176,15 +238,15 @@ export const Contact = () => {
                       >
                         Send Inquiry
                       </button>
-                      {/* displays when the email is sent */}
+                      {}
                       {mailSent && (
                         <p>Your Inquiry has been recived. Thank you.</p>
                       )}
-                    </form>
+                    </form> */}
                   </Zoom>
                 </div>
               </div>
-            )}
+             {/* )} */}
           </div>
         </div>
         <div className="google-map">

@@ -9,7 +9,8 @@ export const Homepage = () => {
     <div className="hero-container">
       <div className="containerh">
         <Fade top>
-          <h1 className="school">MIDLAND PREPARATORY SCHOOL</h1>
+          <h1 className="school">MIDLAND PREPARATORY PRIMARY
+          AND JUNIOR SECONDARY</h1>
         </Fade>
         <div className="line"></div>
         <h2>
