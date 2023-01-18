@@ -109,23 +109,7 @@ export const Glance = () => {
                 ))}
               </select>
               {selectedPDF && <a href={selectedPDF} target="_blank" rel="noopener noreferrer"> View</a>}
-            <div>
-              {/* <select>
-                <option value="" disabled selected>
-                  Select a PDF
-                </option>
-                {pdfFiles.map((pdf, index) => (
-                  <option key={index} onClick={() => handleClick(pdf.path)}>
-                    {pdf.name}
-                  </option>
-                ))}
-              </select> */}
-
-                {/* <label value="" disabled selected>
-                  Select Year
-                </label> */}
-             
-            </div>
+           
           </p>
 
           <p style={{ paddingTop: "2rem" }}>

@@ -47,6 +47,7 @@ export const Gallery = () => {
         <a
           href="https://www.instagram.com/midlandpreparatoryschool/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           {" "}
           View more

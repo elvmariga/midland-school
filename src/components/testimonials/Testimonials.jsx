@@ -68,7 +68,7 @@ export const Testimonials = () => {
         <div className="partner-logos">
           <a
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="partner1 pic"
             href="https://www.education.go.ke/"
           >
@@ -76,7 +76,7 @@ export const Testimonials = () => {
           </a>
           <a
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="partner2 pic"
             href="https://www.health.go.ke/"
           >
@@ -84,16 +84,16 @@ export const Testimonials = () => {
           </a>
           <a
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="partner3 pic"
             href="https://www.knec.ac.ke/"
           >
             <img src={knec} alt="KNEC" />
           </a>
-          <a className="partner4 pic" href="javascript:(0)">
+          <a className="partner4 pic" href="www.pta.co.ke">
             <img src={pta} alt="Ministry of Education" />
           </a>
-          <a className="partner5 pic" href="javascript:(0)">
+          <a className="partner5 pic" href="www.boardmembers.co.ke">
             <img src={board} alt="Ministry of Education" />
           </a>
         </div>

@@ -12,30 +12,33 @@ export const Socials = () => {
         >
           <i className="fa-regular fa-envelope "></i>
         </a>
-        <a href="tel:+2541234555" target="_blank">
+        <a href="tel:+2541234555" target="_blank" rel="noopener noreferrer">
           <i className="fa-solid fa-phone "></i>
         </a>
         {/* <a href="http:// ">
           <i className="fa-brands fa-whatsapp"></i>
         </a> */}
-        <a href="http://" target="_blank">
+        <a href="http://" target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-twitter"></i>
         </a>
         <a
           href="https://www.facebook.com/profile.php?id=100089164727926"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fa-brands fa-facebook"></i>
         </a>
         <a
           href="https://www.instagram.com/midlandpreparatoryschool/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fa-brands fa-instagram"></i>
         </a>
         <a
           href="https://www.instagram.com/midlandpreparatoryschool/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fa-brands fa-linkedin-in"></i>
         </a>

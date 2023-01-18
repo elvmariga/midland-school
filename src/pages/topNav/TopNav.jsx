@@ -28,6 +28,7 @@ export const TopNav = () => {
           <a
             href="https://midlandschool.co.ke/webmail"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Staff Web Mail
           </a>

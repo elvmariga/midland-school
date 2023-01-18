@@ -21,11 +21,11 @@ export const Contact = () => {
   // const [mailSent, setMailSent] = useState();
 
   //geolocation pointer
-  const location = {
-    address: "JXW2+XH9, Community Rd, Nairobi",
-    lat: -1.3525940209369631,
-    lng: 36.951459742971196,
-  };
+  // const location = {
+  //   address: "JXW2+XH9, Community Rd, Nairobi",
+  //   lat: -1.3525940209369631,
+  //   lng: 36.951459742971196,
+  // };
 
   // const handleChange = (e) => {
   //   updateFormData({
@@ -81,10 +81,12 @@ export const Contact = () => {
       .then(
         (result) => {
           // show the user an sent success
+          console.log("yeah");
           swal("Email Sent Successfully");
         },
         (error) => {
           // show the user an error
+          console.log("oops")
           swal("Email not sent, try again");
         }
       );
@@ -268,6 +270,7 @@ export const Contact = () => {
               allowfullscreen=""
               aria-hidden="false"
               tabindex="0"
+              title="map"
             ></iframe>
           </div>
         </div>
