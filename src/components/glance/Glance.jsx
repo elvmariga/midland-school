@@ -8,17 +8,18 @@ import VisibilitySensor from "react-visibility-sensor";
 const pdfFiles = [
   {
     name: " 2022 Results",
-    path: "../../assests/midland_rollup_banner_revised.pdf",
+    path:  results,
   },
-  { name: "PDF 2", path: { results } },
-  { name: "PDF 3", path: { results } },
+  { name: "PDF 2", path: results, },
+  { name: "PDF 3", path: results, },
 ];
 
 export const Glance = () => {
   const [selectedPDF, setSelectedPDF] = useState("");
 
-  const handleClick = (pdf) => {
-    setSelectedPDF(pdf);
+  const handleChange = (e) => {
+
+    setSelectedPDF(e.target.value);
   };
 
   return (
@@ -95,7 +96,7 @@ export const Glance = () => {
         </div>
         <div>
           <p className="results">
-            <a href={results} target="_blank">
+            <a href={results}  rel="noreferrer" target="_blank">
               {" "}
               View KCPE 2022 results
             </a>
@@ -111,17 +112,17 @@ export const Glance = () => {
                 ))}
               </select> */}
 
-              <select onChange={(e) => handleClick(e.target.value)}>
-                <option value="" disabled selected>
+                <label value="" disabled selected>
                   Select Year
-                </option>
+                </label>
+              <select onChange={(e) => handleChange(e)}>
                 {pdfFiles.map((pdf, index) => (
-                  <option key={index} value={pdf.path}>
+                  <option  key={index} value={pdf.path}>
                     {pdf.name}
                   </option>
                 ))}
               </select>
-              {selectedPDF && <a href={`../../assests/${selectedPDF}`} target="_blank" rel="noopener noreferrer"> View</a>}
+              {selectedPDF && <a href={selectedPDF} target="_blank" rel="noopener noreferrer"> View</a>}
             </div>
           </p>
 
