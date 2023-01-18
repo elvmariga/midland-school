@@ -69,7 +69,7 @@
                 padding-top: 1rem;
 
 
-                a{
+               .selected, a{
                     padding: .5rem 1rem;
                     background-color: #660113;
                     color: #ffffff;
@@ -77,6 +77,15 @@
                     border-radius: 6px;
                     text-decoration: none;
 
+                }
+
+                .selected{
+                    border: 2px solid #660113;
+                    background-color: #D0CFD7;
+                    color: #141138;
+                    font-family: "Poppins";
+                    font-size: 14px;
+                    margin-right: .5rem;
                 }
             }
         }

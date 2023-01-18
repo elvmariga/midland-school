@@ -1,6 +1,5 @@
-import React, { useState, useRef } from "react";
-import { Socials, Loading, Map } from "../../components";
-import { Footer } from "../footer/Footer";
+import React, {  useRef } from "react";
+import { Socials } from "../../components";
 import Zoom from "react-reveal/Zoom";
 import "./style/style.css";
 // import axios from "axios";
@@ -185,13 +184,10 @@ export const Contact = () => {
                       placeholder="Message"
                     ></textarea>
                     <input type="submit" value="Send Inquiry " />
-                 
                   </form>
+                </Zoom>
 
-
-
-                  
-                  {/* <form action="" method="post">
+                {/* <form action="" method="post">
                       <input
                         type="text"
                         name="name"
@@ -246,7 +242,6 @@ export const Contact = () => {
                         <p>Your Inquiry has been recived. Thank you.</p>
                       )}
                     </form> */}
-                </Zoom>
               </div>
             </div>
             {/* )} */}
