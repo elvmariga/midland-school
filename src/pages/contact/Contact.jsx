@@ -5,6 +5,7 @@ import Zoom from "react-reveal/Zoom";
 import "./style/style.css";
 // import axios from "axios";
 import emailjs from "@emailjs/browser";
+import swal from "sweetalert";
 
 export const Contact = () => {
   // form inputs
@@ -66,28 +67,29 @@ export const Contact = () => {
   //   }
   // };
 
+  const form = useRef();
 
-   const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-   const sendEmail = (e) => {
-     e.preventDefault();
-
-     emailjs
-       .sendForm(
-         "service_886sh85",
-         "template_ybaee3f",
-         form.current,
-         "3ELD80oB0_0MwUc2d"
-       )
-       .then(
-         (result) => {
-           alert("success");
-         },
-         (error) => {
-            alert("failed");
-         }
-       );
-   };
+    emailjs
+      .sendForm(
+        "service_886sh85",
+        "template_ybaee3f",
+        form.current,
+        "hg8g2BYh9dMK-hAnq"
+      )
+      .then(
+        (result) => {
+          // show the user an sent success
+          swal("Email Sent Successfully");
+        },
+        (error) => {
+          // show the user an error
+          swal("Email not sent, try again");
+        }
+      );
+  };
 
   return (
     <div className="contact-container">
@@ -144,51 +146,52 @@ export const Contact = () => {
             {/* {isLoading ? (
               <Loading />
             ) : ( */}
+            <div>
               <div>
-                <div>
-                  <h2>Any questions? Send us an inquiry</h2>
-                </div>
-                <div>
-                  <Zoom cascade>
-                    <form ref={form} onSubmit={sendEmail}>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Full Name"
-                      />
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                      />
-                      <input
-                        type="tel"
-                        name="tel"
-                        id="tel"
-                        placeholder="Phone Number"
-                      />
-                      <input
-                        type="text"
-                        name="subject"
-                        id="subject"
-                        placeholder="Subject"
-                      />
-                      <textarea
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="3"
-                        placeholder="Message"
-                      ></textarea>
-                      <input type="submit" value="Send Inquiry " />
-                      {/* displays when the email is sent */}
-                      {/* {mailSent && (
-                        <p>Your Inquiry has been recived. Thank you.</p>
-                      )} */}
-                    </form>
-                    {/* <form action="" method="post">
+                <h2>Any questions? Send us an inquiry</h2>
+              </div>
+              <div>
+                <Zoom cascade>
+                  <form ref={form} onSubmit={sendEmail}>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Full Name"
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder="Phone Number"
+                    />
+                    <input
+                      type="text"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                    />
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="3"
+                      placeholder="Message"
+                    ></textarea>
+                    <input type="submit" value="Send Inquiry " />
+                 
+                  </form>
+
+
+
+                  
+                  {/* <form action="" method="post">
                       <input
                         type="text"
                         name="name"
@@ -243,10 +246,10 @@ export const Contact = () => {
                         <p>Your Inquiry has been recived. Thank you.</p>
                       )}
                     </form> */}
-                  </Zoom>
-                </div>
+                </Zoom>
               </div>
-             {/* )} */}
+            </div>
+            {/* )} */}
           </div>
         </div>
         <div className="google-map">
