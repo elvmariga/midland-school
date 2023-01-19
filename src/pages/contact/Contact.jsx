@@ -11,18 +11,18 @@ export const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   
 
-  const form = useRef(null);
+  const formRef = useRef(null);
   
   const sendEmail = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    console.log(form.current);
+    console.log(formRef.current.value);
    
     emailjs
       .sendForm(
         "service_886sh85",
         "template_ybaee3f",
-        form.current,
+        formRef.current,
         "hg8g2BYh9dMK-hAnq"
       )
       .then(
@@ -30,11 +30,13 @@ export const Contact = () => {
           // show the user an sent success
           console.log("yeah");
           swal("Email Sent Successfully");
+          
         },
         (error) => {
           // show the user an error
           console.log("oops")
           swal("Email not sent, try again");
+        
         }
       );
 
@@ -98,48 +100,45 @@ export const Contact = () => {
               <div>
                 <h2>Any questions? Send us an inquiry</h2>
               </div>
+              <Zoom cascade>
               <div>
-                <Zoom cascade>
-                  <form ref={form} onSubmit={sendEmail}>
+             
+                  <form ref={formRef} onSubmit={sendEmail}>
                     <input
                       type="text"
                       name="name"
-                      id="name"
                       placeholder="Full Name"
                     />
                     <input
                       type="email"
                       name="email"
-                      id="email"
                       placeholder="Email"
                     />
                     <input
                       type="tel"
                       name="tel"
-                      id="tel"
                       placeholder="Phone Number"
                     />
                     <input
                       type="text"
                       name="subject"
-                      id="subject"
                       placeholder="Subject"
                     />
                     <textarea
                       name="message"
-                      id="message"
                       cols="30"
                       rows="3"
                       placeholder="Message"
                     ></textarea>
                     <input className="myBtn" type="submit" value= {isLoading ? "Sending..." : "Send Inquiry" }/>
                   </form>
-                </Zoom>
+              
 
                
               </div>
+              </Zoom>
             </div>
-            {/* )} */}
+           
           </div>
         </div>
         <div className="google-map">

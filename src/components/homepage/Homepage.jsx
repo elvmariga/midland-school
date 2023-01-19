@@ -9,8 +9,7 @@ export const Homepage = () => {
     <div className="hero-container">
       <div className="containerh">
         <Fade top>
-          <h1 className="school">MIDLAND PREPARATORY PRIMARY
-          AND JUNIOR SECONDARY</h1>
+          <h1 className="school">Midland Preparatory Primary and Junior Secondary</h1>
         </Fade>
         <div className="line"></div>
         <h2>
@@ -23,8 +22,8 @@ export const Homepage = () => {
         </h2>
         <p>
           Exemplary Leadership,
-          Exemplary Education,
-           Exemplary Results.
+          Excellent Education,
+          Exceptional Results.
         </p>
       </div>
     </div>
