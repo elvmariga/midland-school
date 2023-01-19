@@ -62,19 +62,7 @@ export const Navbar = () => {
                 </NavLink>
               </li>
 
-              {/* <li
-=======
-              <li
-
-                className="link"
-                onClick={() => {
-                  setShowModal(true);
-                  getModalState(showModal);
-                }}
-              >
-                Send Inquiry
-<<<<<<< HEAD
-              </li> */}
+              
 
               <li className="link ">
                 <NavLink

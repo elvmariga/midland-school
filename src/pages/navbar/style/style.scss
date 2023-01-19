@@ -10,6 +10,7 @@ $tablet: 850px;
   position: fixed;
   display: flex;
   width: 100vw;
+  width: 100%;
   padding-left:3rem;
   padding-bottom: 8px;
   margin: 0 auto;
@@ -111,11 +112,7 @@ $tablet: 850px;
 
           // position: absolute;
           width: max-content;
-          // height: 60px;
-          // left: 1200px;
-          // top: 142px;
-
-          /* Midland-blue */
+          
 
           border: 2px solid #650113;
           border-radius: 5px;
@@ -156,60 +153,7 @@ $tablet: 850px;
       width: 2rem;
     }
 
-    // .mobilelinks {
-    //     list-style: none;
-
-    //     ul {
-
-    //         ul {
-    //             .link {
-    //                 list-style: none;
-
-    //                 li {
-
-    //                     a {
-    //                         color: #141138;
-    //                         text-decoration: none;
-    //                         font-weight: 300;
-    //                     }
-
-    //                     a:hover {
-    //                         background-color: #141138;
-    //                         color: white;
-    //                     }
-
-    //                     .login {
-
-    //                         padding: .1rem 1.5rem;
-    //                         gap: 10px;
-    //                         font-family: 'Poppins';
-    //                         font-weight: 500;
-    //                         font-size: 1.5rem;
-    //                         margin-right: 20px;
-    //                         width: max-content;
-    //                        border: 2px solid #141138;
-    //                         border-radius: 5px;
-    //                         background-color: #ffffff;
-    //                     }
-
-    //                     .login {
-    //                         box-shadow: 4px 4px 12px rgba(20, 17, 56, 0.3);
-    //                     }
-
-    //                 }
-    //             }
-
-    //         }
-
-    //         .link:hover {
-    //             transform: scale(1.1, 1.1);
-    //             font-weight: 700;
-    //             background-color: #141138;
-    //                 color: white;
-
-    //         }
-    //     }
-    // }
+ 
 
     @media screen and (max-width: $tablet) {
       display: flex;
@@ -219,12 +163,24 @@ $tablet: 850px;
   }
   .mobile-container {
     margin-right: 1,25rem;
+    left: 30px;
+    top:118px ;
+    position: absolute;
+    // width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f6f6f6;
+    
 
     .mobilelinks {
+      
+      z-index: 5;
       width: 85vw;
       list-style: none;
       text-align: center;
       padding-right: 1.5rem;
+    
+    
 
 
       @media screen and (min-width: $tablet) {

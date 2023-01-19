@@ -7,6 +7,7 @@
   position: fixed;
   display: flex;
   width: 100vw;
+  width: 100%;
   padding-left: 3rem;
   padding-bottom: 8px;
   margin: 0 auto;
@@ -102,7 +103,6 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  /* Midland-blue */
   border: 2px solid #650113;
   border-radius: 5px;
   background-color: #ffffff;
@@ -142,8 +142,15 @@
 }
 .container .mobile-container {
   margin-right: 1, 25rem;
+  left: 30px;
+  top: 118px;
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f6f6f6;
 }
 .container .mobile-container .mobilelinks {
+  z-index: 5;
   width: 85vw;
   list-style: none;
   text-align: center;
