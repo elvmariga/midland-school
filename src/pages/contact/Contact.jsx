@@ -16,7 +16,7 @@ export const Contact = () => {
   const sendEmail =  async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    console.log(formRef.current.value);
+  
    
     await emailjs
       .sendForm(
@@ -28,14 +28,15 @@ export const Contact = () => {
       .then(
         (result) => {
           // show the user an sent success
-          // console.log("yeah");
+          console.log("yeah");
           swal("Email Sent Successfully");
-         
+          //reset form after email submit succes
+          formRef.current.reset();
           
         },
         (error) => {
           // show the user an error
-          // console.log("oops")
+          console.log("oops")
           swal("Email not sent, try again");
         
         }
@@ -104,32 +105,37 @@ export const Contact = () => {
               <Zoom cascade>
               <div>
              
-                  <form ref={formRef} onSubmit={sendEmail}>
+                  <form ref={formRef} onSubmit={ sendEmail}>
                     <input
                       type="text"
                       name="name"
                       placeholder="Full Name"
+                      required
                     />
                     <input
                       type="email"
                       name="email"
                       placeholder="Email"
+                      required
                     />
                     <input
                       type="tel"
                       name="tel"
                       placeholder="Phone Number"
+                      required
                     />
                     <input
                       type="text"
                       name="subject"
                       placeholder="Subject"
+                      required
                     />
                     <textarea
                       name="message"
                       cols="30"
                       rows="3"
                       placeholder="Message"
+                      required
                     ></textarea>
                     <input className="myBtn" type="submit" value= {isLoading ? "Sending..." : "Send Inquiry" }/>
                   </form>
