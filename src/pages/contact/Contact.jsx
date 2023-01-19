@@ -13,12 +13,12 @@ export const Contact = () => {
 
   const formRef = useRef(null);
   
-  const sendEmail = (e) => {
+  const sendEmail =  async (e) => {
     e.preventDefault();
     setIsLoading(true);
     console.log(formRef.current.value);
    
-    emailjs
+    await emailjs
       .sendForm(
         "service_886sh85",
         "template_ybaee3f",
