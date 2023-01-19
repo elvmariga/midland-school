@@ -28,13 +28,14 @@ export const Contact = () => {
       .then(
         (result) => {
           // show the user an sent success
-          console.log("yeah");
+          // console.log("yeah");
           swal("Email Sent Successfully");
+         
           
         },
         (error) => {
           // show the user an error
-          console.log("oops")
+          // console.log("oops")
           swal("Email not sent, try again");
         
         }

@@ -24,11 +24,11 @@
     padding-top: 3rem;
   }
 }
-.hero-container .containerh .school {
+.hero-container .containerh .schoolName {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2rem;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
